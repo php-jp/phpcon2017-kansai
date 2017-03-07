@@ -41,8 +41,7 @@ gulp.task("server",() => tasks.browserSync.start());
 gulp.task("watch",[
     "watch:sass",
     "watch:jade",
-    "watch:webpack",
-    "server"
+    "watch:webpack"
 ]);
 
 gulp.task("build",function(cb){
