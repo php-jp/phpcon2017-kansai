@@ -62,7 +62,7 @@ html,body {
 
         .zou {
             position: absolute;
-            top: 0;
+            top: -30px;
             right: 10px;
         }
 
@@ -98,8 +98,8 @@ html,body {
                 }
                 &:hover {
                     background-color: #b298d6;
+                    opacity: 0.7;
                 }
-
                 span {
                     color: #fff;
                 }
@@ -143,6 +143,10 @@ html,body {
                 display: block;
                 text-decoration: none;
                 font-size: 16px;
+                color: #551a8b;
+            }
+            &:hover {
+                opacity: 0.7;
             }
             span {
                 margin-left: 5px;
@@ -170,6 +174,10 @@ html,body {
                 background-repeat: no-repeat;
                 padding: 2px 0 2px 18px;
                 font-family: monospace;
+                color: #551a8b;
+            }
+            &:hover {
+                opacity: 0.7;
             }
         }
     }
@@ -185,4 +193,62 @@ html,body {
 	0% {transform:translate(0, 0);}
 	50% {transform:translate(0, 15px);}
 	100% {transform:translate(0, 0);}
+}
+
+.sprite {
+  width: 165px;
+  height: 160px;
+  margin: 0 auto;
+  background: url(../../images/zou.png) no-repeat;
+  background-position: 0px 0;
+}
+.sprite {
+    /*一秒間に動くフレーム数*/
+    -webkit-animation: play 10s steps(19) infinite;
+    animation: play 10s steps(19) infinite;
+}
+@-webkit-keyframes play {
+    /*一秒間に動くスタイル*/
+    0% {
+        background-position: 0px 0;
+    }
+    49.999999% {
+        background-position: 0px 0;
+    }
+    50% {
+        background-position: -170px 0;
+    }
+    55% {
+        background-position: -170px 0;
+    }
+    55.0000001% {
+        background-position: -0px 0;
+    }
+    84.999999% {
+      background-position: -0px 0;
+    }
+    85% {
+      background-position: -170px 0;
+    }
+    90% {
+      background-position: -170px 0;
+    }
+    90.0000001% {
+      background-position: -0px 0;
+    }
+    94.999999% {
+      background-position: -0px 0;
+    }
+    95% {
+      background-position: -170px 0;
+    }
+    95% {
+      background-position: -170px 0;
+    }
+    95.0000001% {
+      background-position: -0px 0;
+    }
+    100% {
+        background-position: -0px 0;
+    }
 }
