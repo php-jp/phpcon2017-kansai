@@ -203,52 +203,8 @@ html,body {
   background-position: 0px 0;
 }
 .sprite {
-    /*一秒間に動くフレーム数*/
-    -webkit-animation: play 10s steps(19) infinite;
-    animation: play 10s steps(19) infinite;
+    background-position: 0px 0;
 }
-@-webkit-keyframes play {
-    /*一秒間に動くスタイル*/
-    0% {
-        background-position: 0px 0;
-    }
-    49.999999% {
-        background-position: 0px 0;
-    }
-    50% {
-        background-position: -170px 0;
-    }
-    55% {
-        background-position: -170px 0;
-    }
-    55.0000001% {
-        background-position: -0px 0;
-    }
-    84.999999% {
-      background-position: -0px 0;
-    }
-    85% {
-      background-position: -170px 0;
-    }
-    90% {
-      background-position: -170px 0;
-    }
-    90.0000001% {
-      background-position: -0px 0;
-    }
-    94.999999% {
-      background-position: -0px 0;
-    }
-    95% {
-      background-position: -170px 0;
-    }
-    95% {
-      background-position: -170px 0;
-    }
-    95.0000001% {
-      background-position: -0px 0;
-    }
-    100% {
-        background-position: -0px 0;
-    }
+.sprite.blink {
+    background-position: -170px 0;
 }
