@@ -5,10 +5,10 @@ html(lang="en")
     link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css")
     link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css')
     link(rel='stylesheet', href='./assets/css/main.css')
-    meta property=”og:title” content=”PHPカンファレンス関西2017”
-    meta property=”og:description” content=”カンファレンス関西2017”
-    meta property=”og:url” content=”https://conference.kphpug.jp/2017/”
-    meta property=”og:image” content=”https://conference.kphpug.jp/2017/images/phpconf2017_OGP.jpg”
+    meta(property="og:title", content='PHPカンファレンス関西2017')
+    meta(property="og:description", content='カンファレンス関西2017')
+    meta(property="og:url", content='https://conference.kphpug.jp/2017/')
+    meta(property="og:image", content='https://conference.kphpug.jp/2017/images/phpconf2017_OGP.jpg')
   body#app
       #main
           .container
@@ -47,7 +47,41 @@ html(lang="en")
                     a(href="http://twitter.com/intent/tweet?text=関西最大のPHPイベントは7月15日(土)開催！ カンファレンス関西2017 http://conference.kphpug.jp/2017/&hashtags=phpkansai" target="_blank")
                         i.fa.fa-twitter
                         span Share
-      #footer
+
+      #sponsers
+          .container
+              h3.ttl sponsers
+              p.rank platinum
+                  .platinum.rank_box
+                      .list
+                      a(href="")
+                        img(src="./images/logo_lockon.png", alt="" target="_blank")
+                      a(href="")
+                        img(src="./images/logo_lockon.png", alt="" target="_blank")
+              p.rank Gold
+                  .gold.rank_box
+                      .list
+                      a(href="")
+                          img(src="./images/logo_splout.png", alt="" target="_blank")
+                      a(href="")
+                          img(src="./images/logo_splout.png", alt="" target="_blank")
+                      a(href="")
+                          img(src="./images/logo_splout.png", alt="" target="_blank")
+                      a(href="")
+                          img(src="./images/logo_splout.png", alt="" target="_blank")
+              p.rank Silver
+                  .silver.rank_box
+                      .list
+                      a(href="")
+                          img(src="./images/logo_merukari.png", alt="" target="_blank")
+                      a(href="")
+                          img(src="./images/logo_10mado.png", alt="" target="_blank")
+                      a(href="")
+                          img(src="./images/logo_merukari.png", alt="" target="_blank")
+                      a(href="")
+                          img(src="./images/logo_merukari.png", alt="" target="_blank")
+
+     #footer
           .container
               ul.links
                   li
