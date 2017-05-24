@@ -1,6 +1,8 @@
 @mixin banner($column){
     img{
         width: 100% ;
+        padding: 0 30px;
+        box-sizing: border-box;
     }
     a{
         width:  (100%/$column);
@@ -187,13 +189,10 @@ html,body {
 
         }
         .list{
-            display: -webkit-flex;
-            display: -moz-flex;
-            display: -ms-flex;
-            display: -o-flex;
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
+            justify-content:space-between;
         }
         .rank_box{
             margin-bottom: 30px;
@@ -214,8 +213,7 @@ html,body {
             display: inline-block;
             margin-left:5%;
             padding:0 25px 3px;
-            background-image: url(../../images/lank.png);
-            background-position: 0 2px;
+            background-image: url(../images/rank.png);
             background-repeat: no-repeat;
             background-size: 15px;
         }
