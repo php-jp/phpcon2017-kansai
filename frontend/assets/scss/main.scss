@@ -1,7 +1,7 @@
 @mixin banner($column){
     img{
         width: 100% ;
-        padding: 0 30px;
+        padding: 0 60px;
         box-sizing: border-box;
     }
     a{
@@ -135,7 +135,7 @@ html,body {
         padding-top: 25px;
     }
     .mark {
-        background-image: url("/assets/images/mark01.png");
+        background-image: url(../../assets/images/mark01.png);
         background-repeat: no-repeat;
         background-size: cover;
         width: 80px;
@@ -175,13 +175,12 @@ html,body {
 
         .ttl{
             border-bottom: 4px solid #f4efff;
-            margin-bottom: 50px;
-            width: 7%;
+            width: 100px;
             padding-bottom: 10px;
             margin: 0 auto 50px;
         }
         h3{
-            font-size: 18px;
+            font-size: 25px;
             color: #551a8b;
             background-size: cover;
         }
@@ -210,13 +209,14 @@ html,body {
         }
         p.rank{
             text-align: center;
-            color:#828296;
+            color: #828296;
             display: inline-block;
-            margin-left:5%;
-            padding:0 25px 3px;
-            background-image: url(../images/rank.png);
+            margin-left: 5.5%;
+            padding: 0 31px 3px;
+            background-image: url(/../assets/images/rank.png);
             background-repeat: no-repeat;
-            background-size: 15px;
+            background-size: 21px;
+            font-size: 20px;
         }
     }
 
@@ -235,7 +235,7 @@ html,body {
             a {
                 display: block;
                 text-decoration: none;
-                background-image: url(../../images/linkMark.png);
+                background-image: url(../../assets/images/linkMark.png);
                 background-position: center left;
                 background-repeat: no-repeat;
                 padding: 2px 0 2px 18px;
@@ -265,7 +265,7 @@ html,body {
   width: 165px;
   height: 160px;
   margin: 0 auto;
-  background: url(../../images/zou.png) no-repeat;
+  background: url(../../assets/images/zou.png) no-repeat;
   background-position: 0px 0;
 }
 .sprite {
