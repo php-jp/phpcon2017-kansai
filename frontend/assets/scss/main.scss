@@ -1,7 +1,7 @@
 @mixin banner($column){
     img{
         width: 100% ;
-        padding: 0 60px;
+        padding: 0 15%;
         box-sizing: border-box;
     }
     a{
@@ -180,12 +180,12 @@ html,body {
             margin: 0 auto 50px;
         }
         h3{
-            font-size: 25px;
+            font-size: 1.5rem;
             color: #551a8b;
             background-size: cover;
         }
         p.rank{
-            margin:30px;
+            margin:3%;
 
         }
         .list{
@@ -216,7 +216,7 @@ html,body {
             background-image: url(/../assets/images/rank.png);
             background-repeat: no-repeat;
             background-size: 21px;
-            font-size: 20px;
+            font-size: 1.4rem;
         }
     }
 
