@@ -3,11 +3,12 @@
         width: 100% ;
         padding: 0 15%;
         box-sizing: border-box;
+        vertical-align: middle;
     }
     a{
         width:  (100%/$column);
         display: inline-block;
-        vertical-align: middle;
+        min-height:$minHeight;
     }
 }
 img {
@@ -196,14 +197,14 @@ html,body {
             margin-bottom: 30px;
         }
         .platinum {
-            @include banner(2,420px)
+            @include banner(2,270px)
         }
         .gold{
-            @include banner(3,108px)
+            @include banner(3,190px)
         }
         .silver {
             margin-bottom: 100px;
-            @include banner(4,61px)
+            @include banner(4,150px)
         }
         p.rank{
             text-align: center;
