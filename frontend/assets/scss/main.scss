@@ -1,3 +1,16 @@
+@mixin banner($column,$minHeight){
+    img{
+        width: 100% ;
+        padding: 0 15%;
+        box-sizing: border-box;
+        vertical-align: middle;
+    }
+    a{
+        width:  (100%/$column);
+        display: inline-block;
+        min-height:$minHeight;
+    }
+}
 img {
     vertical-align: bottom;
 }
@@ -121,7 +134,7 @@ html,body {
         padding-top: 25px;
     }
     .mark {
-        background-image: url(../../images/mark01.png);
+        background-image: url(../../assets/images/mark01.png);
         background-repeat: no-repeat;
         background-size: cover;
         width: 80px;
@@ -154,7 +167,60 @@ html,body {
         }
     }
 }
+#sponsers{
+    .container{
+        text-align: center;
+        margin-top: 120px;
 
+        .ttl{
+            border-bottom: 4px solid #f4efff;
+            width: 100px;
+            padding-bottom: 10px;
+            margin: 0 auto 50px;
+        }
+        h3{
+            font-size: 1.5rem;
+            color: #551a8b;
+            background-size: cover;
+        }
+        p.rank{
+            margin:3%;
+
+        }
+        .list{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content:space-between;
+        }
+        .rank_box{
+            margin-bottom: 30px;
+        }
+        .platinum {
+            @include banner(2,270px)
+        }
+        .gold{
+            @include banner(3,190px)
+        }
+        .silver {
+            margin-bottom: 4%;
+            @include banner(4,150px)
+        }
+        p.rank{
+            text-align: center;
+            color: #828296;
+            display: inline-block;
+            margin-left: 5.5%;
+            padding: 0 33px 3px;
+            background-image: url(/../assets/images/rank.png);
+            background-repeat: no-repeat;
+            background-size: 15%;
+            background-position: top left;
+            font-size: 1.4rem;
+        }
+    }
+
+}
 #footer {
     border-top: solid 2px #e6e6e6;
     .container {
@@ -169,7 +235,7 @@ html,body {
             a {
                 display: block;
                 text-decoration: none;
-                background-image: url(../../images/linkMark.png);
+                background-image: url(../../assets/images/linkMark.png);
                 background-position: center left;
                 background-repeat: no-repeat;
                 padding: 2px 0 2px 18px;
@@ -199,11 +265,11 @@ html,body {
   width: 165px;
   height: 160px;
   margin: 0 auto;
-  background: url(../../images/zou.png) no-repeat;
+  background: url(../../assets/images/zou.png) no-repeat;
   background-position: 0px 0;
 }
 .sprite {
-    background-position: 0px 0;
+    background-position: 0 0;
 }
 .sprite.blink {
     background-position: -170px 0;
