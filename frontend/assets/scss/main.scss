@@ -1,3 +1,14 @@
+@mixin banner($column){
+    img{
+        width: 100% ;
+    }
+    a{
+        width:  (100%/$column);
+        display: inline-block;
+    }
+}
+
+
 img {
     vertical-align: bottom;
 }
@@ -188,27 +199,14 @@ html,body {
             margin-bottom: 30px;
         }
         .platinum {
-
-            img{
-                width: calc(100% / 2);
-            }
-            a{
-                width: calc(100% / 2);
-                display: inline-block;
-            }
+            @include banner(2)
         }
         .gold{
-            img{
-                width: calc(100% / 4);
-                display: inline-block;
-            }
+            @include banner(3)
         }
         .silver {
             margin-bottom: 100px;
-            img{
-                width: calc(100% / 5);
-                display: inline-block;
-            }
+            @include banner(4)
         }
         p.rank{
             text-align: center;
