@@ -1,0 +1,13 @@
+//grid system
+@mixin gridLayout ($num) {
+    $column: '';
+    $percent: 100 / $num;
+    @for $i from 1 through $num {
+        $column: $column + ' ' + $percent + '%';
+    }
+    grid-template-columns: unquote($column);
+}
+
+@mixin gridColumn($start, $end) {
+    grid-column: unquote($start + '/' + $end);
+}
