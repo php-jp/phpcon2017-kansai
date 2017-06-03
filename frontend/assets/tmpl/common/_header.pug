@@ -1,18 +1,20 @@
 #header
-    .container.width
-    img#headerLogo(src="./assets/images2/logo_header.png" alt="php conference Kansai 2017 logo")
-    img#headerTitle(src="./assets/images2/title_header.png" alt="php conference Kansai 2017 title")
-    #headerMenu
+    h1.header_logo
+        a(href="./")
+            img(src="./assets/images2/logo_header.png")
+            img(src="./assets/images2/title_header.png" alt="php conference Kansai 2017")
+    .header_share
         ul
             li
                 a(href="#")
-                    img(src="#" alt="Twitter link")
+                    i.fa.fa-twitter
                     | tweet
             li
                 a(href="#")
-                    img(src="#" alt="Facebook link")
+                    i.fa.fa-facebook
                     | share
-            li
-                a(href="#")
-                    img(src="#" alt="register link")
-                    | 参加登録
+    .header_join
+        li
+            a(href="#")
+                i.fa.fa-bookmark
+                | 参加登録

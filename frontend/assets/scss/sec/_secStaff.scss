@@ -1,0 +1,31 @@
+@import "../lib/_mixin";
+@import "../lib/_variable";
+
+#secStaff {
+  background: $clr-lightGlay;
+  .secStaff_staffList1 {
+    @include gridColumn(1,3)
+  }
+  .secStaff_staffList2 {
+    @include gridColumn(3,5)
+  }
+  .secStaff_staffList3 {
+    @include gridColumn(5,7)
+  }
+  .secStaff_staffList4 {
+    @include gridColumn(7,9)
+  }
+  .secStaff_staffList5 {
+    @include gridColumn(9,11)
+  }
+  .secStaff_staffList6 {
+    @include gridColumn(11,13)
+  }
+  .secStaff_staffList7 {
+    @include gridColumn(13,15)
+  }
+  .secStaff_staffList8 {
+    @include gridColumn(15,17)
+  }
+
+}

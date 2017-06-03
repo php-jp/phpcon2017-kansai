@@ -1,0 +1,11 @@
+@import "../lib/_mixin";
+@import "../lib/_variable";
+
+#secSummary {
+  .secSummary_img {
+    @include gridColumn(10, 17);
+  }
+  .secSummary_contents  {
+    @include gridColumn(1, 10);
+  }
+}
