@@ -1,0 +1,127 @@
+@import "../lib/_mixin";
+@import "../lib/_variable";
+
+#secSponsor {
+  @include bg_gradient;
+
+  .secSponsor_contents{
+  }
+  .secSponsor_list {
+    background: #fff;
+    width: 100%;
+  }
+  .secSponsor_platinum {
+    .secSponsor_list1 {
+      @include gridColumn(6,12);
+      background-image: url("/assets/images/banner_platinum_01.png");
+      background-repeat:  no-repeat;
+      background-size: cover;
+      background-position: center;
+
+      &::before {
+        content: "";
+        display: block;
+        padding-top: 60%;
+      }
+    }
+
+  }
+  .secSponsor_gold{
+    .grid {
+      @include gridLayout(20)
+    }
+    .secSponsor_list1 {
+      @include gridColumn(1,7);
+      background-image: url("/assets/images/banner_platinum_01.png");
+      background-repeat:  no-repeat;
+      background-size: cover;
+      background-position: center;
+      &::before {
+        content: "";
+        display: block;
+        padding-top: 60%;
+      }
+    }
+    .secSponsor_list2 {
+      @include gridColumn(8,14);
+      background-image: url("/assets/images/banner_platinum_01.png");
+      background-repeat:  no-repeat;
+      background-size: cover;
+      background-position: center;
+      &::before {
+        content: "";
+        display: block;
+        padding-top: 60%;
+      }
+    }
+    .secSponsor_list3 {
+      @include gridColumn(15,21);
+      background-image: url("/assets/images/banner_platinum_01.png");
+      background-repeat:  no-repeat;
+      background-size: cover;
+      background-position: center;
+      &::before {
+        content: "";
+        display: block;
+        padding-top: 60%;
+      }
+    }
+  }
+  .secSponsor_silver{
+
+    .grid {
+      @include gridLayout(19)
+    }
+
+    .secSponsor_list1 {
+      @include gridColumn(1,5);
+      background-image: url("/assets/images/banner_platinum_01.png");
+      background-repeat:  no-repeat;
+      background-size: cover;
+      background-position: center;
+      &::before {
+        content: "";
+        display: block;
+        padding-top: 60%;
+      }
+    }
+    .secSponsor_list2 {
+      @include gridColumn(6,10);
+      background-image: url("/assets/images/banner_platinum_01.png");
+      background-repeat:  no-repeat;
+      background-size: cover;
+      background-position: center;
+      &::before {
+        content: "";
+        display: block;
+        padding-top: 60%;
+      }
+    }
+    .secSponsor_list3 {
+      @include gridColumn(11,15);
+      background-image: url("/assets/images/banner_platinum_01.png");
+      background-repeat:  no-repeat;
+      background-size: cover;
+      background-position: center;
+      &::before {
+        content: "";
+        display: block;
+        padding-top: 60%;
+      }
+    }
+    .secSponsor_list4 {
+      @include gridColumn(16,20);
+      background-image: url("/assets/images/banner_platinum_01.png");
+      background-repeat:  no-repeat;
+      background-size: cover;
+      background-position: center;
+      &::before {
+        content: "";
+        display: block;
+        padding-top: 60%;
+      }
+    }
+
+
+  }
+}

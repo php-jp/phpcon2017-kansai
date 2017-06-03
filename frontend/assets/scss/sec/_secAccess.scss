@@ -1,0 +1,14 @@
+@import "../lib/_mixin";
+@import "../lib/_variable";
+
+#secAccess {
+  .secAccess_map {
+    @include gridColumn(1,10);
+    background: url("/assets/images2/img_map.png") no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  .secAccess_contents {
+    @include gridColumn(10,17);
+  }
+}

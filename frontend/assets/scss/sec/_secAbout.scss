@@ -1,0 +1,37 @@
+@import "../lib/_mixin";
+@import "../lib/_variable";
+
+#secAbout {
+  background: #fff;
+  .secAbout_img {
+    @include gridColumn(1, 7);
+  }
+  .secAbout_contents {
+    @include gridColumn(7, 17);
+  }
+  .secAbout_heading {
+
+  }
+  .secAbout_event {
+
+  }
+  .secAbout_eventGroup {
+    width: 100%;
+    text-align: center;
+  }
+  .secAbout_eventSession {
+    display: inline-block;
+    width: 49%;
+    text-align: left;
+
+  }
+  .secAbout_eventBooth{
+    display: inline-block;
+    width: 49%;
+    text-align: left;
+
+  }
+  .secAbout_eventParty {
+
+  }
+}

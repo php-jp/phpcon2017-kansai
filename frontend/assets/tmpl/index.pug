@@ -1,18 +1,15 @@
 doctype html
 html(lang="ja")
-    head
-        title PHPカンファレンス関西2017
-        meta(charset="UTF-8")
-        link(rel="stylesheet" href="./assets/css/main.css")
+    include common/_head.pug
     body
-        include ./_header.pug
-        include ./_secHero.pug
-        include ./_secAbout.pug
-        include ./_secSummary.pug
-        include ./_secTimetable.pug
-        include ./_secAccess.pug
-        include ./_secSponsor.pug
-        include ./_secShare.pug
-        include ./_secStaff.pug
-        include ./_secPresentedBy.pug
-        include ./_secFooter.pug
+        include common/_header.pug
+        include topSection/_secHero.pug
+        include topSection/_secAbout.pug
+        include topSection/_secSummary.pug
+        include topSection/_secTimetable.pug
+        include topSection/_secAccess.pug
+        include topSection/_secSponsor.pug
+        include topSection/_secSocial.pug
+        include topSection/_secStaff.pug
+        include topSection/_secPresentedBy.pug
+        include common/_footer.pug

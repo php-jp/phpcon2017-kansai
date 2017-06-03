@@ -1,118 +1,13 @@
-@mixin gridLayout ($num) {
-  $column: '';
-  $percent: 100 / $num;
-  @for $i from 1 through $num {
-    $column: $column + ' ' + $percent + '%';
-  }
-  grid-template-columns: unquote($column);
-}
+@import "common/common";
+@import "common/header";
+@import "common/footer";
 
-@mixin gridColumn($start, $end) {
-  grid-column: unquote($start + '/' + $end);
-}
-
-.container {
-  margin: 0 auto;
-  width: 960px;
-  display: grid;
-  justify-content: center;
-  @include gridLayout(16);
-}
-
-.width {
-  width: 1440px;
-}
-
-.title {
-  @include gridColumn(7, 11);
-  color: #9067CA;
-  weight: bold;
-}
-
-.regular {
-  font-size: 24px;
-  weight: bold;
-}
-
-#secTimetable, #secSponsor {
-  background-image: linear-gradient(-45deg, #D5EBED 0%, #DCD0F9 100%);
-  #secHeroLogo {
-
-  }
-}
-
-#secHero {
-  background-image: linear-gradient(-45deg, #E2F6F9 0%, #EEF7FF 29%, #DCD0F9 100%);
-  #secHeroLogo {
-    @include gridColumn(8, 10);
-  }
-  #secHeroTitle {
-    @include gridColumn(6, 12);
-  }
-  p, a, #secHeroTwitter {
-    @include gridColumn(7, 10);
-  }
-}
-
-#secAbout {
-  img {
-    @include gridColumn(1, 7);
-  }
-  .title {
-    @include gridColumn(8, 16);
-  }
-  #headerOverview {
-    @include gridColumn(8, 16);
-  }
-  #headerSession {
-    @include gridColumn(8, 12);
-  }
-  #headerBooth {
-    @include gridColumn(12, 16);
-  }
-  #headerParty {
-    @include gridColumn(8, 16);
-  }
-}
-
-#secSummary {
-  .title, h3, span {
-    @include gridColumn(3, 9);
-  }
-}
-
-#secTimetable {
-  height: 380px;
-  background: linear-gradient(45deg, #D5EAED 0%, #DCD0F8 100%);
-  p {
-    color: #FFFFFF;
-    weight: bold;
-    @include gridColumn(7, 11);
-  }
-
-}
-
-#secShare {
-  text-align: center;
-  p {
-    @include gridColumn(2, 15);
-  }
-  .secShareFacebook {
-    @include gridColumn(4, 8);
-  }
-  .secShareTwitter {
-    @include gridColumn(9, 13);
-  }
-}
-
-#secStaff {
-
-}
-
-#secSponsor {
-  height: 1030px;
-}
-
-#secFooter {
-  background: #9067CA;
-}
+@import "sec/_secHero";
+@import "sec/_secAbout";
+@import "sec/_secSummary";
+@import "sec/_secTimetable";
+@import "sec/_secAccess";
+@import "sec/_secSponsor";
+@import "sec/_secSocial";
+@import "sec/_secStaff";
+@import "sec/_secPresentedBy";
