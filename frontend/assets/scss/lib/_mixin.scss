@@ -1,3 +1,10 @@
+//mediaQuery
+@mixin mq($breakpoint: md) {
+    @media #{map-get($breakpoints, $breakpoint)} {
+        @content;
+    }
+}
+
 //grid system
 @mixin gridLayout ($num) {
     $column: '';
@@ -26,7 +33,7 @@
     display: inline-block;
     margin-bottom: 22px;
     position: relative;
-    background-image: url(/assets/images2/icn_heading.png);
+    background-image: url("/assets/images/icn_heading.png");
     background-repeat: no-repeat;
     padding: 20px;
     text-align: left;
@@ -43,8 +50,3 @@
     }
 }
 
-@mixin mq($breakpoint: md) {
-  @media #{map-get($breakpoints, $breakpoint)} {
-    @content;
-  }
-}

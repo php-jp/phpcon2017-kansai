@@ -50,7 +50,7 @@
     position: relative;
     .secSponsor_list1 {
       @include gridColumn(6,12);
-      background-image: url("/assets/images/banner_platinum_01.png");
+      background-image: url("/assets/images_old/banner_platinum_01.png");
       background-repeat:  no-repeat;
       background-size: cover;
       background-position: center;
@@ -61,7 +61,7 @@
         padding-top: 60%;
       }
       @include mq() {
-        @include gridColumn(1,18);  
+        @include gridColumn(3,15);
       }
     }
 
@@ -75,7 +75,7 @@
     }
     .secSponsor_list1 {
       @include gridColumn(1,7);
-      background-image: url("/assets/images/banner_platinum_01.png");
+      background-image: url("/assets/images_old/banner_platinum_01.png");
       background-repeat:  no-repeat;
       background-size: cover;
       background-position: center;
@@ -91,7 +91,7 @@
     }
     .secSponsor_list2 {
       @include gridColumn(8,14);
-      background-image: url("/assets/images/banner_platinum_01.png");
+      background-image: url("/assets/images_old/banner_platinum_01.png");
       background-repeat:  no-repeat;
       background-size: cover;
       background-position: center;
@@ -107,7 +107,7 @@
     }
     .secSponsor_list3 {
       @include gridColumn(15,21);
-      background-image: url("/assets/images/banner_platinum_01.png");
+      background-image: url("/assets/images_old/banner_platinum_01.png");
       background-repeat:  no-repeat;
       background-size: cover;
       background-position: center;
@@ -132,7 +132,7 @@
 
     .secSponsor_list1 {
       @include gridColumn(1,5);
-      background-image: url("/assets/images/banner_platinum_01.png");
+      background-image: url("/assets/images_old/banner_platinum_01.png");
       background-repeat:  no-repeat;
       background-size: cover;
       background-position: center;
@@ -148,7 +148,7 @@
     }
     .secSponsor_list2 {
       @include gridColumn(6,10);
-      background-image: url("/assets/images/banner_platinum_01.png");
+      background-image: url("/assets/images_old/banner_platinum_01.png");
       background-repeat:  no-repeat;
       background-size: cover;
       background-position: center;
@@ -164,7 +164,7 @@
     }
     .secSponsor_list3 {
       @include gridColumn(11,15);
-      background-image: url("/assets/images/banner_platinum_01.png");
+      background-image: url("/assets/images_old/banner_platinum_01.png");
       background-repeat:  no-repeat;
       background-size: cover;
       background-position: center;
@@ -180,7 +180,7 @@
     }
     .secSponsor_list4 {
       @include gridColumn(16,20);
-      background-image: url("/assets/images/banner_platinum_01.png");
+      background-image: url("/assets/images_old/banner_platinum_01.png");
       background-repeat:  no-repeat;
       background-size: cover;
       background-position: center;
