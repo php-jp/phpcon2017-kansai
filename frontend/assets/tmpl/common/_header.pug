@@ -1,20 +1,22 @@
 #header
     h1.header_logo
-        a(href="./")
+        a(href="/")
             img(src="./assets/images2/logo_header.png")
             img(src="./assets/images2/title_header.png" alt="php conference Kansai 2017")
     .header_share
         ul
-            li
-                a(href="#")
-                    i.fa.fa-twitter
-                    | tweet
-            li
-                a(href="#")
-                    i.fa.fa-facebook
-                    | share
+            li: a(href="https://twitter.com/intent/tweet?url=https://2017.kphpug.jp/&hashtags=phpkansai" target="_brank")
+                i.fa.fa-twitter
+                | tweet
+            li: a(href="https://www.facebook.com/sharer/sharer.php?u=https://2017.kphpug.jp/" target="_brank")
+                i.fa.fa-facebook
+                | share
     .header_join
-        li
-            a(href="#")
-                i.fa.fa-bookmark
-                | 参加登録
+        li: a(href="#")
+            i.fa.fa-bookmark
+            | 参加登録
+    .header_menu
+        span.top
+        span.middle
+        span.bottom
+    

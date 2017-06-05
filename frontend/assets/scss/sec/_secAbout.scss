@@ -2,15 +2,29 @@
 @import "../lib/_variable";
 
 #secAbout {
+  padding: 60px 0;
   background: #fff;
   .secAbout_img {
     @include gridColumn(1, 7);
+    @include mq() {
+      display: none;
+    }
   }
   .secAbout_contents {
-    @include gridColumn(7, 17);
+    @include gridColumn(8, 17);
+    @include mq() {
+      @include gridColumn(1, 18);
+    }
+    p {
+      color: $clr-font;
+      line-height: 1.5rem;
+      margin-bottom: 30px;
+    }
   }
   .secAbout_heading {
-
+    span {
+      @include title;
+    }
   }
   .secAbout_event {
 
@@ -18,20 +32,49 @@
   .secAbout_eventGroup {
     width: 100%;
     text-align: center;
+    color: $clr-font;
+    margin-bottom: 30px;
+    dt {
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+    dd {
+      line-height: 1.5rem;
+    }
   }
   .secAbout_eventSession {
     display: inline-block;
-    width: 49%;
+    vertical-align: top;
+    width: 45%;
     text-align: left;
-
+    margin-right: 8%;
+    @include mq() {
+      width: 100%;
+      margin-right: 0;
+      display: block;
+      margin-bottom: 30px;
+    }
   }
   .secAbout_eventBooth{
     display: inline-block;
-    width: 49%;
+    vertical-align: top;
+    width: 45%;
     text-align: left;
-
+    @include mq() {
+      width: 100%;
+      margin-right: 0;
+      display: block;
+    }
   }
   .secAbout_eventParty {
-
+    width: 100%;
+    color: $clr-font;
+    dt {
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+    dd {
+      line-height: 1.5rem;
+    }
   }
 }

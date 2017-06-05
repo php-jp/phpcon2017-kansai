@@ -2,10 +2,66 @@
 @import "../lib/_variable";
 
 #secSummary {
+  padding-bottom: 60px;
+  .secSummary_heading {
+    span {
+      @include title;
+    }
+  }
+  .fractal.num03 {
+    position: absolute;
+    top: 150px;
+    right: 70px;
+    animation: fuwafuwa 6s ease-in-out 0.2s backwards infinite;
+  }
   .secSummary_img {
-    @include gridColumn(10, 17);
+    @include gridColumn(11, 17);
+    position: relative;
+    @include mq() {
+      display: none;
+    }
   }
   .secSummary_contents  {
-    @include gridColumn(1, 10);
+    @include gridColumn(2, 10);
+    @include mq() {
+      @include gridColumn(1, 18);
+    }
+
+    .secSummary_summary {
+      display: table;
+      border-collapse: separate;
+      border-spacing: 0px 10px;
+
+      @include mq() {
+        width: 100%;
+        border-spacing: 0 5px;
+      }
+      .inner {
+        display: table-row;
+        color: $clr-font;
+      }
+      h3 {
+        display: table-cell;  
+        padding: 10px;
+        font-weight: bold;
+        width: 120px;
+        border-left: solid 10px #F4EFFF;
+        @include mq() {
+          display: block;
+          background: #f4efff;
+          width: 100%;
+          border: none;
+          box-sizing: border-box;
+        }
+      }
+      span {
+        display: table-cell;
+        @include mq() {
+          display: block;
+          padding: 10px;
+          box-sizing: border-box;
+        }
+      }
+    }
   }
 }
