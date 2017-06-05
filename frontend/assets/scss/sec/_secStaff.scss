@@ -3,6 +3,17 @@
 
 #secStaff {
   background: $clr-lightGlay;
+
+  .secStaff_contents {
+    text-align: center;
+    padding: 60px 0;
+  }
+
+  .secStaff_heading {
+    span {
+      @include title;
+    }
+  }
   .secStaff_staffList1 {
     @include gridColumn(1,3)
   }

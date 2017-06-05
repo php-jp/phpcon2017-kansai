@@ -3,13 +3,28 @@
 
 #secTimetable {
   @include bg_gradient;
-
-  .secTimetable_contents {
-    @include gridColumn(1,17);
+  .secTimetable_heading {
+    span {
+      @include title;
+    }
   }
-  p {
-    color: #FFFFFF;
-    weight: bold;
-    @include gridColumn(7, 11);
+  .secTimetable_contents {
+    padding: 60px 0;
+    text-align: center;
+    @include gridColumn(1,17);
+
+    h2 {
+      color: #FFFFFF;
+      font-weight: bold;
+      margin-bottom: 32px;
+      font-size: 1.7rem;
+    }
+
+    p {
+      color: #FFFFFF;
+      font-weight: bold;
+      margin-bottom: 50px;
+      @include gridColumn(7, 11);
+    }
   }
 }

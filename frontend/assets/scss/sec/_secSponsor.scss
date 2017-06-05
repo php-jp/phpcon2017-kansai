@@ -5,12 +5,43 @@
   @include bg_gradient;
 
   .secSponsor_contents{
+    text-align: center;
+    padding: 60px;
+    position: relative;
+    h3 {
+      font-size: 1.5rem;
+      color: $clr-font;
+      margin-bottom: 30px;
+    }
+    .fractal {
+      position: absolute;
+
+      &.num02 {
+        top: 100px;
+        left: -8%;
+        animation: fuwafuwa 3s ease-in-out 0.2s backwards infinite;
+      }
+
+      &.num03 {
+        bottom: 100px;
+        right: -20%;
+        animation: fuwafuwa 6s ease-in-out 0.2s backwards infinite;
+      }
+    }
+  }
+
+  .secSponsor_heading {
+    span {
+      @include title;
+    }
   }
   .secSponsor_list {
     background: #fff;
     width: 100%;
   }
   .secSponsor_platinum {
+    margin-bottom: 30px;
+    position: relative;
     .secSponsor_list1 {
       @include gridColumn(6,12);
       background-image: url("/assets/images/banner_platinum_01.png");
@@ -27,6 +58,8 @@
 
   }
   .secSponsor_gold{
+    margin-bottom: 30px;
+    position: relative;
     .grid {
       @include gridLayout(20)
     }
@@ -68,7 +101,7 @@
     }
   }
   .secSponsor_silver{
-
+    position: relative;
     .grid {
       @include gridLayout(19)
     }
