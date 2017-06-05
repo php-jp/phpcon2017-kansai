@@ -6,7 +6,7 @@
 
   .secSponsor_contents{
     text-align: center;
-    padding: 60px;
+    padding: 60px 0;
     position: relative;
     h3 {
       font-size: 1.5rem;
@@ -20,12 +20,18 @@
         top: 100px;
         left: -8%;
         animation: fuwafuwa 3s ease-in-out 0.2s backwards infinite;
+        @include mq() {
+          display: none;
+        }
       }
 
       &.num03 {
         bottom: 100px;
         right: -20%;
         animation: fuwafuwa 6s ease-in-out 0.2s backwards infinite;
+        @include mq() {
+          display: none;
+        }
       }
     }
   }
@@ -54,6 +60,9 @@
         display: block;
         padding-top: 60%;
       }
+      @include mq() {
+        @include gridColumn(1,18);  
+      }
     }
 
   }
@@ -62,6 +71,7 @@
     position: relative;
     .grid {
       @include gridLayout(20)
+      
     }
     .secSponsor_list1 {
       @include gridColumn(1,7);
@@ -73,6 +83,10 @@
         content: "";
         display: block;
         padding-top: 60%;
+      }
+      @include mq() {
+        @include gridColumn(1,10);
+        margin-bottom: 20px;        
       }
     }
     .secSponsor_list2 {
@@ -86,6 +100,10 @@
         display: block;
         padding-top: 60%;
       }
+      @include mq() {
+        @include gridColumn(12,21);
+        margin-bottom: 20px;
+      }
     }
     .secSponsor_list3 {
       @include gridColumn(15,21);
@@ -98,12 +116,18 @@
         display: block;
         padding-top: 60%;
       }
+      @include mq() {
+        @include gridColumn(1,10);
+      }
     }
   }
   .secSponsor_silver{
     position: relative;
     .grid {
-      @include gridLayout(19)
+      @include gridLayout(19); 
+      @include mq() {
+        @include gridLayout(20)      
+      }
     }
 
     .secSponsor_list1 {
@@ -117,6 +141,10 @@
         display: block;
         padding-top: 60%;
       }
+      @include mq() {
+        @include gridColumn(1,7);
+        margin-bottom: 20px;
+      }
     }
     .secSponsor_list2 {
       @include gridColumn(6,10);
@@ -128,6 +156,10 @@
         content: "";
         display: block;
         padding-top: 60%;
+      }
+      @include mq() {
+        @include gridColumn(8,14);
+        margin-bottom: 20px;
       }
     }
     .secSponsor_list3 {
@@ -141,6 +173,10 @@
         display: block;
         padding-top: 60%;
       }
+      @include mq() {
+        @include gridColumn(15,21);
+        margin-bottom: 20px;
+      }
     }
     .secSponsor_list4 {
       @include gridColumn(16,20);
@@ -152,6 +188,9 @@
         content: "";
         display: block;
         padding-top: 60%;
+      }
+      @include mq() {
+        @include gridColumn(1,7);
       }
     }
 
