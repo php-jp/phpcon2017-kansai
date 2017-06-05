@@ -44,6 +44,7 @@
   }
   .secAbout_eventSession {
     display: inline-block;
+    vertical-align: top;
     width: 45%;
     text-align: left;
     margin-right: 8%;
@@ -56,6 +57,7 @@
   }
   .secAbout_eventBooth{
     display: inline-block;
+    vertical-align: top;
     width: 45%;
     text-align: left;
     @include mq() {

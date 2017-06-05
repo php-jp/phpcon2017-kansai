@@ -15,7 +15,7 @@
     animation: fuwafuwa 6s ease-in-out 0.2s backwards infinite;
   }
   .secSummary_img {
-    @include gridColumn(10, 17);
+    @include gridColumn(11, 17);
     position: relative;
     @include mq() {
       display: none;

@@ -245,6 +245,7 @@
       border-radius: 20px;
       background-color: #F7F7F7;
       color: $clr-main;
+      @include btn;
       i {
         margin-right: 10px;
       }

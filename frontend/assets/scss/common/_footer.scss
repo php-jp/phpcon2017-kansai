@@ -62,10 +62,14 @@
   @include mq() {
     right: 10px;
   }
+
+  img {
+    width: 49px;
+  }
 }
 
 #pageTop.active {
   position: absolute;
   bottom: initial;
-  top: -37px;
+  top: -48px;
 }
