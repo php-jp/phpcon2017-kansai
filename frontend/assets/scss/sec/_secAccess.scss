@@ -24,6 +24,10 @@
   .secAccess_thumb {
     text-align: center;
     margin-bottom: 25px;
+    img {
+      max-width: 220px;
+      width: 100%;
+    }
   }
   .secAccess_information {
     h3 {

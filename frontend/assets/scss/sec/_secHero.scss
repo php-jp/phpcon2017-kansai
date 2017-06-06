@@ -249,6 +249,7 @@
       @include btn;
       i {
         margin-right: 10px;
+        vertical-align: middle;
       }
       @include mq("sm") {
         width: 100px;
