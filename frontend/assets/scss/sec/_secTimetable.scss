@@ -6,6 +6,7 @@
   .secTimetable_heading {
     span {
       @include title;
+      background-image: url("/assets/images/icn_heading-white.svg");
     }
   }
   .secTimetable_contents {

@@ -16,8 +16,7 @@
       display: inline-block;
       vertical-align: middle;
       font-size: 1.5rem;
-      color: $clr-font;
-      font-weight: bold;
+      @include bold;
       margin-left: 20px;
       @include mq() {
         font-size: 1.2rem;

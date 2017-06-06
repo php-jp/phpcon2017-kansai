@@ -5,7 +5,7 @@
   background: #fff;  
   .secAccess_map {
     @include gridColumn(1,10);
-    background: url("/assets/images/img_map.png") no-repeat;
+    background: url("/assets/images/img_map.svg") no-repeat;
     background-size: cover;
     background-position: center;
     @include mq() {
@@ -13,7 +13,7 @@
     }
   }
   .secAccess_contents {
-    @include gridColumn(10,15);
+    @include gridColumn(10,16);
     background: #fff;
     padding: 50px 0 50px 50px;
     @include mq() {
@@ -22,13 +22,20 @@
     }
   }
   .secAccess_thumb {
-    text-align: center;
+    text-align: left;
+    @include mq(){
+      text-align: center;
+    }
     margin-bottom: 25px;
+    img {
+      max-width: 220px;
+      width: 100%;
+    }
   }
   .secAccess_information {
     h3 {
       font-size: 1.4rem;
-      color: $clr-font;
+      @include bold;
       margin-bottom: 10px;
     }
     p {
@@ -53,7 +60,9 @@
 
   .secAccess_btn {
     margin-top: 35px;
-    text-align: center;
+    @include mq() {
+      text-align: center;
+    }
     a {
       @include btn;
       display: inline-block;
