@@ -13,7 +13,7 @@
     }
   }
   .secAccess_contents {
-    @include gridColumn(10,15);
+    @include gridColumn(10,16);
     background: #fff;
     padding: 50px 0 50px 50px;
     @include mq() {
@@ -60,7 +60,9 @@
 
   .secAccess_btn {
     margin-top: 35px;
-    text-align: center;
+    @include mq() {
+      text-align: center;
+    }
     a {
       @include btn;
       display: inline-block;

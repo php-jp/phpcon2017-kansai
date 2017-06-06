@@ -44,7 +44,9 @@
       letter-spacing: normal;
       margin: 0 10px 20px;
       vertical-align: top;
-
+      @include mq() {
+        margin: 0 5px 10px;
+      }
       a {
         display: inline-block;
       }
@@ -67,13 +69,19 @@
   }
   .secSponsor_platinum {
     margin-bottom: 30px;
+    .content {
+      width: calc(50% - 20px);
+      @include mq() {
+        width: calc(100% - 10px);
+      }
+    }
   }
   .secSponsor_gold{
     margin-bottom: 30px;
     .content {
       width: calc(33.3333% - 20px);
       @include mq() {
-        width: calc(50% - 20px);
+        width: calc(50% - 10px);
       }
     }
   }
@@ -81,7 +89,7 @@
     .content {
       width: calc(25% - 20px);
       @include mq() {
-        width: calc(33.3333% - 20px);
+        width: calc(33.3333% - 10px);
       }
     }
   }
