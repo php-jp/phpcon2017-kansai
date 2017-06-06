@@ -1,0 +1,283 @@
+@mixin banner($column,$minHeight){
+    img{
+        width: 100% ;
+        padding: 0 15%;
+        box-sizing: border-box;
+        vertical-align: middle;
+    }
+    a{
+        width:  (100%/$column);
+        display: inline-block;
+        min-height:$minHeight;
+    }
+}
+img {
+    vertical-align: bottom;
+}
+
+html,body {
+    font-family:Avenir , "游ゴシック" , "Yu Gothic" , "游ゴシック体" , "YuGothic" , "ヒラギノ角ゴ Pro W3" , "Hiragino Kaku Gothic Pro" , "Meiryo UI" , "メイリオ" , Meiryo , "ＭＳ Ｐゴシック" , "MS PGothic" , sans-serif;
+}
+
+#app {
+    min-width: 670px;
+}
+
+#main {
+    background-color: #F4EFFF;
+    width: 100%;
+    height: 730px;
+    padding-top: 105px;
+    box-sizing: border-box;
+
+    .container {
+        position: relative;
+
+        .fractal {
+            position: absolute;
+        }
+        .fractal.num01 {
+            top: -50px;
+            left: 10px;
+            animation: fuwafuwa 6s ease-in-out 0.2s backwards infinite;
+        }
+        .fractal.num02 {
+            bottom: 40px;
+            right: 50px;
+            animation: fuwafuwa 4s ease-in-out 0.2s backwards infinite;
+        }
+        .fractal.num03 {
+            top: 100px;
+            right: 40px;
+            animation: fuwafuwa 5s ease-in-out 0.2s backwards infinite;
+        }
+        .fractal.num04 {
+            bottom: 0;
+            left: 40px;
+            animation: fuwafuwa 7s ease-in-out 0.2s backwards infinite;
+        }
+    }
+
+    .mainVisual {
+        width: 670px;
+        height: 670px;
+        margin: 0 auto;
+        border-radius: 100%;
+        background-color: #fff;
+        display: table;
+        text-align: center;
+        position: relative;
+        .wrap {
+            display: table-cell;
+            vertical-align: middle;
+            position: relative;
+        }
+
+        .zou {
+            position: absolute;
+            top: -30px;
+            right: 10px;
+        }
+
+        .image {
+            display: block;
+            margin-bottom: 25px;
+        }
+
+        p {
+            font-size: 18px;
+            font-weight: bold;
+            color: #828296;
+            line-height: 1.8;
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+        .speaker{
+          p{
+            margin-bottom: 6px;
+            margin-top: 6px;
+            line-height: 1.2;
+          }
+        }
+        .btns {
+            letter-spacing: -.8em;
+            margin-bottom: 40px;
+            .btn {
+                display: inline-block;
+                letter-spacing: normal;
+                width: 180px;
+                text-align: center;
+                padding: 20px 5px;
+                background-color: #9067CA;
+                border-radius: 5px;
+                transition: ease .3s;
+                text-decoration: none;
+                &:first-child {
+                    margin-right: 18px;
+                }
+                &:hover {
+                    background-color: #b298d6;
+                    opacity: 0.7;
+                }
+                span {
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
+
+.container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+#share {
+    position: relative;
+    text-align: center;
+    .container {
+        padding-top: 25px;
+    }
+    .mark {
+        background-image: url(../../assets/images/mark01.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 80px;
+        padding: 32px 0;
+        display: inline-block;
+        text-align: center;
+        font-size: 18px;
+        color: #828296;
+        margin-bottom: 50px;
+    }
+
+    .links {
+        margin-bottom: 60px;
+        text-align: center;
+        li {
+            display: inline-block;
+            margin: 0 15px;
+            a {
+                display: block;
+                text-decoration: none;
+                font-size: 16px;
+                color: #551a8b;
+            }
+            &:hover {
+                opacity: 0.7;
+            }
+            span {
+                margin-left: 5px;
+            }
+        }
+    }
+}
+#sponsers{
+    .container{
+        text-align: center;
+        margin-top: 120px;
+
+        .ttl{
+            border-bottom: 4px solid #f4efff;
+            width: 100px;
+            padding-bottom: 10px;
+            margin: 0 auto 50px;
+        }
+        h3{
+            font-size: 1.5rem;
+            color: #551a8b;
+            background-size: cover;
+        }
+        p.rank{
+            margin:3%;
+
+
+        }
+        .list{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content:space-between;
+        }
+        .rank_box{
+            margin-bottom: 30px;
+        }
+        .platinum {
+            @include banner(2,270px)
+        }
+        .gold{
+            @include banner(3,190px)
+        }
+        .silver {
+            margin-bottom: 4%;
+            @include banner(4,150px)
+        }
+        p.rank{
+            text-align: center;
+            color: #828296;
+            display: inline-block;
+            margin-left: 5.5%;
+            padding: 0 33px 3px;
+            background-image: url(/../assets/images/rank.png);
+            background-repeat: no-repeat;
+            background-size: 15%;
+            background-position: top left;
+            font-size: 1.4rem;
+        }
+    }
+
+}
+#footer {
+    border-top: solid 2px #e6e6e6;
+    .container {
+        padding: 20px 0;
+    }
+    .links {
+        margin-bottom: 20px;
+        text-align: center;
+        li {
+            display: inline-block;
+            margin: 0 15px;
+            a {
+                display: block;
+                text-decoration: none;
+                background-image: url(../../assets/images/linkMark.png);
+                background-position: center left;
+                background-repeat: no-repeat;
+                padding: 2px 0 2px 18px;
+                font-family: monospace;
+                color: #551a8b;
+            }
+            &:hover {
+                opacity: 0.7;
+            }
+        }
+    }
+    .copy {
+        text-align: center;
+        font-size: 12px;
+        color: #828296;
+    }
+}
+
+
+@-webkit-keyframes fuwafuwa {
+	0% {transform:translate(0, 0);}
+	50% {transform:translate(0, 15px);}
+	100% {transform:translate(0, 0);}
+}
+
+.sprite {
+  width: 165px;
+  height: 160px;
+  margin: 0 auto;
+  background: url(../../assets/images/zou.png) no-repeat;
+  background-position: 0px 0;
+}
+.sprite {
+    background-position: 0 0;
+}
+.sprite.blink {
+    background-position: -170px 0;
+}
