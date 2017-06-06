@@ -43,7 +43,11 @@
       display: inline-block;
       letter-spacing: normal;
       margin: 0 10px 20px;
+      vertical-align: top;
 
+      a {
+        display: inline-block;
+      }
       img {
         width: 100%;
       }
