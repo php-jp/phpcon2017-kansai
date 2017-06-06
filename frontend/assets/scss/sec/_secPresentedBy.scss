@@ -1,0 +1,37 @@
+@import "../lib/_mixin";
+@import "../lib/_variable";
+
+#secPresentedBy {
+  background: #fff;
+
+  .secPresenedBy_contents {
+    text-align: center;
+    padding: 60px 0;
+  }
+  .secPresenedByGroup {
+    a {
+      display: inline-block;
+    }
+    p {
+      display: inline-block;
+      vertical-align: middle;
+      font-size: 1.5rem;
+      @include bold;
+      margin-left: 20px;
+      @include mq() {
+        font-size: 1.2rem;
+      }
+    }
+    img {
+      vertical-align: middle;
+      @include mq() {
+        width: 43.5px;
+      }
+    }
+  }
+  .secPresenedBy_heading {
+    span {
+      @include title;
+    }
+  }
+}

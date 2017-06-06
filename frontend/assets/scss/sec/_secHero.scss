@@ -1,0 +1,277 @@
+@import "../lib/_mixin";
+@import "../lib/_variable";
+#secHero {
+  background-image: linear-gradient(-45deg, #DCD0F9 0%, #EEF7FF 60%, #E2F6F9 100%);
+  width: 100%;
+  height: 800px;
+  padding-top: 100px;
+  box-sizing: border-box;
+
+  @include mq() {
+    height: 550px;
+  }
+
+  @include mq("sm") {
+     height: 440px;
+  }
+
+  .secHero_nav {
+    position: absolute;
+    height: 740px;
+    width: 220px;
+    top: 60px;
+    right: 50px;
+    box-sizing: border-box;
+    background: rgba(255, 255, 255, 0.6);
+    padding: 50px 20px 30px;
+
+    li {
+      font-size: 1.2rem;
+      margin-bottom: 20px;
+      a {
+        color: #828296;
+        display: block;
+        padding: 10px 0;
+        font-weight: bold;
+        transition: ease .3s;
+        &:hover{
+          color: $clr-main;
+        }
+      }
+    }
+
+
+    .secHero_sns {
+      position: absolute;
+      width: 100%;
+      left: 0;
+      bottom: 50px;
+    }
+
+    .regular {
+      text-align: center;
+      @include bold;
+      font-size: 1.4rem;
+      margin-bottom: 20px;
+    }
+    .small2 {
+      text-align: center;
+      color: $clr-font;
+      margin-bottom: 20px;
+    }
+    .secHero_share {
+      text-align: center;
+      a {
+        font-size: 1.5rem;
+        width: 35px;
+        display: inline-block;
+        border-radius: 100%;
+        color: #fff;
+        padding: 7px 0;
+        margin: 0 10px;
+        @include btn;
+
+        &.twitter {
+          background: $clr-twitter;
+        }
+
+        &.facebook {
+          background: $clr-facebook;
+        }
+
+      }
+    }
+    @include mq("lg") {
+      display: none;
+    }    
+  }
+
+  .container {
+    position: relative;
+    padding: 0 10px;
+    .fractal {
+      position: absolute;
+    }
+    .fractal.num01 {
+      top: -50px;
+      left: 10px;
+      animation: fuwafuwa 6s ease-in-out 0.2s backwards infinite;
+      img {
+        @include mq() {
+          width: 175.5px;
+        }
+      }
+    }
+    .fractal.num02 {
+      bottom: -10px;
+      right: -10px;
+      animation: fuwafuwa 4s ease-in-out 0.2s backwards infinite;
+      img {
+        @include mq() {
+          width: 125.5px;
+        }
+      }
+    }
+    .fractal.num03 {
+      top: 100px;
+      right: 40px;
+      animation: fuwafuwa 5s ease-in-out 0.2s backwards infinite;
+      @include mq() {
+        display: none;
+      }
+    }
+    .fractal.num04 {
+      bottom: 0;
+      left: 40px;
+      animation: fuwafuwa 7s ease-in-out 0.2s backwards infinite;
+      @include mq() {
+        display: none;
+      }
+    }
+  }
+  .mainVisual {
+    width: 670px;
+    height: 670px;
+    margin: 0 auto;
+    border-radius: 100%;
+    background-color: #fff;
+    display: table;
+    text-align: center;
+    position: relative;
+    @include mq() {
+      width: 400px;
+      height: 400px;
+    }
+    @include mq("sm") {
+      width: 300px;
+      height: 300px;
+    }
+    img {
+      @include mq() {}
+    }
+    .wrap {
+      display: table-cell;
+      vertical-align: middle;
+      position: relative;
+    }
+    .zou {
+      position: absolute;
+      top: -30px;
+      right: 10px;
+      @include mq() {
+        top: -40px;
+      }
+      @include mq("sm") {
+        top: -70px;
+      }
+    }
+    .sprite {
+      width: 165px;
+      height: 160px;
+      margin: 0 auto;
+      background: url(../../assets/images/zou.png) no-repeat;
+      background-position: 0 0;
+      @include mq() {
+        transform: scale(.5);
+        transform-origin: center right;
+      }
+      &.blink {
+        background-position: -170px 0;
+      }
+    }
+    .image {
+      display: block;
+      margin-bottom: 25px;
+      @include mq() {
+        margin-bottom: 15px;
+      }
+    }
+    .logo01 {
+      img {
+        width: 159px;
+        @include mq() {
+          width: 78px;
+        }
+        @include mq("sm") {
+          width: 60px;
+        }
+      }
+    }
+    .logo02 {
+      img {
+        width: 300px;
+        @include mq() {
+          width: 130px;
+        }
+      }
+    }
+    p {
+      font-size: 1.3rem;
+      font-weight: bold;
+      color: #828296;
+      line-height: 1.8;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      @include mq() {
+        line-height: 1.2;
+        margin-top: 10px;
+        margin-bottom: 15px;
+      }
+      @include mq("sm") {
+        font-size: 1.1rem;
+      }
+    }
+    span {
+      font-size: 1rem;
+    }
+    .access {
+      @include btn;
+      font-size: 1rem;
+      background: $clr-main;
+      color: $clr-lightGlay;
+      padding: 8px 15px;
+      margin-left: 15px;
+      i {
+        margin-right: 5px;
+      }
+      @include mq("sm") {
+        padding: 5px 12px;
+      }
+    }
+    .secHero_tag {
+      width: 220px;
+      display: inline-block;
+      padding: 10px;
+      font-size: 1.2rem;
+      border-radius: 20px;
+      background-color: #F7F7F7;
+      color: $clr-main;
+      @include btn;
+      i {
+        margin-right: 10px;
+        vertical-align: middle;
+      }
+      @include mq("sm") {
+        width: 100px;
+        padding: 7px;
+      }
+    }
+  }
+}
+
+@-webkit-keyframes fuwafuwa {
+    0% {
+        -webkit-transform: translate(0,0);
+        transform: translate(0,0)
+    }
+
+    50% {
+        -webkit-transform: translate(0,15px);
+        transform: translate(0,15px)
+    }
+
+    100% {
+        -webkit-transform: translate(0,0);
+        transform: translate(0,0)
+    }
+}

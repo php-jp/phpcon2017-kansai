@@ -1,0 +1,23 @@
+@import "../lib/mixin";
+@import "../lib/variable";
+
+.container {
+  margin: 0 auto;
+  max-width: 960px;
+  padding: 0 20px;
+}
+
+.grid {
+  display: grid;
+  justify-content: center;
+  @include gridLayout(16);
+}
+
+.ml5 {
+  margin-left: 5px;
+}
+
+.ml10 {
+  margin-left: 10px;
+}
+

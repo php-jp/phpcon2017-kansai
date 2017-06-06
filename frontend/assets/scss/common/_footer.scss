@@ -1,0 +1,75 @@
+@import "../lib/mixin";
+@import "../lib/variable";
+
+#footer {
+  background:$clr-main;
+  padding: 40px 0; 
+  position: relative;
+
+  .footer_phpConf {
+    text-align: center;
+
+    p {
+      margin-top: 18px;
+      font-size: 1.5rem;
+      color: $clr-lightGlay;
+      font-weight: bold;
+    }
+  }
+
+  .footer_phpConfArchives {
+    text-align: center;
+    margin-top: 18px;    
+    a {
+      margin: 0 15px;
+      color: $clr-lightGlay;
+      &:hover {
+        text-decoration: underline;
+      }
+      @include mq() {
+        margin: 0 8px;
+      }
+    }
+  }
+
+  .footer_copyright {
+    text-align: center;
+
+    small {
+      display: block;
+      margin-top: 35px;
+      color: $clr-lightGlay;
+
+      &+small{
+        padding-top: 10px;
+        border-top: 1px solid #E9E2F9;
+      }
+    }
+    span {
+      font-weight: bold;
+    }
+    a {
+      font-weight: bold;
+      color: $clr-lightGlay;
+    }
+  }
+}
+
+#pageTop {
+  position: fixed;
+  right: 50px;
+  bottom: 0;
+  @include mq() {
+    right: 10px;
+  }
+
+  img {
+    width: 49px;
+  }
+}
+
+#pageTop.active {
+  position: absolute;
+  bottom: initial;
+  top: -48px;
+}
