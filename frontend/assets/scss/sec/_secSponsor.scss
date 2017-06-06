@@ -12,6 +12,7 @@
       font-size: 1.5rem;
       color: $clr-font;
       margin-bottom: 30px;
+      font-weight: normal;
     }
     .fractal {
       position: absolute;
@@ -34,11 +35,26 @@
         }
       }
     }
+
+    .contents {
+      letter-spacing: -.4em;
+    }
+    .content {
+      display: inline-block;
+      letter-spacing: normal;
+      margin: 0 10px 20px;
+
+      img {
+        width: 100%;
+      }
+    }
+
   }
 
   .secSponsor_heading {
     span {
       @include title;
+      background-image: url("/assets/images/icn_heading-white.svg");
     }
   }
   .secSponsor_list {
@@ -47,153 +63,22 @@
   }
   .secSponsor_platinum {
     margin-bottom: 30px;
-    position: relative;
-    .secSponsor_list1 {
-      @include gridColumn(6,12);
-      background-image: url("/assets/images_old/banner_platinum_01.png");
-      background-repeat:  no-repeat;
-      background-size: cover;
-      background-position: center;
-
-      &::before {
-        content: "";
-        display: block;
-        padding-top: 60%;
-      }
-      @include mq() {
-        @include gridColumn(3,15);
-      }
-    }
-
   }
   .secSponsor_gold{
     margin-bottom: 30px;
-    position: relative;
-    .grid {
-      @include gridLayout(20)
-      
-    }
-    .secSponsor_list1 {
-      @include gridColumn(1,7);
-      background-image: url("/assets/images_old/banner_platinum_01.png");
-      background-repeat:  no-repeat;
-      background-size: cover;
-      background-position: center;
-      &::before {
-        content: "";
-        display: block;
-        padding-top: 60%;
-      }
+    .content {
+      width: calc(33.3333% - 20px);
       @include mq() {
-        @include gridColumn(1,10);
-        margin-bottom: 20px;        
-      }
-    }
-    .secSponsor_list2 {
-      @include gridColumn(8,14);
-      background-image: url("/assets/images_old/banner_platinum_01.png");
-      background-repeat:  no-repeat;
-      background-size: cover;
-      background-position: center;
-      &::before {
-        content: "";
-        display: block;
-        padding-top: 60%;
-      }
-      @include mq() {
-        @include gridColumn(12,21);
-        margin-bottom: 20px;
-      }
-    }
-    .secSponsor_list3 {
-      @include gridColumn(15,21);
-      background-image: url("/assets/images_old/banner_platinum_01.png");
-      background-repeat:  no-repeat;
-      background-size: cover;
-      background-position: center;
-      &::before {
-        content: "";
-        display: block;
-        padding-top: 60%;
-      }
-      @include mq() {
-        @include gridColumn(1,10);
+        width: calc(50% - 20px);
       }
     }
   }
   .secSponsor_silver{
-    position: relative;
-    .grid {
-      @include gridLayout(19); 
+    .content {
+      width: calc(25% - 20px);
       @include mq() {
-        @include gridLayout(20)      
+        width: calc(33.3333% - 20px);
       }
     }
-
-    .secSponsor_list1 {
-      @include gridColumn(1,5);
-      background-image: url("/assets/images_old/banner_platinum_01.png");
-      background-repeat:  no-repeat;
-      background-size: cover;
-      background-position: center;
-      &::before {
-        content: "";
-        display: block;
-        padding-top: 60%;
-      }
-      @include mq() {
-        @include gridColumn(1,7);
-        margin-bottom: 20px;
-      }
-    }
-    .secSponsor_list2 {
-      @include gridColumn(6,10);
-      background-image: url("/assets/images_old/banner_platinum_01.png");
-      background-repeat:  no-repeat;
-      background-size: cover;
-      background-position: center;
-      &::before {
-        content: "";
-        display: block;
-        padding-top: 60%;
-      }
-      @include mq() {
-        @include gridColumn(8,14);
-        margin-bottom: 20px;
-      }
-    }
-    .secSponsor_list3 {
-      @include gridColumn(11,15);
-      background-image: url("/assets/images_old/banner_platinum_01.png");
-      background-repeat:  no-repeat;
-      background-size: cover;
-      background-position: center;
-      &::before {
-        content: "";
-        display: block;
-        padding-top: 60%;
-      }
-      @include mq() {
-        @include gridColumn(15,21);
-        margin-bottom: 20px;
-      }
-    }
-    .secSponsor_list4 {
-      @include gridColumn(16,20);
-      background-image: url("/assets/images_old/banner_platinum_01.png");
-      background-repeat:  no-repeat;
-      background-size: cover;
-      background-position: center;
-      &::before {
-        content: "";
-        display: block;
-        padding-top: 60%;
-      }
-      @include mq() {
-        @include gridColumn(1,7);
-      }
-    }
-
-
   }
 }

@@ -33,7 +33,7 @@
     display: inline-block;
     margin-bottom: 22px;
     position: relative;
-    background-image: url("/assets/images/icn_heading.png");
+    background-image: url("/assets/images/icn_heading.svg");
     background-repeat: no-repeat;
     padding: 20px;
     text-align: left;
@@ -48,5 +48,10 @@
     &:hover{
         opacity: .8;
     }
+}
+
+@mixin bold {
+    font-weight: bold;
+    color: $clr-font-bold;
 }
 

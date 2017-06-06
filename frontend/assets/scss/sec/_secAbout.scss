@@ -5,9 +5,27 @@
   padding: 60px 0;
   background: #fff;
   .secAbout_img {
+    img {
+      max-width: 350px;
+      width: 100%;
+    }
     @include gridColumn(1, 7);
     @include mq() {
       display: none;
+    }
+  }
+  .secAbout_img_sp {
+    display: none;
+    grid-column: 1/18;
+    margin-bottom: -60px;
+    text-align: center;
+    margin-top: 30px;
+    @include mq() {
+      display: block;
+    }
+    img {
+      max-width: 286px;
+      width: 100%;
     }
   }
   .secAbout_contents {

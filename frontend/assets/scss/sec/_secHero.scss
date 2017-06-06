@@ -50,8 +50,7 @@
 
     .regular {
       text-align: center;
-      font-weight: bold;
-      color: $clr-font;
+      @include bold;
       font-size: 1.4rem;
       margin-bottom: 20px;
     }
@@ -189,18 +188,20 @@
     }
     .logo01 {
       img {
+        width: 159px;
         @include mq() {
           width: 78px;
         }
         @include mq("sm") {
-          width: 39px;
+          width: 60px;
         }
       }
     }
     .logo02 {
       img {
+        width: 300px;
         @include mq() {
-          width: 150px;
+          width: 130px;
         }
       }
     }

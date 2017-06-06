@@ -5,7 +5,7 @@
   background: #fff;  
   .secAccess_map {
     @include gridColumn(1,10);
-    background: url("/assets/images/img_map.png") no-repeat;
+    background: url("/assets/images/img_map.svg") no-repeat;
     background-size: cover;
     background-position: center;
     @include mq() {
@@ -28,7 +28,7 @@
   .secAccess_information {
     h3 {
       font-size: 1.4rem;
-      color: $clr-font;
+      @include bold;
       margin-bottom: 10px;
     }
     p {
