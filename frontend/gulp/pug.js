@@ -20,6 +20,8 @@ gulp.task("pug",() => {
                 filters: {
                 }
         };
+
+        locals.sponssors = require("../assets/data/sponsors.js")
         let srcPattern = [
             `${src}assets/tmpl/**/*.pug`,
             `!${src}assets/tmpl/**/_*`,
