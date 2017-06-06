@@ -22,7 +22,10 @@
     }
   }
   .secAccess_thumb {
-    text-align: center;
+    text-align: left;
+    @include mq(){
+      text-align: center;
+    }
     margin-bottom: 25px;
     img {
       max-width: 220px;
