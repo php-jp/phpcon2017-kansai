@@ -1,0 +1,14 @@
+//color palet
+$clr-main: #9067CA;
+$clr-font: #5e5e6d;
+
+$clr-lightGlay: #F7F7F7;
+
+$clr-twitter: #55ACEE;
+$clr-facebook: #315096;
+
+$breakpoints: (
+  'sm': 'screen and (max-width: 420px)',
+  'md': 'screen and (max-width: 768px)',
+  'lg': 'screen and (max-width: 1260px)',
+) !default;

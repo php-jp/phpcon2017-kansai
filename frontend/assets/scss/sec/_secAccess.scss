@@ -1,0 +1,78 @@
+@import "../lib/_mixin";
+@import "../lib/_variable";
+
+#secAccess {
+  background: #fff;  
+  .secAccess_map {
+    @include gridColumn(1,10);
+    background: url("/assets/images/img_map.png") no-repeat;
+    background-size: cover;
+    background-position: center;
+    @include mq() {
+      display: none;
+    }
+  }
+  .secAccess_contents {
+    @include gridColumn(10,15);
+    background: #fff;
+    padding: 50px 0 50px 50px;
+    @include mq() {
+      @include gridColumn(1,18);
+      padding: 50px 30px 50px 30px;
+    }
+  }
+  .secAccess_thumb {
+    text-align: center;
+    margin-bottom: 25px;
+  }
+  .secAccess_information {
+    h3 {
+      font-size: 1.4rem;
+      color: $clr-font;
+      margin-bottom: 10px;
+    }
+    p {
+      font-size: 1rem;
+      color: $clr-font;
+      margin-bottom: 20px;
+      line-height: 1.5rem;
+    }
+  }
+
+  .secAccess_train {
+    font-size: 1rem;
+    color: $clr-font;
+    line-height: 2rem;
+    h3 {
+      margin-bottom: 10px;
+    }
+    span {
+      margin-left: 10px;
+    }
+  }
+
+  .secAccess_btn {
+    margin-top: 35px;
+    text-align: center;
+    a {
+      @include btn;
+      display: inline-block;
+      background: $clr-main;
+      color: #fff;
+      font-weight: bold;
+      font-size: 1.2rem;
+      padding: 15px 20px;
+    }
+    i {
+      margin-right: 15px;
+    }
+  }
+
+  .secAccess_heading {
+    span {
+      @include title;
+    }
+  }
+
+
+}
