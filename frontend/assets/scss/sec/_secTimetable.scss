@@ -22,10 +22,144 @@
     }
 
     p {
-      color: #828296;
       font-weight: bold;
       margin-bottom: 50px;
       @include gridColumn(7, 11);
+    }
+  }
+  .secTimetable_sections{
+    display: flex;
+    box-sizing: border-box;
+    padding: 0 50px;
+    justify-content:space-between;
+    align-content:flex-start;
+    color: #828296;
+    .secTimetable_time{
+      box-sizing: border-box;
+      padding: 40px 15px;
+      text-align: center;
+      width: 10%;
+      background-color: #9B54CB;
+      color: #FFF;
+      margin: 10px;
+    }
+
+    .secTimetable_section{
+      box-sizing: border-box;
+      padding: 5px;
+      width: 30%;
+      margin: 10px;
+      background-color: #FFFFFF;
+
+      &_room{
+        box-sizing: border-box;
+        padding: 15px;
+        height:50px;
+        line-height: 20px;
+        text-align: center;
+        letter-spacing: -0.3em;
+        &Heading{
+          display: inline-block;
+          width: 30%;
+          height: 100%;
+          background-color: #f7f7f7;
+          letter-spacing: initial;
+        }
+        p {
+          margin:0;
+          display: inline-block;
+          width: 70%;
+          height: 100%;
+          background-color: #D5EFF2;
+          letter-spacing: initial;
+        }
+
+      }
+      &_title{
+        box-sizing: border-box;
+        padding: 0 15px;
+        span {
+          font-size: 18px;
+          color: #9067CA;
+          line-height: 25px;
+        }
+      }
+      &_detail{
+        p {
+          font-size: 15px;
+          line-height: 20px;
+          margin: 0;
+        }
+      }
+      &_more{
+        color: #9067CA;
+        box-sizing: border-box;
+        padding: 15px 15px;
+        height:50px;
+        text-align: center;
+        line-height: 20px;
+        letter-spacing: -0.3em;
+        span{
+          display: inline-block;
+          width: 100%;
+          height: 100%;
+          background-color: #f7f7f7;
+          letter-spacing: initial;
+          font-size: 12px;
+          font-weight: bold;
+          &:after{
+            float: right;
+            content: "▼";
+            letter-spacing: initial;
+            background-color: #f7f7f7;
+          }
+        }
+      }
+      &_user{
+        background-color: #f7f7f7;
+        &Heading{
+          box-sizing: border-box;
+          padding: 15px;
+          height: 80px;
+          width: 100%;
+          display: table;
+          text-align: center;
+          .secTimetable_section_userImage{
+            display: inline-table;
+            vertical-align: middle;
+            width: 70px;
+            img {
+              border-radius: 50%;
+              width: 50px;
+              height: 50px;
+            }
+          }
+          h2{
+            vertical-align: middle;
+            display: table-cell;
+            width: 150px;
+            font-size: 14px;
+            line-height: 18px;
+            font-weight: bold;
+          }
+        }
+        &Detail{
+          p {
+            font-size: 15px;
+            line-height: 20px;
+            margin: 0;
+          }
+        }
+        .secTimetable_section_more{
+          span{
+            background-color: #fff;
+            &:after{
+              background-color: #fff;
+            }
+          }
+        }
+      }
+
     }
   }
 }
