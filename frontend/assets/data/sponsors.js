@@ -2,6 +2,7 @@ module.exports = {
     platinum: [
         {
             "url": "http://www.lockon.co.jp",
+            "name" : "株式会社ロックオン",
             "img": "banner_platinum_01.png",
         },
     ],
