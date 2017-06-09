@@ -8,7 +8,7 @@
   box-sizing: border-box;
 
   @include mq() {
-    height: 550px;
+    height: 610px;
   }
 
   @include mq("sm") {
