@@ -246,6 +246,14 @@
         font-size: 1.3rem;
         line-height: 1.5;        
       }
-    } 
+    }
+    .sns {
+      &>div {
+        a {
+          padding: 4px 0;
+          height: auto !important;
+        }
+      }
+    }
   }
 }
