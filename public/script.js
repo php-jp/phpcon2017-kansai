@@ -121,3 +121,10 @@ app.syncHeight = (function () {
         $("#secTimetable .secTimetable_timeline .time").css('height',height)
     })
 }())
+
+app.spToggle = (function  () {
+    $('#secTimetable .secTimetable_sp_contents .time').on('click',function () {
+        $(this).next().slideToggle();
+        $(this).toggleClass("active")
+    })
+}())
