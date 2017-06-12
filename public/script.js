@@ -92,3 +92,32 @@ app.zou = (function  () {
         });
     })
 }())
+
+app.readmore = (function () {
+    var t = ["READ MORE","CLOSE"]
+    $('#secTimetable .speaker .readmore').on('click',function () {
+        if ($(this).hasClass("active")) {
+            $(this).text(t[0])                        
+        }else {
+            $(this).text(t[1])
+        }
+        $(this).prev().slideToggle();
+        $(this).toggleClass("active")
+    })
+    $('#secTimetable .session .readmore').on('click',function () {
+        if ($(this).hasClass("active")) {
+            $(this).text(t[0])                        
+        }else {
+            $(this).text(t[1])
+        }
+        $(this).prev().find("span").slideToggle();
+        $(this).toggleClass("active")
+    })
+}())
+
+app.syncHeight = (function () {
+    $(window).on('load resize',function () {
+        var height =$("#secTimetable .secTimetable_sections .section").innerHeight()
+        $("#secTimetable .secTimetable_timeline .time").css('height',height)
+    })
+}())
