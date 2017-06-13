@@ -41,7 +41,9 @@
     transform: translateY(-50%);
     letter-spacing: -.4em;
     @include mq(){
-      right: 100px;
+      right: 150px;
+      //right: 100px;
+      //ヘッダーメニューが参加登録になったら100pxに変える
     }
     li {
       display: inline-block;
@@ -106,6 +108,39 @@
       }      
     }
   }
+
+  .header_sponsor {
+    position: absolute;
+    right: 50px;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 100%;
+    i {
+      margin-right: 8px;
+      @include mq() {
+        margin-right: 0;
+        display: block;
+        font-size: 20px;
+        margin-bottom: 4px;
+      }
+    }
+    a {
+      @include btn;
+      background-color: $clr-main;
+      color: $clr-lightGlay;
+      font-weight: bold;
+      padding: 23px 10px;
+      display: block;
+      font-size: 14px;
+      @include mq() {
+        text-align: center;
+        font-size: 10px;
+        padding: 0;
+        padding: 8px 5px
+      }
+    }
+  }
+
   .header_menu {
     cursor: pointer;
     position: absolute;
