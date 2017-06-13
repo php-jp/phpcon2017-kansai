@@ -21,7 +21,7 @@ gulp.task("pug",() => {
                 }
         };
 
-        locals.sponssors = require("../assets/data/sponsors.js")
+        locals.sponsors = require("../assets/data/sponsors.js")
         locals.staffs = require("../assets/data/staffs.js")
         locals.speakers = require("../assets/data/speakers.js")
         let srcPattern = [

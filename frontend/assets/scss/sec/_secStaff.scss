@@ -11,18 +11,28 @@
       @include title;
     }
   }
+  .secStaff_staffs {
+    text-align: left;
+  }
+  .secStaff_staff {
+    display: inline-block;
+    width: 120px;
+    text-align: center;
+  }
   .secStaff_icon {
     width: 62px;
     height: 62px;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    border-radius: 100%;
     margin: 0 auto;
     position: relative;
     top: 0;
     left: 0;
     transition: ease .3s;
+    img {
+      border-radius: 100%;
+    }
   }
 
   .secStaff_name {
@@ -38,58 +48,6 @@
           top: -10px;
         }
       }
-    }
-  }
-
-  .secStaff_icon.num01 {
-    background-image: url("/assets/images/img_staffSample.jpg");
-  }
-  .secStaff_staffList1 {
-    @include gridColumn(1, 3);
-    @include mq() {
-      @include gridColumn(1, 6);
-    }
-  }
-  .secStaff_staffList2 {
-    @include gridColumn(3,5);
-    @include mq() {
-      @include gridColumn(6, 12);
-    }
-  }
-  .secStaff_staffList3 {
-    @include gridColumn(5,7);
-    @include mq() {
-      @include gridColumn(12, 18);
-    }
-  }
-  .secStaff_staffList4 {
-    @include gridColumn(7,9);
-    @include mq() {
-      @include gridColumn(1, 6);
-    }
-  }
-  .secStaff_staffList5 {
-    @include gridColumn(9,11);
-    @include mq() {
-      @include gridColumn(6, 12);
-    }
-  }
-  .secStaff_staffList6 {
-    @include gridColumn(11,13);
-    @include mq() {
-      @include gridColumn(12, 18);
-    }
-  }
-  .secStaff_staffList7 {
-    @include gridColumn(13,15);
-    @include mq() {
-      @include gridColumn(1, 6);
-    }
-  }
-  .secStaff_staffList8 {
-    @include gridColumn(15,17);
-    @include mq() {
-      @include gridColumn(6, 12);
     }
   }
 }
