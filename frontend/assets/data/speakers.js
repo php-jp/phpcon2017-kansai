@@ -1,6 +1,6 @@
 var data = [
     {
-        track:"905",
+        track:"901+902",
         time: "10:40-11:20",
         name:"新原 雅司",
         title: "TBA",
@@ -58,7 +58,7 @@ var data = [
     {
         track:"901+902",
         time: "13:10-13:40",
-        name:"PHP大好きおじさん",
+        name:"PHP User Group",
         title: "TBA",
         summary01: "",
         summary02: "",
@@ -67,7 +67,7 @@ var data = [
         twitter: "",
         qiita: "",
         github: "",
-        other: "http://www.hasegawa-tomoki.com/",
+        other: "",
     },
     {
         track:"905",

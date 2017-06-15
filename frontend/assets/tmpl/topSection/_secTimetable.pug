@@ -14,7 +14,7 @@ mixin session(sessionInfo)
                 .icon
                     img(src="https://placehold.jp/50x50.png")
                 .name
-                    p みかかねみかかね【16文字以内】
+                    p=sessionInfo.name
             .detail
                 .text
                     p 株式会社chatbox代表。 大阪府立大学卒業後、フリーランスエンジニア等の経験を経て、株式会社chatboxを設立。【65文字以内】
@@ -41,16 +41,22 @@ mixin sessionEmpty()
                     .time 10:00<br>|<br>12:00
                     .time 10:00<br>|<br>12:00
                     .time 10:00<br>|<br>12:00
+                    .time 10:00<br>|<br>12:00
+                    .time 10:00<br>|<br>12:00
                 .secTimetable_sections
                     each sessionInfo in speakers.findByRoom("901+902")
                         +session(sessionInfo)
+                    +sessionEmpty()
                 .secTimetable_sections
                     +sessionEmpty()
                     each sessionInfo in speakers.findByRoom("905")
                         +session(sessionInfo)
+                    +sessionEmpty()
                 .secTimetable_sections
+                    +sessionEmpty()
                     each sessionInfo in speakers.findByRoom("907")
                         +session(sessionInfo)
+                    +sessionEmpty()
             .sp
                 .secTimetable_sp_contents
                     .content
