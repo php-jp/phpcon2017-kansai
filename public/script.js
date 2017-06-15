@@ -139,6 +139,7 @@ app.syncHeight = (function () {
         }
         var height = $("#secTimetable .secTimetable_sections .section").height()
         $("#secTimetable .secTimetable_timeline .time").css('height',height)
+        $("#secTimetable .secTimetable_sections .sectionEmpty").css('height',height)
     })
 }())
 
