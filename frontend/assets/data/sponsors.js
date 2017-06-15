@@ -1,4 +1,5 @@
-module.exports = {
+
+const data = {
     platinum: [
         {
             "url": "http://www.lockon.co.jp",
