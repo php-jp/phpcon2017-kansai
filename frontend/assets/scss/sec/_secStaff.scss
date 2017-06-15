@@ -12,7 +12,25 @@
     }
   }
   .secStaff_staffs {
-    text-align: left;
+    text-align: center;
+    .secStaff_staff:nth-of-type(1){
+      .secStaff_icon {
+        position: relative;
+        text-align: center;
+        &::after {
+          display: inline-block;
+          content: "";
+          background-image: url("/assets/images/icon_ribbon.svg");
+          background-repeat: no-repeat;
+          background-position: center;
+          width: 40px;
+          height:40px;
+          position: absolute;
+          top: 45px;
+          right: 11px;
+        }
+      }
+    }
   }
   .secStaff_staff {
     display: inline-block;
