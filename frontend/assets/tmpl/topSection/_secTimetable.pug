@@ -1,3 +1,58 @@
+mixin session(sessionInfo)
+    .section
+        .session.inner
+            .room.yellow
+                .name Room
+                .val=sessionInfo.track
+            h2=sessionInfo.title
+            .text
+                p.show Laravel や Lumenフレームワークで用いらみをベース法や汎用的なコンポーネントの設計方法、extendやコン。
+                p このようなDIによるコンポーネントの活用を踏まえた上で、コンポーネント開発で便利なgit subtree や type:path 形延長線上でコンポーネント単位での開発を行えるフローを紹介していきます。
+            .readmore READ MORE
+        .speaker.inner
+            .profile
+                .icon
+                    img(src="https://placehold.jp/50x50.png")
+                .name
+                    p みかかねみかかね【16文字以内】
+            .detail
+                .text
+                    p 株式会社chatbox代表。 大阪府立大学卒業後、フリーランスエンジニア等の経験を経て、株式会社chatboxを設立。【65文字以内】
+                .sns
+                    .twitter: a(href="#", title="title")
+                        i.fa.fa-twitter
+                    .facebook: a(href="#", title="title")
+                        i.fa.fa-facebook
+            .readmore READ MORE
+
+mixin session(sessionInfo)
+    .section
+        .session.inner
+            .room.yellow
+                .name Room
+                .val=sessionInfo.track
+            h2=sessionInfo.title
+            .text
+                p.show Laravel や Lumenフレームワークで用いらみをベース法や汎用的なコンポーネントの設計方法、extendやコン。
+                p このようなDIによるコンポーネントの活用を踏まえた上で、コンポーネント開発で便利なgit subtree や type:path 形延長線上でコンポーネント単位での開発を行えるフローを紹介していきます。
+            .readmore READ MORE
+        .speaker.inner
+            .profile
+                .icon
+                    img(src="https://placehold.jp/50x50.png")
+                .name
+                    p みかかねみかかね【16文字以内】
+            .detail
+                .text
+                    p 株式会社chatbox代表。 大阪府立大学卒業後、フリーランスエンジニア等の経験を経て、株式会社chatboxを設立。【65文字以内】
+                .sns
+                    .twitter: a(href="#", title="title")
+                        i.fa.fa-twitter
+                    .facebook: a(href="#", title="title")
+                        i.fa.fa-facebook
+            .readmore READ MORE
+
+
 #secTimetable
     .container
         .secTimetable_contents
@@ -7,202 +62,36 @@
                 .secTimetable_timeline
                     .time 10:00<br>|<br>12:00
                     .time 10:00<br>|<br>12:00
-                    .secTimetable_sections
-                        .section
-                            .session.inner
-                                .room.yellow
-                                    .name Room
-                                    .val 901 + 902
-                                h2 セッションタdfdfイトルが入ります【文字数30字までになります。】
-                                .text
-                                    p.show Laravel や Lumenフレームワークで用いらみをベース法や汎用的なコンポーネントの設計方法、extendやコン。
-                                    p このようなDIによるコンポーネントの活用を踏まえた上で、コンポーネント開発で便利なgit subtree や type:path 形延長線上でコンポーネント単位での開発を行えるフローを紹介していきます。
-                                .readmore READ MORE  
-                            .speaker.inner
-                                .profile
-                                    .icon
-                                        img(src="https://placehold.jp/50x50.png")
-                                    .name
-                                        p みかかねみかかね【16文字以内】
-                                .detail
-                                    .text
-                                        p 株式会社chatbox代表。 大阪府立大学卒業後、フリーランスエンジニア等の経験を経て、株式会社chatboxを設立。【65文字以内】
-                                    .sns
-                                        .twitter: a(href="#", title="title")
-                                            i.fa.fa-twitter
-                                        .facebook: a(href="#", title="title")
-                                            i.fa.fa-facebook
-                                .readmore READ MORE
-
+                    .time 10:00<br>|<br>12:00
+                    .time 10:00<br>|<br>12:00
+                    .time 10:00<br>|<br>12:00
+                    .time 10:00<br>|<br>12:00
+                .secTimetable_sections
+                    each sessionInfo in speakers.findByRoom("901+902")
+                        +session(sessionInfo)
+                .secTimetable_sections
+                    each sessionInfo in speakers.findByRoom("905")
+                        +session(sessionInfo)
+                .secTimetable_sections
+                    each sessionInfo in speakers.findByRoom("907")
+                        +session(sessionInfo)
             .sp
                 .secTimetable_sp_contents
                     .content
                         .time
                             h2 10:00 - 12:00
                         .wrap
-                            .section
-                                .session.inner
-                                    .room.red
-                                        .name Room
-                                        .val 901 + 902
-                                    h2 セッションタイトルadfが入ります【文字数30字までになります。】
-                                    .text
-                                        p.show Laravel や Lumenフレームワークで用いられれているDIコンテナの仕組みをベースに、DIコンテナの活用方法や汎用的なコンポーネントの設計方法、extendやコンテナの差し替えを利用したコンポーネントの拡張方法などをお話します。
-                                        p このようなDIによるコンポーネントの活用を踏まえた上で、コンポーネント開発で便利なgit subtree や type:path 形式のcomposerの利用方法などを紹介し、日常開発の延長線上でコンポーネント単位での開発を行えるフローを紹介していきます。
-                                    .readmore READ MORE  
-                                .speaker.inner
-                                    .profile
-                                        .icon
-                                            img(src="https://placehold.jp/50x50.png")
-                                        .name
-                                            p みかかねみかかね【16文字以内】
-                                    .detail
-                                        .text
-                                            p 株式会社chatbox代表。 大阪府立大学卒業後、フリーランスエンジニア等の経験を経て、株式会社chatboxを設立。【65文字以内】
-                                        .sns
-                                            .twitter: a(href="#", title="title")
-                                                i.fa.fa-twitter
-                                            .facebook: a(href="#", title="title")
-                                                i.fa.fa-facebook
-                                    .readmore READ MORE
-                            
-                            .section
-                                .session.inner
-                                    .room.red
-                                        .name Room
-                                        .val 901 + 902
-                                    h2 セッションタイトfdfdfルが入ります【文字数30字までになります。】
-                                    .text
-                                        p.show Laravel や Lumenフレームワークで用いられれているDIコンテナの仕組みをベースに、DIコンテナの活用方法や汎用的なコンポーネントの設計方法、extendやコンテナの差し替えを利用したコンポーネントの拡張方法などをお話します。
-                                        p このようなDIによるコンポーネントの活用を踏まえた上で、コンポーネント開発で便利なgit subtree や type:path 形式のcomposerの利用方法などを紹介し、日常開発の延長線上でコンポーネント単位での開発を行えるフローを紹介していきます。
-                                    .readmore READ MORE  
-                                .speaker.inner
-                                    .profile
-                                        .icon
-                                            img(src="https://placehold.jp/50x50.png")
-                                        .name
-                                            p みかかねみかかね【16文字以内】
-                                    .detail
-                                        .text
-                                            p 株式会社chatbox代表。 大阪府立大学卒業後、フリーランスエンジニア等の経験を経て、株式会社chatboxを設立。【65文字以内】
-                                        .sns
-                                            .twitter: a(href="#", title="title")
-                                                i.fa.fa-twitter
-                                            .facebook: a(href="#", title="title")
-                                                i.fa.fa-facebook
-                                    .readmore READ MORE
-
-
-
-
+                            each sessionInfo in speakers.findByTime("13:10-13:40")
+                                +session(sessionInfo)
                     .content
                         .time
                             h2 10:00 - 12:00
                         .wrap
-                            .section
-                                .session.inner
-                                    .room.red
-                                        .name Room
-                                        .val 901 + 902
-                                    h2 セッショfdfdンタイトルが入ります【文字数30字までになります。】
-                                    .text
-                                        p.show Laravel や Lumenフレームワークで用いられれているDIコンテナの仕組みをベースに、DIコンテナの活用方法や汎用的なコンポーネントの設計方法、extendやコンテナの差し替えを利用したコンポーネントの拡張方法などをお話します。
-                                        p このようなDIによるコンポーネントの活用を踏まえた上で、コンポーネント開発で便利なgit subtree や type:path 形式のcomposerの利用方法などを紹介し、日常開発の延長線上でコンポーネント単位での開発を行えるフローを紹介していきます。
-                                    .readmore READ MORE  
-                                .speaker.inner
-                                    .profile
-                                        .icon
-                                            img(src="https://placehold.jp/50x50.png")
-                                        .name
-                                            p みかかねみかかね【16文字以内】
-                                    .detail
-                                        .text
-                                            p 株式会社chatbox代表。 大阪府立大学卒業後、フリーランスエンジニア等の経験を経て、株式会社chatboxを設立。【65文字以内】
-                                        .sns
-                                            .twitter: a(href="#", title="title")
-                                                i.fa.fa-twitter
-                                            .facebook: a(href="#", title="title")
-                                                i.fa.fa-facebook
-                                    .readmore READ MORE
-                            
-                            .section
-                                .session.inner
-                                    .room.red
-                                        .name Room
-                                        .val 901 + 902
-                                    h2 セッションタdfdfイトルが入ります【文字数30字までになります。】
-                                    .text
-                                        p.show Laravel や Lumenフレームワークで用いられれているDIコンテナの仕組みをベースに、DIコンテナの活用方法や汎用的なコンポーネントの設計方法、extendやコンテナの差し替えを利用したコンポーネントの拡張方法などをお話します。
-                                        p このようなDIによるコンポーネントの活用を踏まえた上で、コンポーネント開発で便利なgit subtree や type:path 形式のcomposerの利用方法などを紹介し、日常開発の延長線上でコンポーネント単位での開発を行えるフローを紹介していきます。
-                                    .readmore READ MORE  
-                                .speaker.inner
-                                    .profile
-                                        .icon
-                                            img(src="https://placehold.jp/50x50.png")
-                                        .name
-                                            p みかかねみかかね【16文字以内】
-                                    .detail
-                                        .text
-                                            p 株式会社chatbox代表。 大阪府立大学卒業後、フリーランスエンジニア等の経験を経て、株式会社chatboxを設立。【65文字以内】
-                                        .sns
-                                            .twitter: a(href="#", title="title")
-                                                i.fa.fa-twitter
-                                            .facebook: a(href="#", title="title")
-                                                i.fa.fa-facebook
-                                    .readmore READ MORE
-
+                            each sessionInfo in speakers.findByTime("13:10-13:40")
+                                +session(sessionInfo)
                     .content
                         .time
                             h2 10:00 - 12:00
                         .wrap
-                            .section
-                                .session.inner
-                                    .room.red
-                                        .name Room
-                                        .val 901 + 902
-                                    h2 セッションffdfdイトルが入ります【文字数30字までになります。】
-                                    .text
-                                        p.show Laravel や Lumenフレームワークで用いられれているDIコンテナの仕組みをベースに、DIコンテナの活用方法や汎用的なコンポーネントの設計方法、extendやコンテナの差し替えを利用したコンポーネントの拡張方法などをお話します。
-                                        p このようなDIによるコンポーネントの活用を踏まえた上で、コンポーネント開発で便利なgit subtree や type:path 形式のcomposerの利用方法などを紹介し、日常開発の延長線上でコンポーネント単位での開発を行えるフローを紹介していきます。
-                                    .readmore READ MORE  
-                                .speaker.inner
-                                    .profile
-                                        .icon
-                                            img(src="https://placehold.jp/50x50.png")
-                                        .name
-                                            p みかかねみかかね【16文字以内】
-                                    .detail
-                                        .text
-                                            p 株式会社chatbox代表。 大阪府立大学卒業後、フリーランスエンジニア等の経験を経て、株式会社chatboxを設立。【65文字以内】
-                                        .sns
-                                            .twitter: a(href="#", title="title")
-                                                i.fa.fa-twitter
-                                            .facebook: a(href="#", title="title")
-                                                i.fa.fa-facebook
-                                    .readmore READ MORE
-                            
-                            .section
-                                .session.inner
-                                    .room.red
-                                        .name Room
-                                        .val 901 + 902
-                                    h2 セッションタイトル【文字数30字までになります。】
-                                    .text
-                                        p.show Laravel や Lumenフレームワークで用いられれているDIコンテナの仕組みをベースに、DIコンテナの活用方法や汎用的なコンポーネントの設計方法、extendやコンテナの差し替えを利用したコンポーネントの拡張方法などをお話します。
-                                        p このようなDIによるコンポーネントの活用を踏まえた上で、コンポーネント開発で便利なgit subtree や type:path 形式のcomposerの利用方法などを紹介し、日常開発の延長線上でコンポーネント単位での開発を行えるフローを紹介していきます。
-                                    .readmore READ MORE  
-                                .speaker.inner
-                                    .profile
-                                        .icon
-                                            img(src="https://placehold.jp/50x50.png")
-                                        .name
-                                            p みかかねみかかね【16文字以内】
-                                    .detail
-                                        .text
-                                            p 株式会社chatbox代表。 大阪府立大学卒業後、フリーランスエンジニア等の経験を経て、株式会社chatboxを設立。【65文字以内】
-                                        .sns
-                                            .twitter: a(href="#", title="title")
-                                                i.fa.fa-twitter
-                                            .facebook: a(href="#", title="title")
-                                                i.fa.fa-facebook
-                                    .readmore READ MORE
+                            each sessionInfo in speakers.findByTime("13:10-13:40")
+                                +session(sessionInfo)

@@ -13,6 +13,11 @@ const localsResolver = ()=>{
 
 gulp.task("pug",() => {
     localsResolver().then((locals)=>{
+
+        locals.sponsors = require("../assets/data/sponsors.js")
+        locals.staffs = require("../assets/data/staffs.js")
+        locals.speakers = require("../assets/data/speakers.js")
+
         let options = (jade_option)?jade_option:{
                 locals,
                 pretty: true,
@@ -21,9 +26,6 @@ gulp.task("pug",() => {
                 }
         };
 
-        locals.sponsors = require("../assets/data/sponsors.js")
-        locals.staffs = require("../assets/data/staffs.js")
-        locals.speakers = require("../assets/data/speakers.js")
         let srcPattern = [
             `${src}assets/tmpl/**/*.pug`,
             `!${src}assets/tmpl/**/_*`,

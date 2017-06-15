@@ -1,4 +1,4 @@
-module.exports = [
+var data = [
     {
         track:"905",
         time: "13:10-13:40",
@@ -195,3 +195,33 @@ module.exports = [
         other: "",
     },
 ]
+
+
+class Sessions{
+
+    constructor(data){
+        this.data = data
+    }
+
+    findByRoom(room){
+        let rtn = [];
+        for(var session of this.data) {
+            if (session.track === room) {
+                    rtn.push(session)
+            }
+        }
+        return rtn;
+    }
+
+    findByTime(room){
+        let rtn = [];
+        for(var session of this.data) {
+            if (session.time === room) {
+                rtn.push(session)
+            }
+        }
+        return rtn;
+    }
+}
+
+module.exports = new Sessions(data)
