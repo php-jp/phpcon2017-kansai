@@ -3,55 +3,81 @@ module.exports = {
         {
             "url": "http://www.lockon.co.jp",
             "name" : "株式会社ロックオン",
-            "img": "banner_platinum_01.png",
+            "img": "lockon.png",
         },
     ],
     gold: [
         {
             "url": "https://splout.co.jp/",
-            "img": "banner_gold_01.png",
+            "name" : "スプラウト株式会社",
+            "img": "splout.png",
         },
         {
             "url": "https://levtech.jp/",
-            "img": "banner_gold_02.png",
+            "name" : "レバレジーズ株式会社",
+            "img": "levtech.png",
         },
         {
             "url": "https://cloudpack.jp/",
-            "img": "banner_gold_03.png",
+            "name" : "アイレット株式会",
+            "img": "cloudPack.png",
         },
         {
             "url": "https://www.firstserver.co.jp/",
-            "img": "banner_gold_04.png",
+            "name" : "ファーストサーバ株式会社",
+            "img": "firstServer.png",
         },
     ],
     silver: [
         {
             "url": "https://www.mercari.com/jp/",
-            "img": "banner_silver_01.png",
+            "name" : "株式会社メルカリ",
+            "img": "mercari.png",
         },
         {
             "url": "http://www.relation2012.com/",
-            "img": "banner_silver_02.png",
+            "name" : "株式会社リレーション",
+            "img": "relation.png",
         },
         {
             "url": "https://www.suzukishouten.co.jp/",
-            "img": "banner_silver_03.png",
+            "name" : "株式会社鈴木商店",
+            "img": "suzukiShouten.png",
         },
         {
-            "url": "https://10mado.jp/",
-            "img": "banner_silver_04.png",
+            "url": "https://10mado.jp",
+            "name" : "合同会社テンマド",
+            "img": "10mado.png",
         },
         {
             "url": "https://cookbiz.jp/",
-            "img": "banner_silver_05.png",
+            "name" : "クックビズ株式会社",
+            "img": "cookBiz.png",
         },
         {
             "url": "https://www.phpexam.jp/",
-            "img": "banner_silver_06.png",
+            "name" : "一般社団法人PHP技術者認定機構",
+            "img": "ecc_php.png",
         },
         {
             "url": "http://designegg.co.jp/",
-            "img": "banner_silver_07.png",
+            "name" : "デザインエッグ株式会社",
+            "img": "designEgg.png",
+        },
+        {
+            "url": "https://www.tech-vein.com/",
+            "name" : "株式会社テックベイン",
+            "img": "techVein.png",
+        },
+        {
+            "url": "https://impath.co.jp/",
+            "name" : "株式会社インパス",
+            "img": "impath.png",
+        },
+        {
+            "url": "https://automattic.com/",
+            "name" : "Automattic.Inc",
+            "img": "automattic.png",
         },
     ],
 }
