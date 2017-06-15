@@ -12,6 +12,7 @@ var data = [
         qiita: "",
         github: "",
         other: "",
+        img: "",
     },
     {
         track:"901+902",
@@ -26,6 +27,7 @@ var data = [
         qiita: "",
         github: "",
         other: "",
+        img: "speaker_goto.jpeg",
     },
     {
         track:"905",
@@ -172,8 +174,8 @@ var data = [
         time: "14:45-15:15",
         name:"坂本 剛彦",
         title: "今すぐできるLaravelフレームワーク！～業務アプリ開発～",
-        summary01: "高機能で利便性が高く、今世界で最も人気のあるPHPフレームワークLaravel。Laravelの利用視点を大規模Webアプリ開発ではなく小規模業務向けアプリ開発に絞って、フレームワークの利用メリットを解説。<br> 本セッションでは、Laravelのバリデーション（Validation）の基礎から応用までを説明し、Laravelの良さを掴んでもらいます。<br> 聴講者には明日からLaravelを使いたくなって頂きます。",
-        summary02: "Composer ってなんだろう、というところから、PHP7.1最新の新機能まで、今現場で使えるPHPの新機能をおさらいしていきましょう。",
+        summary01: "高機能で利便性が高く、今世界で最も人気のあるPHPフレームワークLaravel。Laravelの利用視点を大規模Webアプリ開発ではなく小規模業務向けアプリ開発に絞って、フレームワークの利用メリットを解説。",
+        summary02: "<br> 本セッションでは、Laravelのバリデーション（Validation）の基礎から応用までを説明し、Laravelの良さを掴んでもらいます。<br> 聴講者には明日からLaravelを使いたくなって頂きます。Composer ってなんだろう、というところから、PHP7.1最新の新機能まで、今現場で使えるPHPの新機能をおさらいしていきましょう。",
         profile: "2006年未踏ユース開発者経験を経て、株式会社ソディック入社。<br>森、山、海や工作機械、3Dプリンタに囲まれ、PHPを業務で日々書く。",
         facebook: "",
         twitter: "https://twitter.com/sakamoto03",

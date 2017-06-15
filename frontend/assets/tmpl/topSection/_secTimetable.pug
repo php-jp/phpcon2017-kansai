@@ -6,8 +6,8 @@ mixin session(sessionInfo)
                 .val=sessionInfo.track
             h2=sessionInfo.title
             .text
-                p.show Laravel や Lumenフレームワークで用いらみをベース法や汎用的なコンポーネントの設計方法、extendやコン。
-                p このようなDIによるコンポーネントの活用を踏まえた上で、コンポーネント開発で便利なgit subtree や type:path 形延長線上でコンポーネント単位での開発を行えるフローを紹介していきます。
+                p.show=sessionInfo.summary01
+                p=sessionInfo.summary02
             .readmore READ MORE
         .speaker.inner
             .profile
@@ -17,7 +17,7 @@ mixin session(sessionInfo)
                     p=sessionInfo.name
             .detail
                 .text
-                    p 株式会社chatbox代表。 大阪府立大学卒業後、フリーランスエンジニア等の経験を経て、株式会社chatboxを設立。【65文字以内】
+                    p=sessionInfo.profile
                 .sns
                     .twitter: a(href="#", title="title")
                         i.fa.fa-twitter
@@ -35,14 +35,14 @@ mixin sessionEmpty()
                 span Time Table
             .pc
                 .secTimetable_timeline
-                    .time 10:00<br>|<br>12:00
-                    .time 10:00<br>|<br>12:00
-                    .time 10:00<br>|<br>12:00
-                    .time 10:00<br>|<br>12:00
-                    .time 10:00<br>|<br>12:00
-                    .time 10:00<br>|<br>12:00
-                    .time 10:00<br>|<br>12:00
-                    .time 10:00<br>|<br>12:00
+                    .time 10:40<br>|<br>11:20
+                    .time 11:40<br>|<br>12:10
+                    .time 13:10<br>|<br>13:40
+                    .time 14:00<br>|<br>14:30
+                    .time 14:45<br>|<br>15:15
+                    .time 15:30<br>|<br>16:00
+                    .time 16:15<br>|<br>16:45
+                    .time 17:10<br>|<br>17:50
                 .secTimetable_sections
                     each sessionInfo in speakers.findByRoom("901+902")
                         +session(sessionInfo)
