@@ -92,3 +92,59 @@ app.zou = (function  () {
         });
     })
 }())
+
+app.readmore = (function () {
+    var t = ["READ MORE","CLOSE"]
+    $('#secTimetable .speaker .readmore').on('click',function () {
+        if ($(this).hasClass("active")) {
+            $(this).text(t[0])                        
+        }else {
+            $(this).text(t[1])
+        }
+        $(this).prev().slideToggle();
+        $(this).toggleClass("active")
+    })
+    $('#secTimetable .session .readmore').on('click',function () {
+
+        if (!$(this).hasClass("active")) {
+            $("#secTimetable .secTimetable_sections .session p:not(.show)").slideUp()
+            $("#secTimetable .secTimetable_sections .speaker .detail").slideUp()
+            $("#secTimetable .secTimetable_sections .readmore").removeClass("active")
+            $("#secTimetable .secTimetable_sections .readmore").text(t[0])           
+        }
+
+        if ($(this).hasClass("active")) {
+            $(this).text(t[0])
+            $(this).prev().find("p:not(.show)").slideToggle();
+            $(this).toggleClass("active")
+        }else {
+            $(this).text(t[1])
+            $(this).prev().find("p:not(.show)").slideToggle();
+            $(this).toggleClass("active")
+        }
+    })
+}())
+
+app.syncHeight = (function () {
+    var target = [
+        $("#secTimetable .secTimetable_sections .session h2"),
+        $("#secTimetable .secTimetable_sections .session p.show"),
+    ]
+    $(window).on('load resize',function () {
+        for (var i = 0; i < target.length; i++) {
+            var maxHeight = 0;
+            target[i].removeAttr("style")
+            target[i].each(function(){ if ($(this).height() > maxHeight) { maxHeight = $(this).height(); } });
+            target[i].css('height',maxHeight)
+        }
+        var height = $("#secTimetable .secTimetable_sections .section").height()
+        $("#secTimetable .secTimetable_timeline .time").css('height',height)
+    })
+}())
+
+app.spToggle = (function  () {
+    $('#secTimetable .secTimetable_sp_contents .time').on('click',function () {
+        $(this).next().slideToggle();
+        $(this).toggleClass("active")
+    })
+}())

@@ -8,44 +8,12 @@
                 
             h2.secSponsor_heading
                 span Sponsors
-            .secSponsor_platinum
-                h3 Platinum
-                .contents
-                    .content
-                         a(href="http://www.lockon.co.jp/" target="_blank"): img(src="/assets/sponsors/lockon.png", alt="株式会社ロックオン")
 
-
-            .secSponsor_gold
-                h3 Gold
-                .contents
-                    .content
-                        a(href="https://splout.co.jp/" target="_blank"): img(src="/assets/sponsors/splout.png", alt="スプラウト株式会社")
-                    .content
-                        a(href="https://levtech.jp/" target="_blank"): img(src="/assets/sponsors/levtech.png", alt="レバレジーズ株式会社")
-                    .content
-                        a(href="https://cloudpack.jp/" target="_blank"): img(src="/assets/sponsors/cloudPack.png", alt="アイレット株式会社")
-                    .content
-                        a(href="https://www.firstserver.co.jp/" target="_blank"): img(src="/assets/sponsors/firstServer.png", alt="ファーストサーバ株式会社")
-         
-
-            .secSponsor_silver
-                h3 Silver
-                .contents
-                    .content
-                        a(href="https://www.mercari.com/jp/" target="_blank"): img(src="/assets/sponsors/mercari.png", alt="株式会社メルカリ")
-                    .content
-                        a(href="http://www.relation2012.com" target="_blank"): img(src="/assets/sponsors/relation.png", alt="株式会社リレーション")
-                    .content
-                        a(href="https://www.suzukishouten.co.jp/" target="_blank"): img(src="/assets/sponsors/suzukiShouten.png", alt="株式会社鈴木商店")
-                    .content
-                        a(href="https://10mado.jp" target="_blank"): img(src="/assets/sponsors/10mado.png", alt="合同会社テンマド")
-                    .content
-                        a(href="https://cookbiz.jp/" target="_blank"): img(src="/assets/sponsors/cookBiz.png", alt="クックビズ株式会社")
-                    .content
-                        a(href="https://www.phpexam.jp/" target="_blank"): img(src="/assets/sponsors/ecc_php.png", alt="一般社団法人PHP技術者認定機構")
-                    .content
-                        a(href="http://designegg.co.jp/" target="_blank"): img(src="/assets/sponsors/designEgg.png", alt="デザインエッグ株式会社")
-                    .content
-                        a(href="https://www.tech-vein.com/" target="_blank"): img(src="/assets/sponsors/techVein.png", alt="株式会社テックベイン")
-                    .content
-                        a(href="https://impath.co.jp/" target="_blank"): img(src="/assets/sponsors/impath.png", alt="株式会社インパス")
+            each _sponsor,key in locals.sponsors
+                -var className = "secSponsor_" + key
+                 div(class=className)
+                    h3 #{key}
+                    .contents
+                        for sponsor in _sponsor
+                            .content
+                                a(href=sponsor.url target="_blank"): img(src="/assets/sponsors/" + sponsor.img, alt=sponsor.name)
