@@ -90,5 +90,15 @@ module.exports = {
             "name" : "株式会社タンバリン",
             "img": "tambourine.png",
         },
+        {
+            "url": "https://www.tam-tam.co.jp/",
+            "name" : "株式会社TAM",
+            "img": "tam.png",
+        },
+        {
+            "url": "http://www.zealz.co.jp/",
+            "name" : "ジールズ株式会社",
+            "img": "zealz.png",
+        },
     ],
 }
