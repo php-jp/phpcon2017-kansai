@@ -9,9 +9,10 @@
             h2.secSponsor_heading
                 span Sponsors
 
-            each _sponsor,key in locals.sponsors
+            each _sponsor,key in sponsors
                 -var className = "secSponsor_" + key
                  div(class=className)
+                    p hoge
                     h3 #{key}
                     .contents
                         for sponsor in _sponsor
