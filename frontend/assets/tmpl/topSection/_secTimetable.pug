@@ -1,18 +1,18 @@
 mixin session(sessionInfo)
     .section
         .session.inner
-            .room.yellow
+            div(class="room"+" "+sessionInfo.room)
                 .name Room
                 .val=sessionInfo.track
             h2=sessionInfo.title
             .text
-                p.show=sessionInfo.summary01
-                p=sessionInfo.summary02
+                p.show !{sessionInfo.summary01}
+                p !{sessionInfo.summary02}
             .readmore READ MORE
         .speaker.inner
             .profile
                 .icon
-                    img(src="https://placehold.jp/50x50.png")
+                    img(src="/assets/speakers/" + sessionInfo.img)
                 .name
                     p=sessionInfo.name
             .detail
