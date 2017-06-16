@@ -125,6 +125,11 @@ app.readmore = (function () {
     })
 }())
 
+/**
+ * PC版のみ高さをそろえる。
+ * timetable Sections がcolumn 担っているので、
+ * index をベースに擬似 Row を生成していく。
+ */
 app.syncHeight = (function () {
     var target = [
         $("#secTimetable .secTimetable_sections .session h2"),
