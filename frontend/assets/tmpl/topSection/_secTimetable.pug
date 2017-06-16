@@ -65,19 +65,43 @@ mixin sessionEmpty()
                 .secTimetable_sp_contents
                     .content
                         .time
-                            h2 10:00 - 12:00
+                            h2 10:40 - 11:20
+                        .wrap
+                            each sessionInfo in speakers.findByTime("10:40-11:20")
+                                +session(sessionInfo)
+                    .content
+                        .time
+                            h2 11:40 - 12:10
+                        .wrap
+                            each sessionInfo in speakers.findByTime("11:40-12:10")
+                                +session(sessionInfo)
+                    .content
+                        .time
+                            h2 13:10 - 13:40
                         .wrap
                             each sessionInfo in speakers.findByTime("13:10-13:40")
                                 +session(sessionInfo)
                     .content
                         .time
-                            h2 10:00 - 12:00
+                            h2 14:00 - 14:30
                         .wrap
-                            each sessionInfo in speakers.findByTime("13:10-13:40")
+                            each sessionInfo in speakers.findByTime("14:00-14:30")
                                 +session(sessionInfo)
                     .content
                         .time
-                            h2 10:00 - 12:00
+                            h2 14:45 - 15:15
                         .wrap
-                            each sessionInfo in speakers.findByTime("13:10-13:40")
+                            each sessionInfo in speakers.findByTime("14:45-15:15")
+                                +session(sessionInfo)
+                    .content
+                        .time
+                            h2 15:30 - 16:00
+                        .wrap
+                            each sessionInfo in speakers.findByTime("15:30-16:00")
+                                +session(sessionInfo)
+                    .content
+                        .time
+                            h2 16:15 - 16:45
+                        .wrap
+                            each sessionInfo in speakers.findByTime("16:15-16:45")
                                 +session(sessionInfo)
