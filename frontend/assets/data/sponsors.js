@@ -28,6 +28,11 @@ module.exports = {
             "name" : "ファーストサーバ株式会社",
             "img": "firstServer.png",
         },
+        {
+            "url": "https://www.cpi.ad.jp/",
+            "name" : "株式会社KDDIウェブコミュニケーションズ",
+            "img": "kddi.png",
+        },
     ],
     silver: [
         {
@@ -79,6 +84,21 @@ module.exports = {
             "url": "https://automattic.com/",
             "name" : "Automattic.Inc",
             "img": "automattic.png",
+        },
+        {
+            "url": "https://www.tam-bourine.co.jp/",
+            "name" : "株式会社タンバリン",
+            "img": "tambourine.png",
+        },
+        {
+            "url": "https://www.tam-tam.co.jp/",
+            "name" : "株式会社TAM",
+            "img": "tam.png",
+        },
+        {
+            "url": "http://www.zealz.co.jp/",
+            "name" : "ジールズ株式会社",
+            "img": "zealz.png",
         },
     ],
 }

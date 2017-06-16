@@ -144,6 +144,14 @@
         }
       }
     }
+    .sectionEmpty{
+      min-height: 410px;
+      background-image: url("/assets/images/icon_sessionZou.svg");
+      background-repeat: no-repeat;
+      background-size: 50% 50%;
+      background-position: 40%;
+      opacity: .2;
+    }
     .speaker {
       background-color: $clr-lightGlay;
       .profile {
@@ -197,7 +205,7 @@
             }
             i {
               color: #fff;
-              vertical-align: sub;
+              vertical-align: -5px;
             }
           }
         }
