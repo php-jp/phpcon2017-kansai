@@ -17,12 +17,17 @@ mixin session(sessionInfo)
                     p=sessionInfo.name
             .detail
                 .text
-                    p=sessionInfo.profile
+                    p !{sessionInfo.profile}
                 .sns
-                    .twitter: a(href="#", title="title")
+                    .twitter: a(href=sessionInfo.twitter, title="title")
                         i.fa.fa-twitter
-                    .facebook: a(href="#", title="title")
+                    .facebook: a(href=sessionInfo.facebook, title="title")
                         i.fa.fa-facebook
+                    .gitHub: a(href=sessionInfo.github, title="title")
+                        i.fa.fa-github
+                    .other: a(href=sessionInfo.other, title="title")
+                        i.fa.fa-link
+
             .readmore READ MORE
 
 mixin sessionEmpty()
