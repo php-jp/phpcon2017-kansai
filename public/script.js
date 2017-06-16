@@ -97,30 +97,14 @@ app.readmore = (function () {
     var t = ["READ MORE","CLOSE"]
     $('#secTimetable .speaker .readmore').on('click',function () {
         if ($(this).hasClass("active")) {
-            $(this).text(t[0])                        
-        }else {
-            $(this).text(t[1])
-        }
-        $(this).prev().slideToggle();
-        $(this).toggleClass("active")
-    })
-    $('#secTimetable .session .readmore').on('click',function () {
-
-        if (!$(this).hasClass("active")) {
-            $("#secTimetable .secTimetable_sections .session p:not(.show)").slideUp()
-            $("#secTimetable .secTimetable_sections .speaker .detail").slideUp()
-            $("#secTimetable .secTimetable_sections .readmore").removeClass("active")
-            $("#secTimetable .secTimetable_sections .readmore").text(t[0])           
-        }
-
-        if ($(this).hasClass("active")) {
             $(this).text(t[0])
-            $(this).prev().find("p:not(.show)").slideToggle();
-            $(this).toggleClass("active")
+            $(this).parents(".section").find(".more").slideToggle();
+            $(this).removeClass("active")
         }else {
+            $("#secTimetable .speaker .readmore.active").click();
             $(this).text(t[1])
-            $(this).prev().find("p:not(.show)").slideToggle();
-            $(this).toggleClass("active")
+            $(this).parents(".section").find(".more").slideToggle();
+            $(this).addClass("active")
         }
     })
 }())
@@ -131,22 +115,63 @@ app.readmore = (function () {
  * index をベースに擬似 Row を生成していく。
  */
 app.syncHeight = (function () {
-    var target = [
-        $("#secTimetable .secTimetable_sections .session h2"),
-        $("#secTimetable .secTimetable_sections .session p.show"),
-    ]
     $(window).on('load resize',function () {
-        for (var i = 0; i < target.length; i++) {
-            var maxHeight = 0;
-            target[i].removeAttr("style")
-            target[i].each(function(){ if ($(this).height() > maxHeight) { maxHeight = $(this).height(); } });
-            target[i].css('height',maxHeight)
-        }
-        var height = $("#secTimetable .secTimetable_sections .section").height()
-        $("#secTimetable .secTimetable_timeline .time").css('height',height)
-        $("#secTimetable .secTimetable_sections .sectionEmpty").css('height',height)
+        dealEachRow(0)
+        dealEachRow(1)
+        dealEachRow(2)
+        dealEachRow(3)
+        dealEachRow(4)
+        dealEachRow(5)
+        dealEachRow(6)
+        dealEachRow(7)
     })
 }())
+
+var dealEachRow = function(i){
+
+    $targets = [
+        $("#secTimetable .secTimetable_sections:eq(0) .section:eq("+i+") h2"),
+        $("#secTimetable .secTimetable_sections:eq(1) .section:eq("+i+") h2"),
+        $("#secTimetable .secTimetable_sections:eq(2) .section:eq("+i+") h2"),
+    ];
+    var maxHeight = 0;
+    for(var index in $targets){
+        $targets[index].css("height","auto");
+        maxHeight = Math.max($targets[index].height(),maxHeight)
+    }
+    for(var index in $targets){
+        $targets[index].css("height",maxHeight);
+    }
+
+    $targets = [
+        $("#secTimetable .secTimetable_sections:eq(0) .section:eq("+i+") p.show"),
+        $("#secTimetable .secTimetable_sections:eq(1) .section:eq("+i+") p.show"),
+        $("#secTimetable .secTimetable_sections:eq(2) .section:eq("+i+") p.show"),
+    ];
+    var maxHeight = 0;
+    for(var index in $targets){
+        $targets[index].css("height","auto");
+        maxHeight = Math.max($targets[index].height(),maxHeight)
+    }
+    for(var index in $targets){
+        $targets[index].css("height",maxHeight);
+    }
+    $targets = [
+        $("#secTimetable .secTimetable_timeline .time:eq("+i+")"),
+        $("#secTimetable .secTimetable_sections:eq(0) .section:eq("+i+")"),
+        $("#secTimetable .secTimetable_sections:eq(1) .section:eq("+i+")"),
+        $("#secTimetable .secTimetable_sections:eq(2) .section:eq("+i+")"),
+    ];
+    var maxHeight = 0;
+    for(var index in $targets){
+        $targets[index].css("height","auto");
+        maxHeight = Math.max($targets[index].height(),maxHeight)
+    }
+    for(var index in $targets){
+        if($targets[index].hasClass("time") || $targets[index].hasClass("sectionEmpty"))
+        $targets[index].css("height",maxHeight);
+    }
+}
 
 app.spToggle = (function  () {
     $('#secTimetable .secTimetable_sp_contents .time').on('click',function () {

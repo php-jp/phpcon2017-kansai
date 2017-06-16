@@ -7,15 +7,14 @@ mixin session(sessionInfo)
             h2=sessionInfo.title
             .text
                 p.show !{sessionInfo.summary01}
-                p !{sessionInfo.summary02}
-            .readmore READ MORE
+                p.more !{sessionInfo.summary02}
         .speaker.inner
             .profile
                 .icon
                     img(src="/assets/speakers/" + sessionInfo.img)
                 .name
                     p=sessionInfo.name
-            .detail
+            .detail.more
                 .text
                     p !{sessionInfo.profile}
                 .sns
