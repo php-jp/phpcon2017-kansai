@@ -8,6 +8,7 @@ mixin session(sessionInfo)
             .text
                 p.show !{sessionInfo.summary01}
                 p.more !{sessionInfo.summary02}
+            .readmore READ MORE
         .speaker.inner
             .profile
                 .icon
@@ -18,14 +19,18 @@ mixin session(sessionInfo)
                 .text
                     p !{sessionInfo.profile}
                 .sns
-                    .twitter: a(href=sessionInfo.twitter, title="title")
-                        i.fa.fa-twitter
-                    .facebook: a(href=sessionInfo.facebook, title="title")
-                        i.fa.fa-facebook
-                    .gitHub: a(href=sessionInfo.github, title="title")
-                        i.fa.fa-github
-                    .other: a(href=sessionInfo.other, title="title")
-                        i.fa.fa-link
+                    if sessionInfo.twitter
+                        .twitter: a(href=sessionInfo.twitter, title="title")
+                            i.fa.fa-twitter
+                    if sessionInfo.facebook
+                        .facebook: a(href=sessionInfo.facebook, title="title")
+                            i.fa.fa-facebook
+                    if sessionInfo.github
+                        .gitHub: a(href=sessionInfo.github, title="title")
+                            i.fa.fa-github
+                    if sessionInfo.other
+                        .other: a(href=sessionInfo.other, title="title")
+                            i.fa.fa-link
 
             .readmore READ MORE
 
