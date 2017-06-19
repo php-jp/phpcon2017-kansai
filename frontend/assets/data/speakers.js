@@ -116,7 +116,7 @@ var data = [
         facebook: "",
         twitter: "",
         github: "",
-        other: "http://www.kphpug.jp/",
+        other: "",
         img: "speaker_default.png",
     },
     {
@@ -147,7 +147,7 @@ var data = [
         twitter: "https://twitter.com/hiro_y",
         qiita: "",
         github: "",
-        other: "https://10mado.jp",
+        other: "",
         img: "speaker_yamaoka.png",
     },
     {

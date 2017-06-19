@@ -134,6 +134,7 @@ $(function(){
             dealEachRow(5)
             dealEachRow(6)
             dealEachRow(7)
+            dealEachRow(8)
         })
     }())
 

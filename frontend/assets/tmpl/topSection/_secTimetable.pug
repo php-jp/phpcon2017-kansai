@@ -8,7 +8,10 @@ mixin session(sessionInfo)
             .text
                 p.show !{sessionInfo.summary01}
                 p.more !{sessionInfo.summary02}
-            .readmore READ MORE
+            if sessionInfo.summary02
+                .readmore READ MORE
+            else
+                div(style="height:18px")
         .speaker.inner
             .profile
                 .icon
@@ -44,6 +47,7 @@ mixin sessionEmpty()
                 span Time Table
             .pc
                 .secTimetable_timeline
+                    .time 10:30<br>|<br>10:40
                     .time 10:40<br>|<br>11:20
                     .time 11:40<br>|<br>12:10
                     .time 13:10<br>|<br>13:40
@@ -53,15 +57,40 @@ mixin sessionEmpty()
                     .time 16:15<br>|<br>16:45
                     .time 17:10<br>|<br>17:50
                 .secTimetable_sections
+                    .section
+                        .session.inner
+                            div(class="room" + " yellow" )
+                                .name Room
+                                .val 901+902
+                            h2 オープニング
+                            .text
+                                p.show PHPカンファレンス関西 2017 開演！
+                                p.more
                     each sessionInfo in speakers.findByRoom("901+902")
                         +session(sessionInfo)
-                    +sessionEmpty()
+                    .section
+                        .session.inner
+                            div(class="room" + " yellow" )
+                                .name Room
+                                .val 901+902
+                            h2 ライトニングトーク
+                            .text
+                                p.show PHPカンファレンス関西 2017 の締めに珠玉のLTを数本お送りします！
+                                p.more
+                        .speaker.inner
+                            .profile
+                                .icon
+                                    img(src="/assets/speakers/speaker_default.png")
+                                .name
+                                    p.show LT Speakers
                 .secTimetable_sections
+                    +sessionEmpty()
                     +sessionEmpty()
                     each sessionInfo in speakers.findByRoom("905")
                         +session(sessionInfo)
                     +sessionEmpty()
                 .secTimetable_sections
+                    +sessionEmpty()
                     +sessionEmpty()
                     each sessionInfo in speakers.findByRoom("907")
                         +session(sessionInfo)
