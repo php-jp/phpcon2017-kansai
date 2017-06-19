@@ -41,9 +41,7 @@
     transform: translateY(-50%);
     letter-spacing: -.4em;
     @include mq(){
-      right: 150px;
-      //right: 100px;
-      //ヘッダーメニューが参加登録になったら100pxに変える
+      right: 104px;
     }
     li {
       display: inline-block;
