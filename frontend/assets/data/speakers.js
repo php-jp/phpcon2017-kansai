@@ -142,7 +142,7 @@ var data = [
         title: "Slim Frameworkで始めるPHPのmiddleware",
         summary01: "Slim Frameworkを例に、PHPのフレームワーク（Laravel、Zend Expressiveなども）で最近使われるようになってきたmiddlewareの仕組みや考え方についてお話しします。",
         summary02: "あわせて、組み合わせて使うことになるDIコンテナについても何が便利になるのかを解説します。",
-        profile: "半年だけ工事屋やってたPHPer６年生。最近はコンテナでの開発・運用に傾倒してる。",
+        profile: "合同会社テンマドの代表社員・エンジニア。自社プロダクトを開発しつつ、複数の会社で社外CTOやアドバイザーを務めています",
         facebook: "https://www.facebook.com/hiroy",
         twitter: "https://twitter.com/hiro_y",
         qiita: "",
