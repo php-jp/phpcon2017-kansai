@@ -206,6 +206,9 @@
             i {
               color: #fff;
               vertical-align: -5px;
+              @include mq{
+                vertical-align: -1px;
+              }
             }
           }
         }

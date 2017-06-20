@@ -96,7 +96,7 @@ var data = [
         name:"岸田 健一郎",
         title: "Robo を使ったモダンなタスク管理",
         summary01: "最近ではGradleやGulpなどタスクランナーは、よりコードに近い形で定義できるツールが使われてきています。<br>PHPではJenkinsなどとの連携の容易さから、Phingが使われることが多かったと思いますが、XMLでの定義は容易ではありませんでした。",
-        summary02: "RoboはPHPのコードでタスクを定義できるモダンなタスクランナーで、私たちPHPerにも読みやすく理解しやすい構造をしています。<br><br>このセッションではRoboを使ったタスクの定義を、動作デモを交えて紹介したいと思います。<br><a href='http://robo.li/' target=_blank>http://robo.li/</a>",
+        summary02: "RoboはPHPのコードでタスクを定義できるモダンなタスクランナーで、私たちPHPerにも読みやすく理解しやすい構造をしています。<br><br>このセッションではRoboを使ったタスクの定義を、動作デモを交えて紹介したいと思います。<br><a class='textLink' href='http://robo.li/' target=_blank>http://robo.li/</a>",
         profile: "株式会社永和システムマネジメント所属。",
         facebook: "",
         twitter: "https://twitter.com/sizuhiko",
