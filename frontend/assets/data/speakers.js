@@ -162,7 +162,7 @@ var data = [
         facebook: "",
         twitter: "",
         github: "",
-        other: "http://www.hasegawa-tomoki.com/",
+        other: "",
         img: "speaker_default.png",
     },
     {
