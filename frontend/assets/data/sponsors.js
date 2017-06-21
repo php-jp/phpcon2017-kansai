@@ -33,6 +33,11 @@ module.exports = {
             "name" : "株式会社KDDIウェブコミュニケーションズ",
             "img": "kddi.png",
         },
+        {
+            "url": "http://baserfoundation.org/",
+            "name" : "NPO法人ベーサー・ファウンデーション",
+            "img": "baserFoundation.png",
+        },
     ],
     silver: [
         {
