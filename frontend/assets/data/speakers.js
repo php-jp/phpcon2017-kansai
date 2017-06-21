@@ -1,6 +1,6 @@
 var data = [
     {
-        track:"901+902",
+        track:"C01+C02",
         room:"yellow",
         time: "10:40-11:20",
         name:"",
@@ -15,7 +15,7 @@ var data = [
         img: "speaker_default.png",
     },
     {
-        track:"901+902",
+        track:"C01+C02",
         room:"yellow",
         time: "11:40-12:10",
         name:"後藤 知宏",
@@ -30,7 +30,7 @@ var data = [
         img: "speaker_goto.jpeg",
     },
     {
-        track:"905",
+        track:"C05",
         room:"red",
         time: "11:40-12:10",
         name:"たきぐち(@atakig)",
@@ -45,7 +45,7 @@ var data = [
         img: "speaker_takiguchi.jpg",
     },
     {
-        track: "907",
+        track: "C07",
         room: "blue",
         time: "11:40-12:10",
         name: "松藤 秀治",
@@ -60,7 +60,7 @@ var data = [
         img: "speaker_matsufuji.png"
     },
     {
-        track:"901+902",
+        track:"C01+C02",
         room:"yellow",
         time: "13:10-13:40",
         name:"PHP Users",
@@ -75,7 +75,7 @@ var data = [
         img: "speaker_default.png",
     },
     {
-        track:"905",
+        track:"C05",
         room:"red",
         time: "13:10-13:40",
         name:"長谷川 智希",
@@ -90,7 +90,7 @@ var data = [
         img: "speaker_hasegawa.jpg",
     },
     {
-        track:"907",
+        track:"C07",
         room:"blue",
         time: "13:10-13:40",
         name:"岸田 健一郎",
@@ -105,7 +105,7 @@ var data = [
         img: "speaker_kishida.jpg",
     },
     {
-        track:"901+902",
+        track:"C01+C02",
         room:"yellow",
         time: "14:00-14:30",
         name:"PHP User Group",
@@ -120,7 +120,7 @@ var data = [
         img: "speaker_default.png",
     },
     {
-        track:"905",
+        track:"C05",
         room:"red",
         time: "14:00-14:30",
         name:"竹澤 有貴",
@@ -135,7 +135,7 @@ var data = [
         img: "speaker_takezawa.jpeg",
     },
     {
-        track:"907",
+        track:"C07",
         room:"blue",
         time: "14:00-14:30",
         name:"山岡広幸",
@@ -151,7 +151,7 @@ var data = [
         img: "speaker_yamaoka.png",
     },
     {
-        track:"901+902",
+        track:"C01+C02",
         room:"yellow",
         time: "14:45-15:15",
         name:"TBA",
@@ -166,7 +166,7 @@ var data = [
         img: "speaker_default.png",
     },
     {
-        track:"905",
+        track:"C05",
         room:"red",
         time: "14:45-15:15",
         name:"高橋 慎一",
@@ -181,7 +181,7 @@ var data = [
         img: "speaker_takahashi.png",
     },
     {
-        track:"907",
+        track:"C07",
         room:"blue",
         time: "14:45-15:15",
         name:"坂本 剛彦",
@@ -196,7 +196,7 @@ var data = [
         img: "speaker_sakamoto.jpg",
     },
     {
-        track:"901+902",
+        track:"C01+C02",
         room:"yellow",
         time: "15:30-16:00",
         name:"遠藤 良",
@@ -204,14 +204,14 @@ var data = [
         summary01: "PHP開発の現場で１年半。<br>様々なストレスに立ち向かい辿りついたWindowsでの開発環境をXAMMP,Vagrant,Dockerなどのツールを比較してご紹介したいと思います。",
         summary02: "ローカル環境でのページ遷移に10秒とか待っている方、その環境どうにかなりますよ！",
         profile: "株式会社ロックオン EC-CUBEの中の人。チームの大半がMacに乗り換えるなか、愛を持ってWindowsを使っています。",
-        facebook: "https://www.facebook.com/endo.ryo.1984",
+        facebook: "https://www.facebook.com/endo.ryo.1C84",
         twitter: "",
         github: "https://github.com/ryo-endo",
         other: "",
         img: "speaker_endo.jpg",
     },
     {
-        track:"905",
+        track:"C05",
         room:"red",
         time: "15:30-16:00",
         name:"新倉 涼太",
@@ -226,7 +226,7 @@ var data = [
         img: "speaker_niikura.png",
     },
     {
-        track:"907",
+        track:"C07",
         room:"blue",
         time: "15:30-16:00",
         name:"下地 功一",
@@ -241,7 +241,7 @@ var data = [
         img: "speaker_simojichi.png",
     },
     {
-        track:"901+902",
+        track:"C01+C02",
         room:"yellow",
         time: "16:15-16:45",
         name:"角田 一平",
@@ -256,7 +256,7 @@ var data = [
         img: "speaker_sumida.png",
     },
     {
-        track:"905",
+        track:"C05",
         room:"red",
         time: "16:15-16:45",
         name:"渡辺 一宏",
@@ -264,14 +264,14 @@ var data = [
         summary01: "昨年辺りから高い注目を集めているサーバーレスアーキテクチャ。しかし、サーバーレスの代表格、AWS Lambdaではnodejs/Python/JavaのみでPHPを公式にはサポートしていません...。",
         summary02: "本セッションでは、PHPでAzure Functionsを利用する方法を中心に、Azure Functionsの概要、実際の開発、単体テスト、デプロイの方法など様々なTipsをご紹介します。",
         profile: "合同会社decr代表社員。インフラ構築・運用、Webシステムの開発、iOSアプリ開発などいろいろやってます。",
-        facebook: "https://www.facebook.com/kaz29",
-        twitter: "https://twitter.com/kaz_29",
+        facebook: "https://www.facebook.com/kaz2C",
+        twitter: "https://twitter.com/kaz_2C",
         github: "",
         other: "http://decr.jp/",
         img: "speaker_watanabe.jpg",
     },
     {
-        track:"907",
+        track:"C07",
         room:"blue",
         time: "16:15-16:45",
         name:"二神 暢彦",
