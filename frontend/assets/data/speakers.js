@@ -1,6 +1,6 @@
 var data = [
     {
-        track:"C01+C02",
+        track:"901+902",
         room:"yellow",
         time: "10:40-11:20",
         name:"",
@@ -204,7 +204,7 @@ var data = [
         summary01: "PHP開発の現場で１年半。<br>様々なストレスに立ち向かい辿りついたWindowsでの開発環境をXAMMP,Vagrant,Dockerなどのツールを比較してご紹介したいと思います。",
         summary02: "ローカル環境でのページ遷移に10秒とか待っている方、その環境どうにかなりますよ！",
         profile: "株式会社ロックオン EC-CUBEの中の人。チームの大半がMacに乗り換えるなか、愛を持ってWindowsを使っています。",
-        facebook: "https://www.facebook.com/endo.ryo.1C84",
+        facebook: "https://www.facebook.com/endo.ryo.1984",
         twitter: "",
         github: "https://github.com/ryo-endo",
         other: "",
@@ -264,8 +264,8 @@ var data = [
         summary01: "昨年辺りから高い注目を集めているサーバーレスアーキテクチャ。しかし、サーバーレスの代表格、AWS Lambdaではnodejs/Python/JavaのみでPHPを公式にはサポートしていません...。",
         summary02: "本セッションでは、PHPでAzure Functionsを利用する方法を中心に、Azure Functionsの概要、実際の開発、単体テスト、デプロイの方法など様々なTipsをご紹介します。",
         profile: "合同会社decr代表社員。インフラ構築・運用、Webシステムの開発、iOSアプリ開発などいろいろやってます。",
-        facebook: "https://www.facebook.com/kaz2C",
-        twitter: "https://twitter.com/kaz_2C",
+        facebook: "https://www.facebook.com/kaz29",
+        twitter: "https://twitter.com/kaz_29",
         github: "",
         other: "http://decr.jp/",
         img: "speaker_watanabe.jpg",
@@ -298,7 +298,7 @@ class Sessions{
         let rtn = [];
         for(var session of this.data) {
             if (session.track === room) {
-                    rtn.push(session)
+                rtn.push(session)
             }
         }
         return rtn;
