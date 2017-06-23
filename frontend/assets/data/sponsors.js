@@ -105,6 +105,11 @@ module.exports = {
             "name" : "ジールズ株式会社",
             "img": "zealz.png",
         },
+        {
+            "url": "http://kotoba-lab.jp/",
+            "name" : "株式会社ことば研究所",
+            "img": "kotobakenkyujo.png",
+        },
     ],
     media: [
         {
