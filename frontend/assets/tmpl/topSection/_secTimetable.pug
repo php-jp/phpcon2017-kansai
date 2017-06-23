@@ -61,18 +61,18 @@ mixin sessionEmpty()
                         .session.inner
                             div(class="room" + " yellow" )
                                 .name Room
-                                .val 901+902
+                                .val C01+C02
                             h2 オープニング
                             .text
                                 p.show PHPカンファレンス関西 2017 開演！
                                 p.more
-                    each sessionInfo in speakers.findByRoom("901+902")
+                    each sessionInfo in speakers.findByRoom("C01+C02")
                         +session(sessionInfo)
                     .section
                         .session.inner
                             div(class="room" + " yellow" )
                                 .name Room
-                                .val 901+902
+                                .val C01+C02
                             h2 ライトニングトーク
                             .text
                                 p.show PHPカンファレンス関西 2017 の締めに珠玉のLTを数本お送りします！
@@ -86,13 +86,13 @@ mixin sessionEmpty()
                 .secTimetable_sections
                     +sessionEmpty()
                     +sessionEmpty()
-                    each sessionInfo in speakers.findByRoom("905")
+                    each sessionInfo in speakers.findByRoom("C05")
                         +session(sessionInfo)
                     +sessionEmpty()
                 .secTimetable_sections
                     +sessionEmpty()
                     +sessionEmpty()
-                    each sessionInfo in speakers.findByRoom("907")
+                    each sessionInfo in speakers.findByRoom("C07")
                         +session(sessionInfo)
                     +sessionEmpty()
             .sp
