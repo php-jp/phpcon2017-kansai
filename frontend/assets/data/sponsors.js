@@ -106,4 +106,16 @@ module.exports = {
             "img": "zealz.png",
         },
     ],
+    media: [
+        {
+            "url": "https://honto.jp/store/detail_1570065_14HB320.html",
+            "name" : "MARUZEN＆ジュンク堂書店　梅田店",
+            "img": "maruzen-junkudo.png",
+        },
+        {
+            "url": "https://chatbox-inc.com/",
+            "name" : "株式会社chatbox",
+            "img": "chatbox.png",
+        },
+    ],
 }

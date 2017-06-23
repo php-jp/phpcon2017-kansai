@@ -15,14 +15,14 @@ var data = [
         img: "speaker_default.png",
     },
     {
-        track:"901+902",
+        track:"C01+C02",
         room:"yellow",
         time: "11:40-12:10",
         name:"後藤 知宏",
         title: "総集編 - 最近のPHPがわからない人のための基本文法おさらい講座",
         summary01: "PHP5.3 以降PHPはめまぐるしい変化を遂げ様々な新機能が追加されてきました。新しく追加された機能の一つ一つは、便利で有用なものの、まだ使った事がない、よくわからないという人も多いのでは無いでしょうか？",
         summary02: "Composer ってなんだろう、というところから、PHP7.1最新の新機能まで、今現場で使えるPHPの新機能をおさらいしていきましょう。",
-        profile: "半年だけ工事屋やってたPHPer６年生。最近はコンテナでの開発・運用に傾倒してる。",
+        profile: "がんばります！",
         facebook: "",
         twitter: "",
         github: "",
@@ -30,7 +30,7 @@ var data = [
         img: "speaker_goto.jpeg",
     },
     {
-        track:"905",
+        track:"C05",
         room:"red",
         time: "11:40-12:10",
         name:"たきぐち(@atakig)",
@@ -45,7 +45,7 @@ var data = [
         img: "speaker_takiguchi.jpg",
     },
     {
-        track: "907",
+        track: "C07",
         room: "blue",
         time: "11:40-12:10",
         name: "松藤 秀治",
@@ -60,7 +60,7 @@ var data = [
         img: "speaker_matsufuji.png"
     },
     {
-        track:"901+902",
+        track:"C01+C02",
         room:"yellow",
         time: "13:10-13:40",
         name:"PHP Users",
@@ -75,7 +75,7 @@ var data = [
         img: "speaker_default.png",
     },
     {
-        track:"905",
+        track:"C05",
         room:"red",
         time: "13:10-13:40",
         name:"長谷川 智希",
@@ -84,13 +84,13 @@ var data = [
         summary02: "含まれるテーマ<br>・ハッシュとは何か<br>・ハッシュの脆弱性とは何か<br>・Googleが発見したSHA-1脆弱性<br>・ハッシュへの攻撃<br>・ハッシュに似た概念との違い - 暗号, エンコード, 難読化<br>・PHPでのハッシュの使い方<br>・言語へのDoS攻撃 hashdos",
         profile: "デジタルサーカス株式会社 副団長CTO。趣味はCakePHP、カンファレンス運営、カートレース、電子工作。好きな飲み物はビール。",
         facebook: "",
-        twitter: "",
+        twitter: "https://twitter.com/tomzoh",
         github: "",
         other: "http://www.hasegawa-tomoki.com/",
         img: "speaker_hasegawa.jpg",
     },
     {
-        track:"907",
+        track:"C07",
         room:"blue",
         time: "13:10-13:40",
         name:"岸田 健一郎",
@@ -105,7 +105,7 @@ var data = [
         img: "speaker_kishida.jpg",
     },
     {
-        track:"901+902",
+        track:"C01+C02",
         room:"yellow",
         time: "14:00-14:30",
         name:"PHP User Group",
@@ -120,7 +120,7 @@ var data = [
         img: "speaker_default.png",
     },
     {
-        track:"905",
+        track:"C05",
         room:"red",
         time: "14:00-14:30",
         name:"竹澤 有貴",
@@ -135,23 +135,23 @@ var data = [
         img: "speaker_takezawa.jpeg",
     },
     {
-        track:"907",
+        track:"C07",
         room:"blue",
         time: "14:00-14:30",
         name:"山岡広幸",
         title: "Slim Frameworkで始めるPHPのmiddleware",
         summary01: "Slim Frameworkを例に、PHPのフレームワーク（Laravel、Zend Expressiveなども）で最近使われるようになってきたmiddlewareの仕組みや考え方についてお話しします。",
         summary02: "あわせて、組み合わせて使うことになるDIコンテナについても何が便利になるのかを解説します。",
-        profile: "半年だけ工事屋やってたPHPer６年生。最近はコンテナでの開発・運用に傾倒してる。",
+        profile: "合同会社テンマドの代表社員・エンジニア。自社プロダクトを開発しつつ、複数の会社で社外CTOやアドバイザーを務めています",
         facebook: "https://www.facebook.com/hiroy",
         twitter: "https://twitter.com/hiro_y",
         qiita: "",
         github: "",
-        other: "",
+        other: "https://10mado.jp",
         img: "speaker_yamaoka.png",
     },
     {
-        track:"901+902",
+        track:"C01+C02",
         room:"yellow",
         time: "14:45-15:15",
         name:"TBA",
@@ -162,11 +162,11 @@ var data = [
         facebook: "",
         twitter: "",
         github: "",
-        other: "http://www.hasegawa-tomoki.com/",
+        other: "",
         img: "speaker_default.png",
     },
     {
-        track:"905",
+        track:"C05",
         room:"red",
         time: "14:45-15:15",
         name:"高橋 慎一",
@@ -181,7 +181,7 @@ var data = [
         img: "speaker_takahashi.png",
     },
     {
-        track:"907",
+        track:"C07",
         room:"blue",
         time: "14:45-15:15",
         name:"坂本 剛彦",
@@ -196,7 +196,7 @@ var data = [
         img: "speaker_sakamoto.jpg",
     },
     {
-        track:"901+902",
+        track:"C01+C02",
         room:"yellow",
         time: "15:30-16:00",
         name:"遠藤 良",
@@ -211,7 +211,7 @@ var data = [
         img: "speaker_endo.jpg",
     },
     {
-        track:"905",
+        track:"C05",
         room:"red",
         time: "15:30-16:00",
         name:"新倉 涼太",
@@ -226,7 +226,7 @@ var data = [
         img: "speaker_niikura.png",
     },
     {
-        track:"907",
+        track:"C07",
         room:"blue",
         time: "15:30-16:00",
         name:"下地 功一",
@@ -241,7 +241,7 @@ var data = [
         img: "speaker_simojichi.png",
     },
     {
-        track:"901+902",
+        track:"C01+C02",
         room:"yellow",
         time: "16:15-16:45",
         name:"角田 一平",
@@ -250,13 +250,13 @@ var data = [
         summary02: "",
         profile: "Web制作会社を経て、現在はフリーランスエンジニアとして2016年7月から活動中。CoderDojo枚方代表。",
         facebook: "https://www.facebook.com/ippeisumida",
-        twitter: "",
-        github: "https://github.com/ippey_s",
+        twitter: "https://twitter.com/ippey_s",
+        github: "",
         other: "",
         img: "speaker_sumida.png",
     },
     {
-        track:"905",
+        track:"C05",
         room:"red",
         time: "16:15-16:45",
         name:"渡辺 一宏",
@@ -271,7 +271,7 @@ var data = [
         img: "speaker_watanabe.jpg",
     },
     {
-        track:"907",
+        track:"C07",
         room:"blue",
         time: "16:15-16:45",
         name:"二神 暢彦",
@@ -298,7 +298,7 @@ class Sessions{
         let rtn = [];
         for(var session of this.data) {
             if (session.track === room) {
-                    rtn.push(session)
+                rtn.push(session)
             }
         }
         return rtn;

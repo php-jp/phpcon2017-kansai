@@ -86,6 +86,15 @@
     }
   }
   .secSponsor_silver{
+    margin-bottom: 30px;
+    .content {
+      width: calc(25% - 20px);
+      @include mq() {
+        width: calc(33.3333% - 10px);
+      }
+    }
+  }
+  .secSponsor_media{
     .content {
       width: calc(25% - 20px);
       @include mq() {
