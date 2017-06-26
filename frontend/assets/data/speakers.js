@@ -1,6 +1,6 @@
 var data = [
     {
-        track:"901+902",
+        track:"C01+C02",
         room:"yellow",
         time: "10:40-11:20",
         name:"",
