@@ -17,7 +17,7 @@ module.exports = [
     {
         name: "松尾浩志",
         url: "https://facebook.com/matsuoshi",
-        img: "staff_default.png",
+        img: "staff_matsuo.jpg",
     },
     {
         name: "tanakahisateru",
@@ -38,11 +38,11 @@ module.exports = [
         url: "https://www.facebook.com/masaya.arimoto",
         img: "staff_arimoto.jpg",
     },
-    // {
-    //     name: "原田さん",
-    //     url: "",
-    //     img: "staff_default.png",
-    // },
+    {
+        name: "Yasuo Harada",
+        url: "",
+        img: "staff_harada.jpeg",
+    },
     {
         name: "yugo",
         url: "https://twitter.com/yugo_tak",
@@ -63,10 +63,11 @@ module.exports = [
     //     url: "",
     //     img: "staff_default.png",
     // },
-    // {
-    //     name: "大門さん",
-    //     url: "",
-    //     img: "staff_default.png",
+    {
+        name: "sigesagba",
+        url: "",
+        img: "staff_sigesagba.jpg",
+    },
     // },
     // {
     //     name: "新原さん",
@@ -78,11 +79,11 @@ module.exports = [
         url: "https://www.facebook.com/p526CA",
         img: "staff_dorii.jpg",
     },
-    // {
-    //     name: "海恵",
-    //     url: "",
-    //     img: "staff_default.png",
-    // },
+    {
+        name: "kaie",
+        url: "https://www.facebook.com/kaie.okayama",
+        img: "staff_kaie.png",
+    },
     {
         name: "Yasui Risa",
         url: "https://www.facebook.com/yausi05821",
@@ -93,5 +94,9 @@ module.exports = [
     //     url: "",
     //     img: "staff_default.png",
     // },
-
+    {
+        name: "ちげ",
+        url: "https://twitter.com/technictige",
+        img: "staff_chige.jpg",
+    },
 ]
