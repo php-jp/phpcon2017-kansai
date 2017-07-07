@@ -6,8 +6,15 @@
             .secStaff_staffs
                 each staff in locals.staffs
                     .secStaff_staff
-                        a(href=staff.url)
+                        if staff.url
+                            a(href=staff.url, target="_blank")
+                                .secStaff_icon
+                                    img(src="/assets/staffs/" + staff.img)
+                                .secStaff_name
+                                    span #{staff.name}
+                        else
                             .secStaff_icon
-                                 img(src="/assets/staffs/" + staff.img)
+                                img(src="/assets/staffs/" + staff.img)
                             .secStaff_name
                                 span #{staff.name}
+
