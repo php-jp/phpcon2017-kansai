@@ -29,10 +29,10 @@ mixin session(sessionInfo)
                         .facebook: a(href=sessionInfo.facebook, title="title", target="_blank")
                             i.fa.fa-facebook
                     if sessionInfo.github
-                        .gitHub: a(href=sessionInfo.github, title="title", target="_blank")
+                        .gitHub: a(href=sessionInfo.github, title="title")
                             i.fa.fa-github
                     if sessionInfo.other
-                        .other: a(href=sessionInfo.other, title="title", target="_blank")
+                        .other: a(href=sessionInfo.other, title="title")
                             i.fa.fa-link
 
             .readmore READ MORE
@@ -99,6 +99,19 @@ mixin sessionEmpty()
                 .secTimetable_sp_contents
                     .content
                         .time
+                            h2 10:30 - 10:40
+                        .wrap
+                            .section
+                                .session.inner
+                                    div(class="room" + " yellow" )
+                                        .name Room
+                                        .val C01+C02
+                                    h2 オープニング
+                                    .text
+                                        p.show PHPカンファレンス関西 2017 開演！
+                                        p.more
+                    .content
+                        .time
                             h2 10:40 - 11:20
                         .wrap
                             each sessionInfo in speakers.findByTime("10:40-11:20")
@@ -139,3 +152,22 @@ mixin sessionEmpty()
                         .wrap
                             each sessionInfo in speakers.findByTime("16:15-16:45")
                                 +session(sessionInfo)
+                    .content
+                        .time
+                            h2 17:10 - 17:50
+                        .wrap
+                            .section
+                                .session.inner
+                                    div(class="room" + " yellow" )
+                                        .name Room
+                                        .val C01+C02
+                                    h2 ライトニングトーク
+                                    .text
+                                        p.show PHPカンファレンス関西 2017 の締めに珠玉のLTを数本お送りします！
+                                        p.more
+                                .speaker.inner
+                                    .profile
+                                        .icon
+                                            img(src="/assets/speakers/speaker_default.png")
+                                        .name
+                                            p.show LT Speakers
