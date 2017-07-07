@@ -38,6 +38,10 @@
     text-align: center;
     vertical-align: top;
     margin-bottom: 20px;
+    @include mq {
+      width: 80px;
+      margin-bottom: 10px;
+    }
   }
   .secStaff_icon {
     width: 62px;
