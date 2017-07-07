@@ -23,16 +23,16 @@ mixin session(sessionInfo)
                     p !{sessionInfo.profile}
                 .sns
                     if sessionInfo.twitter
-                        .twitter: a(href=sessionInfo.twitter, title="title")
+                        .twitter: a(href=sessionInfo.twitter, title="title", target="_blank")
                             i.fa.fa-twitter
                     if sessionInfo.facebook
-                        .facebook: a(href=sessionInfo.facebook, title="title")
+                        .facebook: a(href=sessionInfo.facebook, title="title", target="_blank")
                             i.fa.fa-facebook
                     if sessionInfo.github
-                        .gitHub: a(href=sessionInfo.github, title="title")
+                        .gitHub: a(href=sessionInfo.github, title="title", target="_blank")
                             i.fa.fa-github
                     if sessionInfo.other
-                        .other: a(href=sessionInfo.other, title="title")
+                        .other: a(href=sessionInfo.other, title="title", target="_blank")
                             i.fa.fa-link
 
             .readmore READ MORE
