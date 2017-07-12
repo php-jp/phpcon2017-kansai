@@ -76,13 +76,12 @@
     border-right: 10px solid transparent;
     position: absolute;
     right: -20px;
-    //bottom: 20%;
-    //フォーム公開時↓に変更
     bottom: 30%;
 
   }
   span {
     display: inline-block;
+    line-height: 1.4;
   }
   .lt_link {
     display: inline-block;
@@ -93,12 +92,10 @@
 #lt_notice.active {
   position: absolute;
   bottom: initial;
-  top: -40px;
-  //フォーム公開時↓に変更
-  //top: -60px;
-  //@include mq {
-  //  top: -50px;
-  //}
+  top: -65px;
+  @include mq {
+    top: -55px;
+  }
 }
 
 
