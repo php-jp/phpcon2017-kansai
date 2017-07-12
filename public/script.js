@@ -94,6 +94,23 @@ $(function(){
         })
     }())
 
+    app.zou = (function  () {
+        $(window).on("load resize",function  () {
+            var position = $("#footer").position();
+            var top = Math.floor(position.top);
+            $(window).on("scroll", function() {
+                var scrollPosition = $(window).height() + $(window).scrollTop();
+                if ((top - scrollPosition) / top < 0) {
+                    if (!$("#lt_notice").hasClass('active')) {
+                        $("#lt_notice").addClass('active')
+                    }
+                }else {
+                    $("#lt_notice").removeClass('active')
+                }
+            });
+        })
+    }())
+
     app.readmore = (function () {
         var t = ["READ MORE","CLOSE"]
         $('#secTimetable .readmore').on('click',function () {
