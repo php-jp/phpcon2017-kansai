@@ -41,7 +41,7 @@ module.exports = [
     {
         name: "Yasuo Harada",
         url: "",
-        img: "staff_harada.jpeg",
+        img: "staff_harada.jpg",
     },
     {
         name: "yugo",
@@ -51,7 +51,7 @@ module.exports = [
     {
         name: "たきぐち(@atakig)",
         url: "https://twitter.com/atakig",
-        img: "staff_takiguchi.jpeg",
+        img: "staff_takiguchi.jpg",
     },
     // {
     //     name: "佐田さん",
@@ -98,5 +98,90 @@ module.exports = [
         name: "ちげ",
         url: "https://twitter.com/technictige",
         img: "staff_chige.jpg",
+    },
+    {
+        name: "44",
+        url: "https://twitter.com/44x1carbon",
+        img: "staff_yamasaki.jpg",
+    },
+    {
+        name: "HackMan",
+        url: "https://twitter.com/mogus_workshop",
+        img: "staff_haku.jpg",
+    },
+    {
+        name: "雫玉子",
+        url: "https://github.com/sizukutamago",
+        img: "staff_tanaka_s.jpg",
+    },
+    {
+        name: "そーた",
+        url: "",
+        img: "staff_default.png",
+    },
+    {
+        name: "中村樹仁",
+        url: "",
+        img: "staff_default.png",
+    },
+    {
+        name: "金子凌雅",
+        url: "https://twitter.com/37x9",
+        img: "staff_kaneko.jpg",
+    },
+    {
+        name: "田中陸斗",
+        url: "",
+        img: "staff_default.png",
+    },
+    {
+        name: "むらとお",
+        url: "",
+        img: "staff_murakami.jpg",
+    },
+    {
+        name: "たかし",
+        url: "https://twitter.com/takashioic",
+        img: "staff_takashi.jpg",
+    },
+    {
+        name: "かずきち",
+        url: "",
+        img: "staff_tobita.jpg",
+    },
+    {
+        name: "竹川翔悟",
+        url: "",
+        img: "staff_default.png",
+    },
+    {
+        name: "山腰知典",
+        url: "https://twitter.com/ymgn_ll",
+        img: "staff_yamagoshi.jpg",
+    },
+    {
+        name: "岡嶋秀記",
+        url: "https://www.facebook.com/hideki.okajima.758",
+        img: "staff_okajima.jpg",
+    },
+    {
+        name: "滝口知佳",
+        url: "https://www.facebook.com/chika.muramatsu",
+        img: "staff_takiguchi.jpg",
+    },
+    {
+        name: "omoon",
+        url: "http://omoon.org",
+        img: "staff_omura.jpg",
+    },
+    {
+        name: "UNILORN",
+        url: "https://github.com/UNILORN",
+        img: "staff_aoki.jpg",
+    },
+    {
+        name: "GOUTEN",
+        url: "http://blog.gouten.net/",
+        img: "staff_okashima.jpg",
     },
 ]
