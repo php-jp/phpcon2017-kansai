@@ -110,7 +110,7 @@ var data = [
         time: "14:00-14:30",
         name:"奥 清隆",
         title: "PHP[TEK] 2017 参加レポート",
-        summary01: "5月末にアトランタで開催された「PHP[TEK] 2017」(<a class='textLink' href='http://robo.li/' target=_blank>https://tek.phparch.com/</a>)に参加してきました。<br>5日間に渡って行われたカンファレンスの内容を30分に凝縮して、最新のPHP情報をレポートします。",
+        summary01: "5月末にアトランタで開催された「PHP[TEK] 2017」(<a class='textLink' href='https://tek.phparch.com' target=_blank>https://tek.phparch.com/</a>)に参加してきました。<br>5日間に渡って行われたカンファレンスの内容を30分に凝縮して、最新のPHP情報をレポートします。",
         summary02: "",
         profile: "株式会社ロックオン EC-CUBEの中の人。好きな言語はJava。",
         facebook: "",
