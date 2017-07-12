@@ -55,6 +55,53 @@
   }
 }
 
+#lt_notice {
+  padding: 8px 5px;
+  position: fixed;
+  right: 120px;
+  bottom: 10px;
+  background: #f4efff;
+  @include mq() {
+    right: 70px;
+  }
+  &::after {
+    margin-top: -25%;
+    display: inline-block;
+    content: "";
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-left: 10px solid #f4efff;
+    border-bottom: 10px solid transparent;
+    border-right: 10px solid transparent;
+    position: absolute;
+    right: -20px;
+    //bottom: 20%;
+    //フォーム公開時↓に変更
+    bottom: 30%;
+
+  }
+  span {
+    display: inline-block;
+  }
+  .lt_link {
+    display: inline-block;
+    margin-top: 5px;
+    font-weight: bold;
+  }
+}
+#lt_notice.active {
+  position: absolute;
+  bottom: initial;
+  top: -40px;
+  //フォーム公開時↓に変更
+  //top: -60px;
+  //@include mq {
+  //  top: -50px;
+  //}
+}
+
+
 #pageTop {
   position: fixed;
   right: 50px;
