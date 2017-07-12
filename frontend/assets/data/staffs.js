@@ -117,7 +117,7 @@ module.exports = [
     {
         name: "そーた",
         url: "",
-        img: "staff_default.png",   // todo: 画像を設定する
+        img: "staff_default.png",
     },
     {
         name: "中村樹仁",
