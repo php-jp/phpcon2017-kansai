@@ -51,7 +51,7 @@ module.exports = [
     {
         name: "たきぐち(@atakig)",
         url: "https://twitter.com/atakig",
-        img: "staff_takiguchi.jpg",
+        img: "staff_takiguchi.jpeg",
     },
     // {
     //     name: "佐田さん",
