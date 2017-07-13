@@ -57,7 +57,7 @@ var data = [
         twitter: "https://twitter.com/matsu_hide",
         github: "",
         other: "",
-        img: "speaker_matsufuji.png"
+        img: "speaker_matsufuji.jpg"
     },
     {
         track:"C01+C02",
@@ -72,7 +72,7 @@ var data = [
         twitter: "",
         github: "",
         other: "",
-        img: "speaker_default.png",
+        img: "speaker_default.jpg",
     },
     {
         track:"C05",
@@ -117,7 +117,7 @@ var data = [
         twitter: "",
         github: "https://git.io/K",
         other: "",
-        img: "speaker_oku.png",
+        img: "speaker_oku.jpg",
     },
     {
         track:"C05",
@@ -238,7 +238,7 @@ var data = [
         twitter: "",
         github: "",
         other: "",
-        img: "speaker_simojichi.png",
+        img: "speaker_simojichi.jpg",
     },
     {
         track:"C01+C02",
@@ -253,7 +253,7 @@ var data = [
         twitter: "https://twitter.com/ippey_s",
         github: "",
         other: "",
-        img: "speaker_sumida.png",
+        img: "speaker_sumida.jpg",
     },
     {
         track:"C05",
