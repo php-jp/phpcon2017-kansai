@@ -41,7 +41,7 @@ module.exports = [
     {
         name: "Yasuo Harada",
         url: "",
-        img: "staff_harada.jpg",
+        img: "staff_harada.jpeg",
     },
     {
         name: "yugo",
