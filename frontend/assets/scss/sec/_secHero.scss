@@ -229,12 +229,12 @@
       font-size: 1rem;
       background: $clr-main;
       color: $clr-lightGlay;
-      padding: 8px 15px;
+      padding: 10px 20px 10px 25px;
       margin-left: 15px;
       i {
         margin-right: 5px;
       }
-      @include mq("sm") {
+      @include mq("md") {
         padding: 5px 12px;
       }
     }
