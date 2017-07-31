@@ -14,14 +14,13 @@
     height: 50px;
   }
   .header_logo {
-    position: absolute;
-    top: 50%;
-    left: 20px;
-    transform: translateY(-46%);
-    @media screen and (max-width: 1210px) {
-      transform: translateY(-50%);
+    display: inline-block;
+    margin-left: 20px;
+    transform: translateY(62%);
+    @include mq{
+      transform: translateY(45%);
+      margin-left: 10px;
     }
-
     a {
       display: inline;
     }
@@ -51,13 +50,22 @@
         display: none;
       }
     }
+  }
+  .header_report {
+    display: inline-block;
+    height: 60px;
+    vertical-align: top;
     .pc_btn {
-      @include btn;
-      font-size: 1rem;
-      background: #fff;
-      color: $clr-main;
-      padding: 8px 25px;
+      display: inline-block;
       margin-left: 15px;
+      padding: 8px 25px;
+      box-sizing: border-box;
+      transform: translateY(45%);
+      font-size: 1rem;
+      font-weight: bold;
+      color: $clr-main;
+      background: #fff;
+      @include btn;
       i {
         margin-right: 5px;
       }
@@ -70,26 +78,42 @@
     }
     .sp_btn {
       display: none;
-      @include btn;
       font-size: 1rem;
-      background: #fff;
       color: $clr-main;
-      padding: 15px 25px;
-      margin-left: 15px;
+      background: #fff;
+      @include btn;
+      position: relative;
+      @media screen and (min-width:768px) and (max-width: 1210px) {
+        display: inline-block;
+        margin-left: 16px;
+        padding: 0 25px;
+        padding-left: 20px;
+        height: 60px;
+      }
+      @include mq('md') {
+        display: inline-block;
+        padding: 0 20px;
+        height: 50px;
+      }
       i {
-        margin-right: 5px;
+        display: inline-block;
+        margin-right: 10px;
         margin-top: 8px;
+        transform: translateY(40%);
+
+        @media screen and (min-width:768px) and (max-width: 1210px) {
+          font-size: 1.2rem;
+        }
+        @include mq('md') {
+          margin-right: 2px;
+          font-size: 1.5rem;
+        }
       }
+
       .sp_btn_text {
+        display: inline-block;
         text-align: center;
-        margin-left: 5px;
-      }
-      @media screen and (max-width: 1210px) {
-        display: inline-flex;
-        margin-left: 8px;
-      }
-      @include mq("sm") {
-        padding: 15px 20px;
+        transform: translateY(40%);
       }
     }
   }
@@ -99,11 +123,11 @@
     top: 50%;
     transform: translateY(-50%);
     letter-spacing: -.4em;
-    @include mq(){
-      right: 104px;
-    }
-    @media screen and (max-width: 1210px) {
+    @include mq("md"){
       right: 60px;
+    }
+    @media screen and (min-width:768px) and (max-width: 1210px) {
+      right: 70px;
     }
     li {
       display: inline-block;
@@ -117,6 +141,7 @@
       }
     }
     a {
+      vertical-align: super;
       color: #fff;
       @include btn;
       @include mq(){
@@ -129,7 +154,9 @@
     }
     i {
       margin-right: 10px;
-      @include mq(){
+      font-size: 1.4rem;
+      vertical-align: middle;
+    @include mq(){
         display: block;
         margin-right:0;
         font-size: 20px;

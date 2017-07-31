@@ -12,8 +12,9 @@ gulp.task("server",()=> {
     browserSync({
         server:{
             baseDir:"public",
-            index: "index.html"
-        }
+            index: "index.html",
+        },
+        open: "external"
     })
 
     return gulp.watch(`${dest}/**/*`, (e) => {
