@@ -1,8 +1,17 @@
 #header
     h1.header_logo
         a(href="https://2017.kphpug.jp/")
-            img(src="./assets/images/logo.svg")
-            img(src="./assets/images/title_header.svg" alt="php conference Kansai 2017")
+            img.logo_mark(src="./assets/images_after/logo_white.svg")
+            img.logo_type(src="./assets/images_after/title_header_white.svg" alt="php conference Kansai 2017")
+        p.header_message ご参加ありがとうございました！
+        a(href="#secAccess").pc_btn
+            i.fa.fa-heart
+            |   イベントレポートサイトを見る
+        a(href="#secAccess").sp_btn
+            i.fa.fa-heart
+            p.sp_btn_text event
+                br
+                | report
     .header_share
         ul
             li: a(href="https://twitter.com/intent/tweet?text=関西最大のPHPイベントは7月15日(土)開催！ PHPカンファレンス関西2017 https://2017.kphpug.jp&hashtags=phpkansai" target="_blank")
@@ -11,10 +20,6 @@
             li: a(href="https://www.facebook.com/sharer.php?u=https://2017.kphpug.jp&amp;t=関西最大のPHPイベントは7月15日(土)開催！ PHPカンファレンス関西2017&hashtags=phpkansai" target="_blank")
                 i.fa.fa-facebook
                 | share
-    .header_join
-        li: a(href="http://phpcon-kansai-2017.peatix.com/" target="_blank")
-            i.fa.fa-bookmark
-            | 完売御礼
     .header_menu
         span.top
         span.middle
