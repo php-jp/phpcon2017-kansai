@@ -1,0 +1,19 @@
+#secSponsor
+    .container
+        .secSponsor_contents
+            .fractal.num02
+                img(src="./assets/images/fractal02.png", alt="")
+            .fractal.num03
+                img(src="./assets/images/fractal03.png", alt="")
+                
+            h2.secSponsor_heading
+                span Sponsors
+
+            each _sponsor,key in sponsors
+                -var className = "secSponsor_" + key
+                 div(class=className)
+                    h3 #{key}
+                    .contents
+                        for sponsor in _sponsor
+                            .content
+                                a(href=sponsor.url target="_blank"): img(src="/assets/sponsors/" + sponsor.img, alt=sponsor.name)

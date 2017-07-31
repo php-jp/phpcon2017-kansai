@@ -1,0 +1,53 @@
+#secHero
+    .container
+        .secHero_hero
+            .fractal.num01
+                img(src="./assets/images/fractal01.png", alt="")
+            .fractal.num02
+                img(src="./assets/images/fractal02.png", alt="")
+            .fractal.num03
+                img(src="./assets/images/fractal03.png", alt="")
+            .fractal.num04
+                img(src="./assets/images/fractal04.png", alt="")
+            .mainVisual
+                .wrap
+                    .zou.sprite
+                    .image.logo01
+                        img(src="./assets/images/logo.svg", alt="")
+                    .image.logo02
+                        img(src="./assets/images/title.svg", alt="")
+                    p 2017
+                        span 年
+                        | 7
+                        span 月
+                        | 15
+                        span 日(土)
+                        br
+                        | 大阪 グランフロント
+                    p
+                        a.btn_pc(href="#secAccess")
+                            i.fa.fa-heart
+                            |   イベントレポートサイトを見る！
+                        a.btn_sp(href="#secAccess")
+                            i.fa.fa-heart
+                            |   レポートサイトを見る！
+                    a(href="https://twitter.com/hashtag/phpkansai",target="_blank").secHero_tag
+                        i.fa.fa-twitter
+                        span #phpkansai
+
+    .secHero_nav
+        nav
+            ul
+                li: a(href="#secAbout") イベントについて
+                li: a(href="#secTimetable") タイムテーブル
+                li: a(href="#secAccess") アクセス
+                li: a(href="#secSponsor") スポンサー
+        .secHero_sns
+            p.regular SNS
+            p.small2 follow me!
+            .secHero_share
+                a(href="https://www.facebook.com/pcon.kansai/" target="_blank").facebook
+                    i.fa.fa-facebook
+                a(href="https://twitter.com/phpcon_kansai" target="_blank").twitter
+                    i.fa.fa-twitter
+
