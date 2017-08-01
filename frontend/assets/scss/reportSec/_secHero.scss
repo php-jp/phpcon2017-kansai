@@ -1,9 +1,11 @@
 @import "../lib/_mixin";
 @import "../lib/_variable";
 #secHero {
-  background-image: linear-gradient(45deg, #F8FBFC 0%, #DCECFD 35%, #DBDAFB 75%, #D5C5F9 100%);
+  background-image: url("../images_after/bg_hero.jpg");
+  background-size: cover;
+  background-position: center;
   width: 100%;
-  height: 900px;
+  height: 1250px;
   padding-top: 150px;
   box-sizing: border-box;
 
@@ -14,6 +16,16 @@
 
   @include mq("sm") {
     height: 450px;
+  }
+
+  .secHero_cover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 1250px;
+    background-color: #9067CA;
+    opacity: 0.7;
   }
 
   .secHero_nav {
@@ -95,7 +107,7 @@
     }
     .fractal.num01 {
       top: -50px;
-      left: 10px;
+      left: -60px;
       animation: fuwafuwa 6s ease-in-out 0.2s backwards infinite;
       img {
         @include mq() {
@@ -104,7 +116,7 @@
       }
     }
     .fractal.num02 {
-      bottom: -10px;
+      bottom: 390px;
       right: -10px;
       animation: fuwafuwa 4s ease-in-out 0.2s backwards infinite;
       img {
@@ -114,15 +126,15 @@
       }
     }
     .fractal.num03 {
-      top: 100px;
-      right: 40px;
+      top: 50px;
+      right: -40px;
       animation: fuwafuwa 5s ease-in-out 0.2s backwards infinite;
       @include mq() {
         display: none;
       }
     }
     .fractal.num04 {
-      bottom: 0;
+      bottom: 400px;
       left: 40px;
       animation: fuwafuwa 7s ease-in-out 0.2s backwards infinite;
       @include mq() {
@@ -327,7 +339,29 @@
       }
     }
   }
+
+  .secHero_contents {
+    text-align: center;
+    padding: 60px 0;
+    color: #fff;
+    .secHero_heading {
+      @include rep_title;
+      color: #fff;
+    }
+    .secHero_heading_svg {
+       @include rep_title_svg;
+       margin: 20px auto;
+       opacity: 0.9;
+    }
+    .secHero_text {
+      padding: 10px 0;
+      line-height: 1.3;
+      font-size: 1.1rem;
+    }
+  }
 }
+
+
 
 @-webkit-keyframes fuwafuwa {
     0% {

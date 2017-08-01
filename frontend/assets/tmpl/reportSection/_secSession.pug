@@ -1,0 +1,193 @@
+mixin session(sessionInfo)
+    .section
+        .session.inner
+            div(class="room"+" "+sessionInfo.room)
+                .name Room
+                .val=sessionInfo.track
+            h2=sessionInfo.title
+            .text
+                p.show !{sessionInfo.summary01}
+                p.more !{sessionInfo.summary02}
+            if sessionInfo.summary02
+                .readmore READ MORE
+            else
+                div(style="height:18px")
+        .speaker.inner
+            .profile
+                .icon
+                    img(src="/assets/speakers/" + sessionInfo.img)
+                .name
+                    p=sessionInfo.name
+            .detail.more
+                .text
+                    p !{sessionInfo.profile}
+                .sns
+                    if sessionInfo.twitter
+                        .twitter: a(href=sessionInfo.twitter, title="title", target="_blank")
+                            i.fa.fa-twitter
+                    if sessionInfo.facebook
+                        .facebook: a(href=sessionInfo.facebook, title="title", target="_blank")
+                            i.fa.fa-facebook
+                    if sessionInfo.github
+                        .gitHub: a(href=sessionInfo.github, title="title")
+                            i.fa.fa-github
+                    if sessionInfo.other
+                        .other: a(href=sessionInfo.other, title="title")
+                            i.fa.fa-link
+
+            .readmore READ MORE
+
+mixin sessionEmpty()
+    .section.sectionEmpty
+
+#secSession
+    .container
+        .secSession_contents
+            .secSession_heading_svg
+                img(src="./assets/images/icn_heading-white.svg")
+            h2.secSession_heading
+                span Session
+            .pc
+                .secSession_timeline
+                    .time 10:30<br>|<br>10:40
+                    .time 10:40<br>|<br>11:20
+                    .time 11:40<br>|<br>12:10
+                    .time 13:10<br>|<br>13:40
+                    .time 14:00<br>|<br>14:30
+                    .time 14:45<br>|<br>15:15
+                    .time 15:30<br>|<br>16:00
+                    .time 16:15<br>|<br>16:45
+                    .time 17:10<br>|<br>17:50
+                .secSession_sections
+                    .section
+                        .session.inner
+                            div(class="room" + " yellow" )
+                                .name Room
+                                .val C01+C02
+                            h2 オープニング
+                            .text
+                                p.show PHPカンファレンス関西 2017 開演！
+                                p.more
+                    each sessionInfo in speakers.findByRoom("C01+C02")
+                        +session(sessionInfo)
+                    .section
+                        .session.inner
+                            div(class="room" + " yellow" )
+                                .name Room
+                                .val C01+C02
+                            h2 ライトニングトーク
+                            .text
+                                p.show PHPカンファレンス関西 2017 の締めに珠玉のLTを数本お送りします！<br><br>今年は本編LTを当日に募集します！
+                                p.more
+                        .speaker.inner
+                            .profile
+                                .icon
+                                    img(src="/assets/speakers/speaker_default.jpg")
+                                .name
+                                    p.show LT Speakers
+                .secSession_sections
+                    +sessionEmpty()
+                    +sessionEmpty()
+                    each sessionInfo in speakers.findByRoom("C05")
+                        +session(sessionInfo)
+                    +sessionEmpty()
+                .secSession_sections
+                    +sessionEmpty()
+                    +sessionEmpty()
+                    each sessionInfo in speakers.findByRoom("C07")
+                        +session(sessionInfo)
+                    +sessionEmpty()
+            .sp
+                .secSession_sp_contents
+                    .content
+                        .time
+                            h2 10:30 - 10:40
+                        .wrap
+                            .section
+                                .session.inner
+                                    div(class="room" + " yellow" )
+                                        .name Room
+                                        .val C01+C02
+                                    h2 オープニング
+                                    .text
+                                        p.show PHPカンファレンス関西 2017 開演！
+                                        p.more
+                    .content
+                        .time
+                            h2 10:40 - 11:20
+                        .wrap
+                            each sessionInfo in speakers.findByTime("10:40-11:20")
+                                +session(sessionInfo)
+                    .content
+                        .time
+                            h2 11:40 - 12:10
+                        .wrap
+                            each sessionInfo in speakers.findByTime("11:40-12:10")
+                                +session(sessionInfo)
+                    .content
+                        .time
+                            h2 13:10 - 13:40
+                        .wrap
+                            each sessionInfo in speakers.findByTime("13:10-13:40")
+                                +session(sessionInfo)
+                    .content
+                        .time
+                            h2 14:00 - 14:30
+                        .wrap
+                            each sessionInfo in speakers.findByTime("14:00-14:30")
+                                +session(sessionInfo)
+                    .content
+                        .time
+                            h2 14:45 - 15:15
+                        .wrap
+                            each sessionInfo in speakers.findByTime("14:45-15:15")
+                                +session(sessionInfo)
+                    .content
+                        .time
+                            h2 15:30 - 16:00
+                        .wrap
+                            each sessionInfo in speakers.findByTime("15:30-16:00")
+                                +session(sessionInfo)
+                    .content
+                        .time
+                            h2 16:15 - 16:45
+                        .wrap
+                            each sessionInfo in speakers.findByTime("16:15-16:45")
+                                +session(sessionInfo)
+                    .content
+                        .time
+                            h2 17:10 - 17:50
+                        .wrap
+                            .section
+                                .session.inner
+                                    div(class="room" + " yellow" )
+                                        .name Room
+                                        .val C01+C02
+                                    h2 ライトニングトーク
+                                    .text
+                                        p.show PHPカンファレンス関西 2017 の締めに珠玉のLTを数本お送りします！<br><br>今年は本編LTを当日に募集します！
+                                        p.more
+                                .speaker.inner
+                                    .profile
+                                        .icon
+                                            img(src="/assets/speakers/speaker_default.jpg")
+                                        .name
+                                            p.show LT Speakers
+            .secSession_heading_svg
+                img(src="./assets/images/icn_heading-white.svg")
+            h2.secSession_heading
+                span LT & UnConference
+            .secSession_lt_unconf
+                .secSession_blog_block
+                    <iframe style="width:100%;height:155px;max-width:320px;display:inline-block;" src="http://hatenablog.com/embed?url=http://www.slideshare.net/ssuserdee628/javascriptvuejs" frameborder="0" scrolling="no" class="DRAGDIS_iframe"></iframe>
+                .secSession_blog_block
+                    <iframe style="width:100%;height:155px;max-width:320px;display:inline-block;" src="http://hatenablog.com/embed?url=http://www.slideshare.net/ssuserdee628/javascriptvuejs" frameborder="0" scrolling="no" class="DRAGDIS_iframe"></iframe>
+                .secSession_blog_block
+                    <iframe style="width:100%;height:155px;max-width:320px;display:inline-block;" src="http://hatenablog.com/embed?url=http://www.slideshare.net/ssuserdee628/javascriptvuejs" frameborder="0" scrolling="no" class="DRAGDIS_iframe"></iframe>
+            .secSession_lt_unconf
+                .secSession_blog_block
+                    <iframe style="width:100%;height:155px;max-width:320px;display:inline-block;" src="http://hatenablog.com/embed?url=http://www.slideshare.net/ssuserdee628/javascriptvuejs" frameborder="0" scrolling="no" class="DRAGDIS_iframe"></iframe>
+                .secSession_blog_block
+                    <iframe style="width:100%;height:155px;max-width:320px;display:inline-block;" src="http://hatenablog.com/embed?url=http://www.slideshare.net/ssuserdee628/javascriptvuejs" frameborder="0" scrolling="no" class="DRAGDIS_iframe"></iframe>
+                .secSession_blog_block
+                    <iframe style="width:100%;height:155px;max-width:320px;display:inline-block;" src="http://hatenablog.com/embed?url=http://www.slideshare.net/ssuserdee628/javascriptvuejs" frameborder="0" scrolling="no" class="DRAGDIS_iframe"></iframe>
