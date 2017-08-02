@@ -218,8 +218,16 @@
         }
       }
     }
+    .image_thankyou {
+      position: absolute;
+      top: 57%;
+      right: 80px;
+      img {
+        width: 170px;
+      }
+    }
     p {
-      margin-top: 20px;
+      margin-top: 50px;
       margin-bottom: 20px;
       font-size: 1.3rem;
       font-weight: bold;

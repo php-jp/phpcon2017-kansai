@@ -13,6 +13,9 @@ var data = [
         github: "",
         other: "",
         img: "speaker_shimbara.png",
+        session: "01shimbara.jpg",
+        slide: "",
+
     },
     {
         track:"C01+C02",
@@ -28,6 +31,8 @@ var data = [
         github: "",
         other: "",
         img: "speaker_goto.jpeg",
+        session: "02goto.jpg",
+        slide: "",
     },
     {
         track:"C05",
@@ -43,6 +48,8 @@ var data = [
         github: "",
         other: "",
         img: "speaker_takiguchi.jpg",
+        session: "03takiguchi.jpg",
+        slide: "",
     },
     {
         track: "C07",
@@ -57,7 +64,9 @@ var data = [
         twitter: "https://twitter.com/matsu_hide",
         github: "",
         other: "",
-        img: "speaker_matsufuji.jpg"
+        img: "speaker_matsufuji.jpg",
+        session: "04matsufuji.jpg",
+        slide: "",
     },
     {
         track:"C01+C02",
@@ -73,6 +82,8 @@ var data = [
         github: "",
         other: "",
         img: "speaker_default.jpg",
+        session: "05phpug.jpg",
+        slide: "",
     },
     {
         track:"C05",
@@ -88,6 +99,8 @@ var data = [
         github: "",
         other: "http://www.hasegawa-tomoki.com/",
         img: "speaker_hasegawa.jpg",
+        session: "06hasegawa.jpg",
+        slide: "",
     },
     {
         track:"C07",
@@ -103,6 +116,8 @@ var data = [
         github: "",
         other: "",
         img: "speaker_kishida.jpg",
+        session: "07kishida.jpg",
+        slide: "",
     },
     {
         track:"C01+C02",
@@ -118,6 +133,8 @@ var data = [
         github: "https://git.io/K",
         other: "",
         img: "speaker_oku.jpg",
+        session: "08oku.jpg",
+        slide: "",
     },
     {
         track:"C05",
@@ -133,6 +150,8 @@ var data = [
         github: "https://github.com/ytake",
         other: "",
         img: "speaker_takezawa.jpeg",
+        session: "09takezawa.jpg",
+        slide: "",
     },
     {
         track:"C07",
@@ -149,6 +168,8 @@ var data = [
         github: "",
         other: "https://10mado.jp",
         img: "speaker_yamaoka.png",
+        session: "10okayama.jpg",
+        slide: "",
     },
     {
         track:"C01+C02",
@@ -164,6 +185,8 @@ var data = [
         github: "",
         other: "https://potato4d.me",
         img: "speaker_hanatani.jpg",
+        session: "11hanatani.jpg",
+        slide: "",
     },
     {
         track:"C05",
@@ -179,6 +202,8 @@ var data = [
         github: "",
         other: "",
         img: "speaker_takahashi.png",
+        session: "12takahashi.jpg",
+        slide: "",
     },
     {
         track:"C07",
@@ -194,6 +219,8 @@ var data = [
         github: "",
         other: "",
         img: "speaker_sakamoto.jpg",
+        session: "13sakamoto.jpg",
+        slide: "",
     },
     {
         track:"C01+C02",
@@ -209,6 +236,8 @@ var data = [
         github: "https://github.com/ryo-endo",
         other: "",
         img: "speaker_endo.jpg",
+        session: "14endo.jpg",
+        slide: "",
     },
     {
         track:"C05",
@@ -224,6 +253,8 @@ var data = [
         github: "https://github.com/niisan-tokyo",
         other: "http://qiita.com/niisan-tokyo",
         img: "speaker_niikura.png",
+        session: "15niikura.jpg",
+        slide: "",
     },
     {
         track:"C07",
@@ -239,6 +270,8 @@ var data = [
         github: "",
         other: "",
         img: "speaker_simojichi.jpg",
+        session: "16simoji.jpg",
+        slide: "",
     },
     {
         track:"C01+C02",
@@ -254,6 +287,8 @@ var data = [
         github: "",
         other: "",
         img: "speaker_sumida.jpg",
+        session: "17sumida.jpg",
+        slide: "",
     },
     {
         track:"C05",
@@ -269,6 +304,8 @@ var data = [
         github: "",
         other: "http://decr.jp/",
         img: "speaker_watanabe.jpg",
+        session: "18watanabe.jpg",
+        slide: "",
     },
     {
         track:"C07",
@@ -284,6 +321,8 @@ var data = [
         github: "",
         other: "http://qiita.com/bobu_web",
         img: "speaker_futagami.jpeg",
+        session: "19futagami.jpg",
+        slide: "",
     },
 ]
 
