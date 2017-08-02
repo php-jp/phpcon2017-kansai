@@ -69,6 +69,9 @@
       display: flex;
       justify-content: space-between;
       margin: 10px 0;
+      @include mq() {
+        display: block;
+      }
       .secBlog_block {
         z-index: 1;
       }

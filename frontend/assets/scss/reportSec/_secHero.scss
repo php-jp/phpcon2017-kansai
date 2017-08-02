@@ -9,13 +9,13 @@
   padding-top: 150px;
   box-sizing: border-box;
 
-  @include mq() {
+  @include mq("md") {
     padding-top: 110px;
-    height: 550px;
+    height: 900px;
   }
 
   @include mq("sm") {
-    height: 450px;
+    height: 900px;
   }
 
   .secHero_cover {
@@ -26,6 +26,9 @@
     height: 1250px;
     background-color: #9067CA;
     opacity: 0.7;
+    @include mq("md") {
+      height: 900px;
+    }
   }
 
   .secHero_nav {
@@ -109,6 +112,10 @@
       top: -50px;
       left: -60px;
       animation: fuwafuwa 6s ease-in-out 0.2s backwards infinite;
+      @include mq() {
+        top: -40px;
+        left: 5%;
+      }
       img {
         @include mq() {
           width: 175.5px;
@@ -119,6 +126,10 @@
       bottom: 390px;
       right: -10px;
       animation: fuwafuwa 4s ease-in-out 0.2s backwards infinite;
+      @include mq() {
+        bottom: 420px;
+        right: 5%;
+      }
       img {
         @include mq() {
           width: 125.5px;
@@ -224,6 +235,13 @@
       right: 80px;
       img {
         width: 170px;
+        @include mq() {
+          width: 100px;
+        }
+      }
+      @include mq() {
+        top: 50%;
+        right: 30px;
       }
     }
     p {
@@ -235,7 +253,7 @@
       color: #828296;
       @include mq() {
         line-height: 1.4;
-        margin-top: 10px;
+        margin-top: 30px;
         margin-bottom: 15px;
       }
       @include mq("sm") {

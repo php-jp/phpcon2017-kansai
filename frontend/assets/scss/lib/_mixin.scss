@@ -51,9 +51,6 @@
     margin-bottom: 26px;
     line-height: 1.2;
     color: #9067CA;
-    @include mq() {
-        padding: 21px;
-    }
 }
 @mixin rep_title_svg {
     margin: 15px auto;

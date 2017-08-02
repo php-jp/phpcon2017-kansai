@@ -17,6 +17,9 @@
       justify-content: space-between;
       .secSession_blog_block {
       }
+      @include mq("md") {
+        display: block;
+      }
     }
 
   }
@@ -79,6 +82,9 @@
           top: 24%;
           right: 5px;
         }
+        @include mq() {
+          font-size: 1.2rem;
+        }
       }
     }
     .speaker {
@@ -136,6 +142,9 @@
     }
     .wrap {
       display: none;
+    }
+    .session_img img {
+      width: 100%;
     }
     .session {
       .room {

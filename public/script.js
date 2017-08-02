@@ -206,5 +206,9 @@ $(function(){
             $(this).next().slideToggle();
             $(this).toggleClass("active")
         })
+        $('#secSession .secSession_sp_contents .time').on('click',function () {
+            $(this).next().slideToggle();
+            $(this).toggleClass("active")
+        })
     }())
 })

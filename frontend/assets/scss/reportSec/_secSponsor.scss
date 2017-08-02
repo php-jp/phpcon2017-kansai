@@ -31,7 +31,8 @@
   .secSponsor_video {
     margin: 30px auto 0;
     video {
-      width: 800px;
+      width: 100%;
+      max-width: 800px;
     }
   }
   .secSponsor_video_text {
