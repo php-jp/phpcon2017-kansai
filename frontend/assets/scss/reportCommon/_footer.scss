@@ -8,18 +8,12 @@
 
   .footer_phpConf {
     text-align: center;
-
-    p {
-      margin-top: 18px;
-      font-size: 1.5rem;
-      color: $clr-lightGlay;
-      font-weight: bold;
-    }
+    margin-bottom: 60px;
   }
 
   .footer_phpConfArchives {
     text-align: center;
-    margin-top: 18px;    
+    margin-top: 18px;
     a {
       margin: 0 15px;
       color: $clr-lightGlay;
@@ -34,16 +28,20 @@
 
   .footer_copyright {
     text-align: center;
-
+    .footer_copyright_main {
+      font-size: 1.5rem;
+      p {
+        display: block;
+        margin-top: 35px;
+        color: $clr-lightGlay;
+      }
+    }
     small {
       display: block;
       margin-top: 35px;
       color: $clr-lightGlay;
-
-      &+small{
-        padding-top: 10px;
-        border-top: 1px solid #E9E2F9;
-      }
+      padding-top: 10px;
+      border-top: 1px solid #E9E2F9;
     }
     span {
       font-weight: bold;
@@ -52,6 +50,7 @@
       font-weight: bold;
       color: $clr-lightGlay;
     }
+
   }
 }
 
