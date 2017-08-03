@@ -15,10 +15,12 @@
     .secSession_lt_unconf{
       display: flex;
       justify-content: space-between;
+      margin-bottom: 20px;
       .secSession_blog_block {
       }
       @include mq("md") {
         display: block;
+        margin-bottom: 0;
       }
     }
 

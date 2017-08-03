@@ -69,8 +69,10 @@
       display: flex;
       justify-content: space-between;
       align-content: center;
+      margin-bottom: 20px;
       @include mq() {
         display: block;
+        margin-bottom: 0;
       }
       .secBlog_block {
         min-width: 300px;
