@@ -43,6 +43,21 @@
     }
 }
 
+@mixin rep_title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    display: block;
+    margin-bottom: 26px;
+    line-height: 1.2;
+    color: #9067CA;
+}
+@mixin rep_title_svg {
+    margin: 15px auto;
+    width: 60px;
+    opacity: .9;
+}
+
 @mixin btn {
     transition: ease .3s;
     &:hover{
