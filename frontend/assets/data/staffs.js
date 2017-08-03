@@ -187,6 +187,6 @@ module.exports = [
     {
         name: "HotaruMaru",
         url: "",
-        img: "staff_hotarumaru.jpg",
+        img: "staff_hotarumaru.png",
     }
 ]

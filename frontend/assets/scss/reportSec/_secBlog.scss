@@ -68,11 +68,13 @@
     .secBlog{
       display: flex;
       justify-content: space-between;
-      margin: 10px 0;
+      align-content: center;
       @include mq() {
         display: block;
       }
       .secBlog_block {
+        min-width: 300px;
+        margin: 10px 0;
         z-index: 1;
       }
     }

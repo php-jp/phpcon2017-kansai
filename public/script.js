@@ -161,6 +161,9 @@ $(function(){
             $("#secTimetable .secTimetable_sections:eq(0) .section:eq("+i+") h2"),
             $("#secTimetable .secTimetable_sections:eq(1) .section:eq("+i+") h2"),
             $("#secTimetable .secTimetable_sections:eq(2) .section:eq("+i+") h2"),
+            $("#secSession .secSession_sections:eq(0) .section:eq("+i+") h2"),
+            $("#secSession .secSession_sections:eq(1) .section:eq("+i+") h2"),
+            $("#secSession .secSession_sections:eq(2) .section:eq("+i+") h2"),
         ];
         var maxHeight = 0;
         for(var index in $targets){
@@ -175,6 +178,9 @@ $(function(){
             $("#secTimetable .secTimetable_sections:eq(0) .section:eq("+i+") p.show"),
             $("#secTimetable .secTimetable_sections:eq(1) .section:eq("+i+") p.show"),
             $("#secTimetable .secTimetable_sections:eq(2) .section:eq("+i+") p.show"),
+            $("#secSession .secSession_sections:eq(0) .section:eq("+i+") .session_slide"),
+            $("#secSession .secSession_sections:eq(1) .section:eq("+i+") .session_slide"),
+            $("#secSession .secSession_sections:eq(2) .section:eq("+i+") .session_slide"),
         ];
         var maxHeight = 0;
         for(var index in $targets){
@@ -189,6 +195,10 @@ $(function(){
             $("#secTimetable .secTimetable_sections:eq(0) .section:eq("+i+")"),
             $("#secTimetable .secTimetable_sections:eq(1) .section:eq("+i+")"),
             $("#secTimetable .secTimetable_sections:eq(2) .section:eq("+i+")"),
+            $("#secSession .secSession_timeline .time:eq("+i+")"),
+            $("#secSession .secSession_sections:eq(0) .section:eq("+i+")"),
+            $("#secSession .secSession_sections:eq(1) .section:eq("+i+")"),
+            $("#secSession .secSession_sections:eq(2) .section:eq("+i+")"),
         ];
         var maxHeight = 0;
         for(var index in $targets){

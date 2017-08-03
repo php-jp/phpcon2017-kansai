@@ -4,9 +4,10 @@ mixin session(sessionInfo)
             img(src="/assets/rep_speakers/" + sessionInfo.session)
         .session.inner
             h2=sessionInfo.title
-            a(href=sessionInfo.slide).session_slide
-                | SLIDE
-                i.fa.fa-external-link.session_slide_icon
+            if sessionInfo.slide
+                a(href=sessionInfo.slide target="_blank").session_slide
+                    | SLIDE
+                    i.fa.fa-external-link.session_slide_icon
         .speaker.inner
             p !{sessionInfo.name}
 
