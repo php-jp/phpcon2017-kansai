@@ -14,3 +14,20 @@
 @import "sec/_secSocial";
 @import "sec/_secStaff";
 @import "sec/_secPresentedBy";
+
+.report{
+  @import "reportCommon/base";
+  @import "reportCommon/common";
+  @import "reportCommon/header";
+  @import "reportCommon/nav";
+  @import "reportCommon/footer";
+
+
+  @import "reportSec/_secHero";
+  @import "reportSec/_secSession";
+  @import "reportSec/secBooth";
+  @import "reportSec/_secBlog";
+  @import "reportSec/_secSponsor";
+  @import "reportSec/_secStaff";
+  @import "reportSec/_secPresentedBy";
+}

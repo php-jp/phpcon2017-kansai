@@ -1,0 +1,159 @@
+@import "../lib/_mixin";
+@import "../lib/_variable";
+#secSession {
+  @include bg_gradient;
+
+  .secSession_contents {
+    padding: 60px 0;
+    text-align: center;
+    .secSession_heading {
+      @include rep_title;
+    }
+    .secSession_heading_svg {
+      @include rep_title_svg;
+    }
+    .secSession_lt_unconf{
+      display: flex;
+      justify-content: space-between;
+      .secSession_blog_block {
+      }
+      @include mq("md") {
+        display: block;
+      }
+    }
+
+  }
+  .sp {
+    display: none;
+  }
+  @include mq() {
+    .sp {
+      display: block;
+    }
+    .pc {
+      display: none;
+    }
+  }
+  .secSession_timeline {
+    margin-right: 2.083333333%;
+    letter-spacing: normal;
+    .time {
+      width: 100px;
+      background: $clr-main;
+      line-height: 2.5;
+      color: $clr-lightGlay;
+      text-align: center;
+      padding: 20px 5px;
+      box-sizing: border-box;
+      margin-bottom: 20px;
+    }
+    display: inline-block;
+  }
+  .secSession_sections,
+  .secSession_sp_contents {
+    width: 22.916666667%;
+    display: inline-block;
+    vertical-align: top;
+    text-align: left;
+    letter-spacing: normal;
+    &+.secSession_sections {
+      margin-left: 2.083333333%;
+    }
+    .inner {
+      padding: 20px;
+    }
+    .session {
+      line-height: 1.2;
+      font-size: 1.3rem;
+      color: $clr-main;
+      font-weight: bold;
+      .session_slide {
+        display: block;
+        margin-top: 20px;
+        text-align: center;
+        font-size: 0.8rem;
+        background-color: $clr-main;
+        color: #fff;
+        padding: 5px;
+        cursor: pointer;
+        position: relative;
+        .session_slide_icon {
+          position: absolute;
+          top: 24%;
+          right: 5px;
+        }
+        @include mq() {
+          font-size: 1.2rem;
+        }
+      }
+    }
+    .speaker {
+      text-align: center;
+      background-color: $clr-lightGlay;
+    }
+    .section {
+      margin-bottom: 20px;
+      background: #fff;
+    }
+
+    .sectionEmpty{
+      min-height: 150px;
+      background-image: url("/assets/images/icon_sessionZou.svg");
+      background-repeat: no-repeat;
+      background-size: 50% 50%;
+      background-position: 40%;
+      opacity: .2;
+    }
+  }
+
+  .secSession_sp_contents {
+    width: 100%;
+    .time {
+      width: 100%;
+      background: $clr-main;
+      line-height: 2.5;
+      color: $clr-lightGlay;
+      font-size: 1.2rem;
+      text-align: left;
+      padding: 5px 20px;
+      box-sizing: border-box;
+      margin-bottom: 20px;
+      position: relative;
+      &:after {
+        content: '';
+        position: absolute;
+        right: 10px;
+        margin-top: -2.5px;
+        top: 50%;
+        width: 0;
+        height: 0;
+        border-left: 5px solid transparent;
+        border-right: 5px solid transparent;
+        border-top: 5px solid $clr-lightGlay;
+        clear: both;
+        transform: rotate(0deg);
+        transition: ease .3s;
+      }
+      &.active {
+        &:after {
+          transform: rotate(180deg);
+        }
+      }
+    }
+    .wrap {
+      display: none;
+    }
+    .session_img img {
+      width: 100%;
+    }
+    .session {
+      .room {
+        margin-bottom: 20px;
+      }
+      h2 {
+        font-size: 1.3rem;
+        line-height: 1.5;
+      }
+    }
+  }
+}

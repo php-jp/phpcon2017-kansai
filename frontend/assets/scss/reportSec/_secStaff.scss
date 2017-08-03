@@ -5,12 +5,16 @@
   .secStaff_contents {
     text-align: center;
     padding: 60px 0;
-  }
-  .secStaff_heading {
-    span {
-      @include title;
+
+    .secStaff_heading {
+      @include rep_title;
+      margin-bottom: 50px;
+    }
+    .secStaff_heading_svg {
+      @include rep_title_svg;
     }
   }
+
   .secStaff_staffs {
     text-align: center;
     .secStaff_staff:nth-of-type(1){

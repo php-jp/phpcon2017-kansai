@@ -13,6 +13,9 @@ var data = [
         github: "",
         other: "",
         img: "speaker_shimbara.png",
+        session: "01shimbara.jpg",
+        slide: "http://blog.shin1x1.com/entry/2017/07/18/000000",
+
     },
     {
         track:"C01+C02",
@@ -28,6 +31,8 @@ var data = [
         github: "",
         other: "",
         img: "speaker_goto.jpeg",
+        session: "02goto.jpg",
+        slide: "http://mkkn.hatenablog.jp/entry/2017/07/18/011930",
     },
     {
         track:"C05",
@@ -43,6 +48,8 @@ var data = [
         github: "",
         other: "",
         img: "speaker_takiguchi.jpg",
+        session: "03takiguchi.jpg",
+        slide: "",
     },
     {
         track: "C07",
@@ -57,7 +64,9 @@ var data = [
         twitter: "https://twitter.com/matsu_hide",
         github: "",
         other: "",
-        img: "speaker_matsufuji.jpg"
+        img: "speaker_matsufuji.jpg",
+        session: "04matsufuji.jpg",
+        slide: "https://www.slideshare.net/matsu_hide/php2017-phpdsl",
     },
     {
         track:"C01+C02",
@@ -73,6 +82,8 @@ var data = [
         github: "",
         other: "",
         img: "speaker_default.jpg",
+        session: "05phpug.jpg",
+        slide: "https://speakerdeck.com/tanakahisateru/psrtoditohuremuwaku-number-phpkansai",
     },
     {
         track:"C05",
@@ -88,6 +99,8 @@ var data = [
         github: "",
         other: "http://www.hasegawa-tomoki.com/",
         img: "speaker_hasegawa.jpg",
+        session: "06hasegawa.jpg",
+        slide: "https://speakerdeck.com/tomzoh/hash-or-encryption",
     },
     {
         track:"C07",
@@ -103,6 +116,8 @@ var data = [
         github: "",
         other: "",
         img: "speaker_kishida.jpg",
+        session: "07kishida.jpg",
+        slide: "http://blog.open.tokyo.jp/2017/07/17/phpkansai.html",
     },
     {
         track:"C01+C02",
@@ -118,6 +133,8 @@ var data = [
         github: "https://git.io/K",
         other: "",
         img: "speaker_oku.jpg",
+        session: "08oku.jpg",
+        slide: "http://www.lockon.co.jp/officialblog/engineer/12862/",
     },
     {
         track:"C05",
@@ -133,6 +150,8 @@ var data = [
         github: "https://github.com/ytake",
         other: "",
         img: "speaker_takezawa.jpeg",
+        session: "09takezawa.jpg",
+        slide: "https://speakerdeck.com/ytake/phpdezhi-eruda-gui-mo-ramudaakitekutiya",
     },
     {
         track:"C07",
@@ -149,6 +168,8 @@ var data = [
         github: "",
         other: "https://10mado.jp",
         img: "speaker_yamaoka.png",
+        session: "10okayama.jpg",
+        slide: "https://speakerdeck.com/hiro_y/slim-frameworkdeshi-meruphpfalsemiddleware",
     },
     {
         track:"C01+C02",
@@ -164,6 +185,8 @@ var data = [
         github: "",
         other: "https://potato4d.me",
         img: "speaker_hanatani.jpg",
+        session: "11hanatani.jpg",
+        slide: "https://speakerdeck.com/potato4d/xian-dai-niokerupurodakutokai-fa-tophpwoxuan-ding-suruwake-number-phpkansai",
     },
     {
         track:"C05",
@@ -179,6 +202,8 @@ var data = [
         github: "",
         other: "",
         img: "speaker_takahashi.png",
+        session: "12takahashi.jpg",
+        slide: "https://www.slideshare.net/shinichitakahashi790/ss-77900965",
     },
     {
         track:"C07",
@@ -194,6 +219,8 @@ var data = [
         github: "",
         other: "",
         img: "speaker_sakamoto.jpg",
+        session: "13sakamoto.jpg",
+        slide: "https://speakerdeck.com/sakamoto03/jin-sugudekirularavelhuremuwaku-ye-wu-apurikai-fa",
     },
     {
         track:"C01+C02",
@@ -209,6 +236,8 @@ var data = [
         github: "https://github.com/ryo-endo",
         other: "",
         img: "speaker_endo.jpg",
+        session: "14endo.jpg",
+        slide: "https://speakerdeck.com/ryoendo/phpconguan-xi-2017-pu-falsechan-rituitazui-qiang-falsephpkai-fa-huan-jing-aetefalsewindows",
     },
     {
         track:"C05",
@@ -224,6 +253,8 @@ var data = [
         github: "https://github.com/niisan-tokyo",
         other: "http://qiita.com/niisan-tokyo",
         img: "speaker_niikura.png",
+        session: "15niikura.jpg",
+        slide: "https://speakerdeck.com/niisantokyo/hitasurale-sitephpapuriwokontenayun-yong",
     },
     {
         track:"C07",
@@ -239,6 +270,8 @@ var data = [
         github: "",
         other: "",
         img: "speaker_simojichi.jpg",
+        session: "16simoji.jpg",
+        slide: "https://blog.suzukishouten.co.jp/archives/1254",
     },
     {
         track:"C01+C02",
@@ -254,6 +287,8 @@ var data = [
         github: "",
         other: "",
         img: "speaker_sumida.jpg",
+        session: "17sumida.jpg",
+        slide: "https://speakerdeck.com/ippey/tesutotozhong-liang-kusurutamefalsecodeceptionfalsehazimekata-number-phpkansai",
     },
     {
         track:"C05",
@@ -269,6 +304,8 @@ var data = [
         github: "",
         other: "http://decr.jp/",
         img: "speaker_watanabe.jpg",
+        session: "18watanabe.jpg",
+        slide: "https://speakerdeck.com/kaz29/phptemosaharesusitai",
     },
     {
         track:"C07",
@@ -284,6 +321,8 @@ var data = [
         github: "",
         other: "http://qiita.com/bobu_web",
         img: "speaker_futagami.jpeg",
+        session: "19futagami.jpg",
+        slide: "https://speakerdeck.com/nobu222/jin-feng-falsehurontoendokai-fa-wosuruzui-duan-dezui-xiao-xian-falsezhuang-bei",
     },
 ]
 

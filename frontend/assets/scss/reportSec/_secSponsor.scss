@@ -2,104 +2,41 @@
 @import "../lib/_variable";
 
 #secSponsor {
-  @include bg_gradient;
+  background-image: url("../images_after/bg_sponsor.jpg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
 
   .secSponsor_contents{
     text-align: center;
     padding: 60px 0;
-    position: relative;
-    h3 {
-      font-size: 1.5rem;
-      color: $clr-font;
-      margin-bottom: 30px;
-      font-weight: normal;
+    .secSponsor_heading_svg {
+      @include rep_title_svg;
     }
-    .fractal {
-      position: absolute;
-
-      &.num02 {
-        top: 100px;
-        left: -8%;
-        animation: fuwafuwa 3s ease-in-out 0.2s backwards infinite;
-        @include mq() {
-          display: none;
-        }
-      }
-
-      &.num03 {
-        bottom: 100px;
-        right: -20%;
-        animation: fuwafuwa 6s ease-in-out 0.2s backwards infinite;
-        @include mq() {
-          display: none;
-        }
-      }
-    }
-
-    .contents {
-      letter-spacing: -.4em;
-    }
-    .content {
-      display: inline-block;
-      letter-spacing: normal;
-      margin: 0 10px 20px;
-      vertical-align: top;
-      @include mq() {
-        margin: 0 5px 10px;
-      }
-      a {
-        display: inline-block;
-      }
-      img {
-        width: 100%;
-      }
-    }
-
-  }
-
-  .secSponsor_heading {
-    span {
-      @include title;
-      background-image: url("/assets/images/icn_heading-white.svg");
+    .secSponsor_heading {
+      @include rep_title;
+      color: #fff;
     }
   }
-  .secSponsor_list {
-    background: #fff;
+  .secSponsor_cover {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
+    height: 100%;
+    background-color: #9067CA;
+    opacity: 0.7;
   }
-  .secSponsor_platinum {
-    margin-bottom: 30px;
-    .content {
-      width: calc(50% - 20px);
-      @include mq() {
-        width: calc(100% - 10px);
-      }
+
+  .secSponsor_video {
+    margin: 30px auto 0;
+    video {
+      width: 100%;
+      max-width: 800px;
     }
   }
-  .secSponsor_gold{
-    margin-bottom: 30px;
-    .content {
-      width: calc(33.3333% - 20px);
-      @include mq() {
-        width: calc(50% - 10px);
-      }
-    }
-  }
-  .secSponsor_silver{
-    margin-bottom: 30px;
-    .content {
-      width: calc(25% - 20px);
-      @include mq() {
-        width: calc(33.3333% - 10px);
-      }
-    }
-  }
-  .secSponsor_media{
-    .content {
-      width: calc(25% - 20px);
-      @include mq() {
-        width: calc(33.3333% - 10px);
-      }
-    }
+  .secSponsor_video_text {
+    margin: 20px auto 40px;
+    color: #fff;
   }
 }
