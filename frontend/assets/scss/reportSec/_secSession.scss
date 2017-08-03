@@ -13,14 +13,15 @@
       @include rep_title_svg;
     }
     .secSession_lt_unconf{
-      display: flex;
-      justify-content: space-between;
-      margin-bottom: 20px;
-      .secSession_blog_block {
-      }
-      @include mq("md") {
+      text-align: center;
+      max-width: 980px;
+      @include mq() {
         display: block;
         margin-bottom: 0;
+      }
+      iframe {
+        margin: 4px 5px;
+        z-index: 1;
       }
     }
 

@@ -18,8 +18,8 @@
       position: absolute;
 
       &.num02 {
-        top: 100px;
-        left: -8%;
+        top: 10px;
+        left: -18%;
         animation: fuwafuwa 3s ease-in-out 0.2s backwards infinite;
         @include mq() {
           display: none;
@@ -66,17 +66,14 @@
       margin-bottom: 40px;
     }
     .secBlog{
-      display: flex;
-      justify-content: space-between;
-      align-content: center;
-      margin-bottom: 20px;
+      text-align: center;
+      max-width: 980px;
       @include mq() {
         display: block;
         margin-bottom: 0;
       }
-      .secBlog_block {
-        min-width: 300px;
-        margin: 10px 0;
+      iframe {
+        margin: 5px 5px;
         z-index: 1;
       }
     }
