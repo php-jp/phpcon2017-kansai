@@ -70,9 +70,11 @@
       font-size: 1.3rem;
       color: $clr-main;
       font-weight: bold;
+      .session_slideBox {
+        margin-top: 20px;
+      }
       .session_slide {
         display: block;
-        margin-top: 20px;
         text-align: center;
         font-size: 0.8rem;
         background-color: $clr-main;
@@ -144,7 +146,7 @@
       }
     }
     .wrap {
-      display: none;
+      display: block;
     }
     .session_img img {
       width: 100%;

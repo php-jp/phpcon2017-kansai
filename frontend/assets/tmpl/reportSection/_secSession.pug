@@ -4,10 +4,11 @@ mixin session(sessionInfo)
             img(src="/assets/rep_speakers/" + sessionInfo.session)
         .session.inner
             h2=sessionInfo.title
-            if sessionInfo.slide
-                a(href=sessionInfo.slide target="_blank").session_slide
-                    | SLIDE
-                    i.fa.fa-external-link.session_slide_icon
+            .session_slideBox
+                if sessionInfo.slide
+                    a(href=sessionInfo.slide target="_blank").session_slide
+                        | SLIDE
+                        i.fa.fa-external-link.session_slide_icon
         .speaker.inner
             p !{sessionInfo.name}
 
@@ -30,7 +31,6 @@ mixin sessionEmpty()
                     .time 14:45<br>|<br>15:15
                     .time 15:30<br>|<br>16:00
                     .time 16:15<br>|<br>16:45
-                    .time 17:10<br>|<br>17:50
                 .secSession_sections
                     each sessionInfo in speakers.findByRoom("C01+C02")
                         +session(sessionInfo)
@@ -87,7 +87,7 @@ mixin sessionEmpty()
                             each sessionInfo in speakers.findByTime("16:15-16:45")
                                 +session(sessionInfo)
 
-            .secSession_heading_svg
+            #secLtUnconf.secSession_heading_svg
                 img(src="./assets/images/icn_heading-white.svg")
             h2.secSession_heading
                 span LT & UnConferences
