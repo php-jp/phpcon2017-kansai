@@ -1,0 +1,42 @@
+@import "../lib/_mixin";
+@import "../lib/_variable";
+
+#secSponsor {
+  background-image: url("../images_after/bg_sponsor.jpg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+
+  .secSponsor_contents{
+    text-align: center;
+    padding: 60px 0;
+    .secSponsor_heading_svg {
+      @include rep_title_svg;
+    }
+    .secSponsor_heading {
+      @include rep_title;
+      color: #fff;
+    }
+  }
+  .secSponsor_cover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #9067CA;
+    opacity: 0.7;
+  }
+
+  .secSponsor_video {
+    margin: 30px auto 0;
+    video {
+      width: 100%;
+      max-width: 800px;
+    }
+  }
+  .secSponsor_video_text {
+    margin: 20px auto 40px;
+    color: #fff;
+  }
+}

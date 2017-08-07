@@ -1,0 +1,15 @@
+doctype html
+html(lang="ja")
+    include reportCommon/_head.pug
+    body.report
+        include reportCommon/_header.pug
+        include reportCommon/_nav.pug
+        include reportSection/_secHero.pug
+        include reportSection/_secSession.pug
+        include reportSection/_secBooth
+        include reportSection/_secBlog.pug
+        include reportSection/_secSponsor.pug
+        include reportSection/_secStaff.pug
+        include reportSection/_secPresentedBy
+        include reportCommon/_footer.pug
+        script(src="/script.js")

@@ -1,0 +1,118 @@
+@import "../lib/mixin";
+@import "../lib/variable";
+
+#footer {
+  background:$clr-main;
+  padding: 40px 0; 
+  position: relative;
+
+  .footer_phpConf {
+    text-align: center;
+    margin-bottom: 60px;
+  }
+
+  .footer_phpConfArchives {
+    text-align: center;
+    margin-top: 18px;
+    a {
+      margin: 0 15px;
+      color: $clr-lightGlay;
+      &:hover {
+        text-decoration: underline;
+      }
+      @include mq() {
+        margin: 0 8px;
+      }
+    }
+  }
+
+  .footer_copyright {
+    text-align: center;
+    .footer_copyright_main {
+      font-size: 1.5rem;
+      p {
+        display: block;
+        margin-top: 35px;
+        color: $clr-lightGlay;
+      }
+    }
+    small {
+      display: block;
+      margin-top: 35px;
+      color: $clr-lightGlay;
+      padding-top: 10px;
+      border-top: 1px solid #E9E2F9;
+    }
+    span {
+      font-weight: bold;
+    }
+    a {
+      font-weight: bold;
+      color: $clr-lightGlay;
+    }
+
+  }
+}
+
+#lt_notice {
+  padding: 8px 5px;
+  position: fixed;
+  right: 120px;
+  bottom: 10px;
+  background: #f4efff;
+  @include mq() {
+    right: 70px;
+  }
+  &::after {
+    margin-top: -25%;
+    display: inline-block;
+    content: "";
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-left: 10px solid #f4efff;
+    border-bottom: 10px solid transparent;
+    border-right: 10px solid transparent;
+    position: absolute;
+    right: -20px;
+    bottom: 30%;
+
+  }
+  span {
+    display: inline-block;
+    line-height: 1.4;
+  }
+  .lt_link {
+    display: inline-block;
+    margin-top: 5px;
+    font-weight: bold;
+  }
+}
+#lt_notice.active {
+  position: absolute;
+  bottom: initial;
+  top: -65px;
+  @include mq {
+    top: -55px;
+  }
+}
+
+
+#pageTop {
+  position: fixed;
+  right: 50px;
+  bottom: 0;
+  @include mq() {
+    right: 10px;
+  }
+
+  img {
+    width: 49px;
+  }
+}
+
+#pageTop.active {
+  position: absolute;
+  bottom: initial;
+  top: -48px;
+}

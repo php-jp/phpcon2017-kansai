@@ -201,11 +201,80 @@ $(function(){
         }
     }
 
+
+
+    /**
+     * PC版のみ高さをそろえる。
+     * timetable Sections がcolumn 担っているので、
+     * index をベースに擬似 Row を生成していく。
+     */
+    app.syncHeightReport = (function () {
+        $(window).on('load resize',function () {
+            dealEachRowReport(0)
+            dealEachRowReport(1)
+            dealEachRowReport(2)
+            dealEachRowReport(3)
+            dealEachRowReport(4)
+            dealEachRowReport(5)
+            dealEachRowReport(6)
+            dealEachRowReport(7)
+            dealEachRowReport(8)
+        })
+    }())
+
+    var dealEachRowReport = function(i){
+
+        $targets = [
+            $("#secSession .secSession_sections:eq(0) .section:eq("+i+") h2"),
+            $("#secSession .secSession_sections:eq(1) .section:eq("+i+") h2"),
+            $("#secSession .secSession_sections:eq(2) .section:eq("+i+") h2"),
+        ];
+        var maxHeight = 0;
+        for(var index in $targets){
+            $targets[index].css("height","auto");
+            maxHeight = Math.max($targets[index].height(),maxHeight)
+        }
+        for(var index in $targets){
+            $targets[index].css("height",maxHeight);
+        }
+        $targets = [
+            $("#secSession .secSession_sections:eq(0) .section:eq("+i+") .session_slideBox"),
+            $("#secSession .secSession_sections:eq(1) .section:eq("+i+") .session_slideBox"),
+            $("#secSession .secSession_sections:eq(2) .section:eq("+i+") .session_slideBox"),
+        ];
+        var maxHeight = 0;
+        for(var index in $targets){
+            $targets[index].css("height","auto");
+            maxHeight = Math.max($targets[index].height(),maxHeight)
+        }
+        for(var index in $targets){
+            $targets[index].css("height",maxHeight);
+        }
+        $targets = [
+            $("#secSession .secSession_timeline .time:eq("+i+")"),
+            $("#secSession .secSession_sections:eq(0) .section:eq("+i+")"),
+            $("#secSession .secSession_sections:eq(1) .section:eq("+i+")"),
+            $("#secSession .secSession_sections:eq(2) .section:eq("+i+")"),
+        ];
+        var maxHeight = 0;
+        for(var index in $targets){
+            $targets[index].css("height","auto");
+            maxHeight = Math.max($targets[index].height(),maxHeight)
+        }
+        for(var index in $targets){
+            if($targets[index].hasClass("time") || $targets[index].hasClass("sectionEmpty"))
+                $targets[index].css("height",maxHeight);
+        }
+    }
+
     app.spToggle = (function  () {
         $('#secTimetable .secTimetable_sp_contents .time').on('click',function () {
             $(this).next().slideToggle();
             $(this).toggleClass("active")
         })
+        $('#secSession .secSession_sp_contents .time').on('click',function () {
+            $(this).next().slideToggle();
+            $(this).toggleClass("active")
+        })
     }())
 })
-

@@ -1,0 +1,22 @@
+mixin ogp(title,description,image)
+    title=title
+    meta(name="description", content=description)
+    meta(property="og:title", content=title)
+    meta(property="og:image", content=image)
+    meta(property="og:description", content=description)
+    meta(name="twitter:card", content="summary_large_image")
+    meta(name="twitter:site", content="@phpcon_kansai")
+    meta(name="twitter:creator", content="@phpcon_kansai")
+    meta(name="twitter:title", content=title)
+    meta(name="twitter:description", content=description)
+    meta(name="twitter:image", content=image)
+head
+    meta(name="viewport", content="width=device-width,initial-scale=1")
+    +ogp("PHPカンファレンス関西2017 は 大阪グランフロントにて 7/15 に開催しました!","ご参加ありがとうございました！イベントの様子やスライド、ブログなどをレポートページにて紹介しております！","https://2017.kphpug.jp/assets/images/ogp_after.jpg")
+    link(rel="icon", type="image/png",href="/assets/images/favicon.ico")
+    link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css")
+    link(rel='stylesheet', href='/assets/css/main.css')
+    link(rel='stylesheet', href="//fonts.googleapis.com/earlyaccess/notosansjapanese.css")
+    meta(property="og:url",content="https://2017.kphpug.jp/")
+    script(src="https://code.jquery.com/jquery-3.2.0.min.js")
+    

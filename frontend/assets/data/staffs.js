@@ -184,4 +184,9 @@ module.exports = [
         url: "http://blog.gouten.net/",
         img: "staff_okashima.jpg",
     },
+    {
+        name: "HotaruMaru",
+        url: "",
+        img: "staff_hotarumaru.png",
+    }
 ]

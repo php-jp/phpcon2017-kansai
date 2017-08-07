@@ -1,0 +1,81 @@
+@import "../lib/_mixin";
+@import "../lib/_variable";
+#secStaff {
+  background: $clr-lightGlay;
+  .secStaff_contents {
+    text-align: center;
+    padding: 60px 0;
+
+    .secStaff_heading {
+      @include rep_title;
+      margin-bottom: 50px;
+    }
+    .secStaff_heading_svg {
+      @include rep_title_svg;
+    }
+  }
+
+  .secStaff_staffs {
+    text-align: center;
+    .secStaff_staff:nth-of-type(1){
+      .secStaff_icon {
+        position: relative;
+        text-align: center;
+        &::after {
+          display: inline-block;
+          content: "";
+          background-image: url("/assets/images/icon_ribbon.svg");
+          background-repeat: no-repeat;
+          background-position: center;
+          width: 40px;
+          height:40px;
+          position: absolute;
+          top: 45px;
+          right: 11px;
+        }
+      }
+    }
+  }
+  .secStaff_staff {
+    display: inline-block;
+    width: 120px;
+    text-align: center;
+    vertical-align: top;
+    margin-bottom: 20px;
+    @include mq {
+      width: 80px;
+      margin-bottom: 10px;
+    }
+  }
+  .secStaff_icon {
+    width: 62px;
+    height: 62px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin: 0 auto;
+    position: relative;
+    top: 0;
+    left: 0;
+    transition: ease .3s;
+    img {
+      border-radius: 100%;
+    }
+  }
+
+  .secStaff_name {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    color: $clr-font;
+  }
+
+  .secStaff_contents {
+    a {
+      &:hover {
+        .secStaff_icon {
+          top: -10px;
+        }
+      }
+    }
+  }
+}

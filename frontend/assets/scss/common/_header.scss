@@ -1,7 +1,8 @@
 @import "../lib/mixin";
 @import "../lib/variable";
 #header {
-  background: #fff;
+  background: $clr-main;
+  color: #fff;
   height: 60px;
   width: 100%;
   position: fixed;
@@ -13,12 +14,15 @@
     height: 50px;
   }
   .header_logo {
-    position: absolute;
-    top: 50%;
-    left: 20px;
-    transform: translateY(-50%);
+    display: inline-block;
+    margin-left: 20px;
+    transform: translateY(62%);
+    @include mq{
+      transform: translateY(45%);
+      margin-left: 10px;
+    }
     a {
-      display: block;
+      display: inline;
     }
     img {
       vertical-align: middle;
@@ -33,15 +37,97 @@
         display: none;
       }
     }
+    .header_message {
+      display: inline-block;
+      padding-left: 15px;
+      font-size: 1.2rem;
+      @media screen and (max-width: 1210px) {
+        display: none;
+      }
+    }
+    .logo_typo {
+      @media screen and (max-width: 1210px) {
+        display: none;
+      }
+    }
+  }
+  .header_report {
+    display: inline-block;
+    height: 60px;
+    vertical-align: top;
+    .pc_btn {
+      display: inline-block;
+      margin-left: 15px;
+      padding: 8px 25px;
+      box-sizing: border-box;
+      transform: translateY(45%);
+      font-size: 1rem;
+      font-weight: bold;
+      color: $clr-main;
+      background: #fff;
+      @include btn;
+      i {
+        margin-right: 5px;
+      }
+      @media screen and (max-width: 1210px) {
+        display: none;
+        i {
+          margin-top: 8px;
+        }
+      }
+    }
+    .sp_btn {
+      display: none;
+      font-size: 1rem;
+      color: $clr-main;
+      background: #fff;
+      @include btn;
+      position: relative;
+      @media screen and (min-width:768px) and (max-width: 1210px) {
+        display: inline-block;
+        margin-left: 16px;
+        padding: 0 25px;
+        padding-left: 20px;
+        height: 60px;
+      }
+      @include mq('md') {
+        display: inline-block;
+        padding: 0 20px;
+        height: 50px;
+      }
+      i {
+        display: inline-block;
+        margin-right: 10px;
+        margin-top: 8px;
+        transform: translateY(40%);
+
+        @media screen and (min-width:768px) and (max-width: 1210px) {
+          font-size: 1.2rem;
+        }
+        @include mq('md') {
+          margin-right: 2px;
+          font-size: 1.5rem;
+        }
+      }
+
+      .sp_btn_text {
+        display: inline-block;
+        text-align: center;
+        transform: translateY(40%);
+      }
+    }
   }
   .header_share {
     position: absolute;
-    right: 250px;
+    right: 80px;
     top: 50%;
     transform: translateY(-50%);
     letter-spacing: -.4em;
-    @include mq(){
-      right: 104px;
+    @include mq("md"){
+      right: 60px;
+    }
+    @media screen and (min-width:768px) and (max-width: 1210px) {
+      right: 70px;
     }
     li {
       display: inline-block;
@@ -55,7 +141,8 @@
       }
     }
     a {
-      color: $clr-main;
+      vertical-align: super;
+      color: #fff;
       @include btn;
       @include mq(){
         text-align: center;
@@ -67,43 +154,14 @@
     }
     i {
       margin-right: 10px;
-      @include mq(){
+      font-size: 1.4rem;
+      vertical-align: middle;
+    @include mq(){
         display: block;
         margin-right:0;
         font-size: 20px;
         margin-bottom: 2.5px;
       }
-    }
-  }
-  .header_join {
-    position: absolute;
-    right: 50px;
-    top: 50%;
-    transform: translateY(-50%);
-    height: 100%;
-    i {
-      margin-right: 20px;
-      @include mq() { 
-        margin-right: 0;
-        display: block;
-        font-size: 20px;
-        margin-bottom: 4px;
-      }
-    }
-    a {
-      @include btn;
-      background-color: $clr-main;
-      color: $clr-lightGlay;
-      font-weight: bold;
-      padding: 20px 33px;
-      display: block;
-      font-size: 20px;
-      @include mq() { 
-        text-align: center;
-        font-size: 10px;
-        padding: 0;
-        padding: 8px 5px;
-      }      
     }
   }
 
@@ -142,6 +200,7 @@
   .header_menu {
     cursor: pointer;
     position: absolute;
+    background: #fff;
     right: 0;
     top: 0;
     height: 60px;

@@ -1,0 +1,407 @@
+@import "../lib/_mixin";
+@import "../lib/_variable";
+#secHero {
+  background-image: url("../images_after/bg_hero.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 1250px;
+  padding-top: 150px;
+  box-sizing: border-box;
+
+  @include mq("md") {
+    padding-top: 110px;
+    height: 900px;
+  }
+
+  @include mq("sm") {
+    height: 900px;
+  }
+
+  .secHero_cover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 1250px;
+    background-color: #9067CA;
+    opacity: 0.7;
+    @include mq("md") {
+      height: 900px;
+    }
+  }
+
+  .secHero_nav {
+    position: absolute;
+    height: 900px;
+    width: 220px;
+    top: 60px;
+    right: 50px;
+    box-sizing: border-box;
+    background: rgba(255, 255, 255, 0.6);
+    padding: 50px 20px 30px;
+
+    li {
+      font-size: 1.2rem;
+      margin-bottom: 20px;
+      a {
+        color: #828296;
+        display: block;
+        padding: 10px 0;
+        font-weight: bold;
+        transition: ease .3s;
+        &:hover{
+          color: $clr-main;
+        }
+      }
+    }
+
+
+    .secHero_sns {
+      position: absolute;
+      width: 100%;
+      left: 0;
+      bottom: 100px;
+    }
+
+    .regular {
+      text-align: center;
+      @include bold;
+      font-size: 1.4rem;
+      margin-bottom: 20px;
+    }
+    .small2 {
+      text-align: center;
+      color: $clr-font;
+      margin-bottom: 20px;
+    }
+    .secHero_share {
+      text-align: center;
+      a {
+        font-size: 1.5rem;
+        width: 35px;
+        display: inline-block;
+        border-radius: 100%;
+        color: #fff;
+        padding: 7px 0;
+        margin: 0 10px;
+        @include btn;
+
+        &.twitter {
+          background: $clr-twitter;
+        }
+
+        &.facebook {
+          background: $clr-facebook;
+        }
+
+      }
+    }
+    @include mq("lg") {
+      display: none;
+    }    
+  }
+
+  .container {
+    position: relative;
+    padding: 0 10px;
+    .fractal {
+      position: absolute;
+    }
+    .fractal.num01 {
+      top: -50px;
+      left: -60px;
+      animation: fuwafuwa 6s ease-in-out 0.2s backwards infinite;
+      @include mq() {
+        top: -40px;
+        left: 5%;
+      }
+      img {
+        @include mq() {
+          width: 175.5px;
+        }
+      }
+    }
+    .fractal.num02 {
+      bottom: 390px;
+      right: -10px;
+      animation: fuwafuwa 4s ease-in-out 0.2s backwards infinite;
+      @include mq() {
+        bottom: 420px;
+        right: 5%;
+      }
+      img {
+        @include mq() {
+          width: 125.5px;
+        }
+      }
+    }
+    .fractal.num03 {
+      top: 50px;
+      right: -40px;
+      animation: fuwafuwa 5s ease-in-out 0.2s backwards infinite;
+      @include mq() {
+        display: none;
+      }
+    }
+    .fractal.num04 {
+      bottom: 400px;
+      left: 40px;
+      animation: fuwafuwa 7s ease-in-out 0.2s backwards infinite;
+      @include mq() {
+        display: none;
+      }
+    }
+  }
+  .mainVisual {
+    width: 670px;
+    height: 670px;
+    margin: 0 auto;
+    border-radius: 100%;
+    background-color: #fff;
+    display: table;
+    text-align: center;
+    position: relative;
+    @include mq() {
+      width: 400px;
+      height: 400px;
+    }
+    @include mq("sm") {
+      width: 300px;
+      height: 300px;
+    }
+    img {
+      @include mq() {}
+    }
+    .wrap {
+      display: table-cell;
+      vertical-align: middle;
+      position: relative;
+    }
+    .zou {
+      position: absolute;
+      top: -30px;
+      right: 10px;
+      @include mq() {
+        top: -40px;
+      }
+      @include mq("sm") {
+        top: -70px;
+      }
+    }
+    .sprite {
+      width: 165px;
+      height: 160px;
+      margin: 0 auto;
+      background: url(../../assets/images/zou.png) no-repeat;
+      background-position: 0 0;
+      @include mq() {
+        transform: scale(.5);
+        transform-origin: center right;
+      }
+      &.blink {
+        background-position: -170px 0;
+      }
+    }
+    .image {
+      display: block;
+      margin-bottom: 25px;
+      @include mq() {
+        margin-bottom: 15px;
+      }
+    }
+    .logo01 {
+      img {
+        width: 159px;
+        @include mq() {
+          width: 78px;
+        }
+        @include mq("sm") {
+          width: 60px;
+        }
+      }
+    }
+    .logo02 {
+      img {
+        width: 300px;
+        @include mq() {
+          width: 130px;
+        }
+      }
+    }
+    .image_thankyou {
+      position: absolute;
+      top: 57%;
+      right: 80px;
+      img {
+        width: 170px;
+        @include mq() {
+          width: 100px;
+        }
+      }
+      @include mq() {
+        top: 50%;
+        right: 30px;
+      }
+    }
+    p {
+      margin-top: 50px;
+      margin-bottom: 20px;
+      font-size: 1.3rem;
+      font-weight: bold;
+      line-height: 1.6;
+      color: #828296;
+      @include mq() {
+        line-height: 1.4;
+        margin-top: 30px;
+        margin-bottom: 15px;
+      }
+      @include mq("sm") {
+        font-size: .8rem;
+      }
+    }
+    span {
+      font-size: 1rem;
+      @include mq {
+        font-size: .6rem;
+      }
+    }
+    .btn_pc {
+      display: inline-block;
+      @include btn;
+      font-size: 1.2rem;
+      background: $clr-main;
+      color: $clr-lightGlay;
+      padding: 10px 20px 10px 25px;
+      i {
+        margin-right: 5px;
+      }
+      @include mq("md") {
+        display: none;
+      }
+    }
+    .btn_sp {
+      display: none;
+      @include mq("md") {
+        display: inline-block;
+        @include btn;
+        font-size: 1rem;
+        background: $clr-main;
+        color: $clr-lightGlay;
+        padding: 10px 12px;
+      }
+    }
+    .secHero_tag {
+      width: 220px;
+      display: inline-block;
+      padding: 10px;
+      font-size: 1.2rem;
+      border-radius: 20px;
+      background-color: #F7F7F7;
+      color: $clr-main;
+      @include btn;
+      i {
+        margin-right: 10px;
+        vertical-align: middle;
+      }
+      span {
+        @include mq {
+          font-size: 1rem;
+        }
+      }
+      @include mq("sm") {
+        width: 100px;
+        padding: 7px;
+      }
+    }
+  }
+  .secHero_action {
+    text-align: center;
+    .btn {
+      margin: 35px 0 13px;
+      @include mq() {
+        margin: 20px 0 10px;
+        text-align: center;
+      }
+      a {
+        @include btn;
+        display: inline-block;
+        background: $clr-main;
+        color: #fff;
+        font-weight: bold;
+        font-size: 1.2rem;
+        padding: 20px 35px;
+        min-width: 250px;
+        @include mq {
+          padding: 15px 20px;
+        }
+      }
+      i {
+        margin-right: 15px;
+      }
+    }
+    .btn_enquete{
+      margin: 10px 0;
+      @include mq() {
+        margin: 5px;
+        text-align: center;
+      }
+      a {
+        @include btn;
+        display: inline-block;
+        min-width: 250px;
+        background: #da75c0;
+        color: #fff;
+        font-weight: bold;
+        font-size: 1.2rem;
+        padding: 20px 35px;
+        @include mq {
+          padding: 15px 20px;
+        }
+      }
+      i {
+        margin-left: 5px;
+        margin-right: 10px;
+      }
+    }
+  }
+
+  .secHero_contents {
+    text-align: center;
+    padding: 60px 0;
+    color: #fff;
+    .secHero_heading {
+      @include rep_title;
+      color: #fff;
+    }
+    .secHero_heading_svg {
+       @include rep_title_svg;
+       margin: 20px auto;
+       opacity: 0.9;
+    }
+    .secHero_text {
+      padding: 10px 0;
+      line-height: 1.3;
+      font-size: 1.1rem;
+    }
+  }
+}
+
+
+
+@-webkit-keyframes fuwafuwa {
+    0% {
+        -webkit-transform: translate(0,0);
+        transform: translate(0,0)
+    }
+
+    50% {
+        -webkit-transform: translate(0,15px);
+        transform: translate(0,15px)
+    }
+
+    100% {
+        -webkit-transform: translate(0,0);
+        transform: translate(0,0)
+    }
+}
